@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小说阅读器</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .app-container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        .sidebar {
+            width: 300px;
+            background: white;
+            border-right: 1px solid #e0e0e0;
+            overflow-y: auto;
+            transition: width 0.3s ease;
+        }
+        
+        .sidebar.collapsed {
+            width: 50px;
+        }
+        
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            background: #2c3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .search-container {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            background: white;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 10px 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        
+        .search-box:focus {
+            border-color: #3498db;
+        }
+        
+        .search-box::placeholder {
+            color: #999;
+        }
+        
+        .search-results {
+            max-height: 300px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+        
+        .search-results::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .search-results::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        
+        .search-results::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+        }
+        
+        .search-results::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+        
+        .search-result-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #e9ecef;
+            color: #495057;
+        }
+        
+        .search-result-item:hover {
+            background: #e9ecef;
+        }
+        
+        .search-result-item.active {
+            background: #007bff;
+            color: white;
+        }
+        
+        .search-novel-name {
+            font-size: 12px;
+            color: #6c757d;
+            margin-bottom: 4px;
+        }
+        
+        .search-result-item:hover .search-novel-name {
+            color: #fff;
+        }
+        
+        .search-chapter-name {
+            font-weight: 500;
+        }
+        
+        .no-search-results {
+            padding: 20px;
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        .toggle-btn {
+            background: #34495e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: auto;
+        }
+        
+        .novel-list {
+            padding: 20px 0;
+        }
+        
+        .novel-item {
+            margin: 10px 0;
+        }
+        
+        .novel-title {
+            padding: 12px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .novel-title:hover {
+            background: #d5dbdb;
+        }
+        
+        .novel-title.active {
+            background: #3498db;
+            color: white;
+        }
+        
+        .chapter-list {
+            background: #f8f9fa;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .chapter-list.expanded {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .chapter-list::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .chapter-list::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        
+        .chapter-list::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+        }
+        
+        .chapter-list::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+        
+        .chapter-item {
+            padding: 10px 40px;
+            cursor: pointer;
+            border-bottom: 1px solid #e9ecef;
+            color: #6c757d;
+        }
+        
+        .chapter-item:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+        
+        .chapter-item.active {
+            background: #007bff;
+            color: white;
+        }
+        
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .content-header {
+            padding: 20px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .content-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .reading-timer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .timer-display {
+            background: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+            color: #495057;
+        }
+        
+        .timer-icon {
+            font-size: 16px;
+        }
+        
+        .content-body {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-content {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #2c3e50;
+            white-space: pre-wrap;
+        }
+        
+        .english-text {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #6c757d;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #dc3545;
+        }
+        
+        .expand-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .expand-icon.rotated {
+            transform: rotate(90deg);
+        }
+        
+        .welcome-message {
+            text-align: center;
+            padding: 100px 50px;
+            color: #6c757d;
+        }
+        
+        .welcome-message h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: fixed;
+                z-index: 1000;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .sidebar.mobile-open {
+                transform: translateX(0);
+            }
+            
+            .content-area {
+                margin-left: 0;
+            }
+            
+            .content-header {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+            
+            .reading-timer {
+                align-self: flex-end;
+            }
+            
+            .content-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="app-container">
+            <!-- 侧边栏 -->
+            <div class="sidebar" :class="{ collapsed: sidebarCollapsed }">
+                <div class="sidebar-header">
+                    <div class="sidebar-title" v-if="!sidebarCollapsed">小说阅读器</div>
+                    <button class="toggle-btn" @click="toggleSidebar">
+                        {{ sidebarCollapsed ? '→' : '←' }}
+                    </button>
+                </div>
+                
+                <!-- 搜索框 -->
+                <div class="search-container" v-if="!sidebarCollapsed">
+                    <input 
+                        type="text" 
+                        class="search-box" 
+                        placeholder="搜索章节..." 
+                        v-model="searchQuery"
+                        @input="performSearch"
+                    />
+                </div>
+                
+                <!-- 搜索结果 -->
+                <div class="search-results" v-if="!sidebarCollapsed && searchQuery && searchResults.length > 0">
+                    <div v-for="result in searchResults" 
+                         :key="result.novel + '-' + result.chapter.name"
+                         class="search-result-item"
+                         :class="{ active: selectedChapter === result.chapter.path }"
+                         @click="loadChapter(result.novel, result.chapter)">
+                        <div class="search-novel-name">{{ getNovelDisplayName(result.novel) }}</div>
+                        <div class="search-chapter-name">{{ getChapterDisplayName(result.chapter.name) }}</div>
+                    </div>
+                </div>
+                
+                <!-- 无搜索结果提示 -->
+                <div class="no-search-results" v-if="!sidebarCollapsed && searchQuery && searchResults.length === 0">
+                    未找到匹配的章节
+                </div>
+                
+                <div class="novel-list" v-if="!sidebarCollapsed && !searchQuery">
+                    <div v-for="novel in novels" :key="novel.name" class="novel-item">
+                        <div class="novel-title" 
+                             :class="{ active: selectedNovel === novel.name }"
+                             @click="toggleNovel(novel.name)">
+                            <span>{{ getNovelDisplayName(novel.name) }}</span>
+                            <span class="expand-icon" 
+                                  :class="{ rotated: expandedNovels.includes(novel.name) }">
+                                ▶
+                            </span>
+                        </div>
+                        
+                        <div class="chapter-list" 
+                             :class="{ expanded: expandedNovels.includes(novel.name) }">
+                            <div v-for="chapter in novel.chapters" 
+                                 :key="chapter.name"
+                                 class="chapter-item"
+                                 :class="{ active: selectedChapter === chapter.path }"
+                                 @click="loadChapter(novel.name, chapter)">
+                                {{ getChapterDisplayName(chapter.name) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 内容区域 -->
+            <div class="content-area">
+                <div class="content-header" v-if="currentChapterTitle">
+                    <div class="content-title">{{ currentChapterTitle }}</div>
+                    <div class="reading-timer">
+                        <span class="timer-icon">⏱️</span>
+                        <div class="timer-display">{{ formatTime(readingTime) }}</div>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div v-if="loading" class="loading">
+                        <p>加载中...</p>
+                    </div>
+                    
+                    <div v-else-if="error" class="error">
+                        <p>{{ error }}</p>
+                    </div>
+                    
+                    <div v-else-if="chapterContent" class="chapter-content" v-html="formatContent(chapterContent)">
+                    </div>
+                    
+                    <div v-else class="welcome-message">
+                        <h2>欢迎使用小说阅读器</h2>
+                        <p>请从左侧目录中选择要阅读的章节</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    novels: [],
+                    expandedNovels: [],
+                    selectedNovel: null,
+                    selectedChapter: null,
+                    chapterContent: '',
+                    currentChapterTitle: '',
+                    loading: false,
+                    error: null,
+                    sidebarCollapsed: false,
+                    apiBase: 'https://api.github.com/repos/hitori-janai/novels/contents/books',
+                    readingTime: 0,
+                    readingTimer: null,
+                    startTime: null,
+                    searchQuery: '',
+                    searchResults: []
+                }
+            },
+            
+            async mounted() {
+                await this.loadNovels();
+                this.loadFromCache();
+                this.startReadingTimer();
+            },
+            
+            beforeUnmount() {
+                this.stopReadingTimer();
+            },
+            
+            methods: {
+                async loadNovels() {
+                    try {
+                        this.loading = true;
+                        this.error = null;
+                        
+                        const response = await axios.get(this.apiBase);
+                        const novelDirs = response.data.filter(item => item.type === 'dir');
+                        
+                        this.novels = [];
+                        
+                        for (const novelDir of novelDirs) {
+                            const chaptersResponse = await axios.get(novelDir.url);
+                            const chapters = chaptersResponse.data
+                                .filter(item => item.type === 'file' && item.name.endsWith('.txt'))
+                                .sort((a, b) => a.name.localeCompare(b.name));
+                            
+                            this.novels.push({
+                                name: novelDir.name,
+                                path: novelDir.path,
+                                chapters: chapters
+                            });
+                        }
+                        
+                    } catch (error) {
+                        console.error('Error loading novels:', error);
+                        this.error = '加载小说列表失败: ' + error.message;
+                    } finally {
+                        this.loading = false;
+                    }
+                },
+                
+                toggleNovel(novelName) {
+                    if (this.expandedNovels.includes(novelName)) {
+                        this.expandedNovels = this.expandedNovels.filter(name => name !== novelName);
+                    } else {
+                        this.expandedNovels.push(novelName);
+                    }
+                    this.selectedNovel = novelName;
+                },
+                
+                async loadChapter(novelName, chapter, saveCache = true) {
+                    try {
+                        this.loading = true;
+                        this.error = null;
+                        this.selectedChapter = chapter.path;
+                        
+                        const response = await axios.get(chapter.download_url);
+                        this.chapterContent = response.data;
+                        this.currentChapterTitle = `${this.getNovelDisplayName(novelName)} - ${this.getChapterDisplayName(chapter.name)}`;
+                        
+                        // 保存缓存
+                        if (saveCache) {
+                            this.saveToCache();
+                        }
+                        
+                    } catch (error) {
+                        console.error('Error loading chapter:', error);
+                        this.error = '加载章节失败: ' + error.message;
+                    } finally {
+                        this.loading = false;
+                    }
+                },
+                
+                formatContent(content) {
+                    if (!content) return '';
+                    
+                    // 转义HTML
+                    let escapedContent = content
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;')
+                        .replace(/'/g, '&#39;');
+                    
+                    // 高亮英文句子（包含英文字母和基本标点的行）
+                    escapedContent = escapedContent.replace(
+                        /^.*[a-zA-Z].*$/gm,
+                        '<span class="english-text">$&</span>'
+                    );
+                    
+                    return escapedContent;
+                },
+                
+                getNovelDisplayName(name) {
+                    const displayNames = {
+                        'oap': '桃子和橙子',
+                        'oap_en': '桃子和橙子 (English)'
+                    };
+                    return displayNames[name] || name;
+                },
+                
+                getChapterDisplayName(filename) {
+                    // 去掉文件扩展名并格式化章节名
+                    return filename.replace('.txt', '').replace(/_/g, ' ');
+                },
+                
+                toggleSidebar() {
+                    this.sidebarCollapsed = !this.sidebarCollapsed;
+                },
+                
+                // 缓存相关方法
+                saveToCache() {
+                    const cacheData = {
+                        selectedNovel: this.selectedNovel,
+                        selectedChapter: this.selectedChapter,
+                        currentChapterTitle: this.currentChapterTitle,
+                        expandedNovels: this.expandedNovels,
+                        readingTime: this.readingTime,
+                        lastReadTime: Date.now()
+                    };
+                    localStorage.setItem('novelReaderCache', JSON.stringify(cacheData));
+                },
+                
+                loadFromCache() {
+                    const cacheData = localStorage.getItem('novelReaderCache');
+                    if (cacheData) {
+                        try {
+                            const data = JSON.parse(cacheData);
+                            this.selectedNovel = data.selectedNovel;
+                            this.selectedChapter = data.selectedChapter;
+                            this.currentChapterTitle = data.currentChapterTitle;
+                            this.expandedNovels = data.expandedNovels || [];
+                            this.readingTime = data.readingTime || 0;
+                            
+                            // 如果有缓存的章节，自动加载
+                            if (this.selectedChapter) {
+                                this.$nextTick(() => {
+                                    this.loadCachedChapter();
+                                });
+                            }
+                        } catch (error) {
+                            console.error('Error loading cache:', error);
+                        }
+                    }
+                },
+                
+                async loadCachedChapter() {
+                    // 等待小说列表加载完成
+                    if (this.novels.length === 0) {
+                        setTimeout(() => this.loadCachedChapter(), 500);
+                        return;
+                    }
+                    
+                    // 查找对应的章节
+                    for (const novel of this.novels) {
+                        const chapter = novel.chapters.find(ch => ch.path === this.selectedChapter);
+                        if (chapter) {
+                            await this.loadChapter(novel.name, chapter, false);
+                            this.scrollToActiveChapter();
+                            break;
+                        }
+                    }
+                },
+                
+                scrollToActiveChapter() {
+                    this.$nextTick(() => {
+                        const activeChapter = document.querySelector('.chapter-item.active');
+                        if (activeChapter) {
+                            activeChapter.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    });
+                },
+                
+                // 计时器相关方法
+                startReadingTimer() {
+                    this.readingTimer = setInterval(() => {
+                        if (this.chapterContent) {
+                            this.readingTime++;
+                            // 每分钟保存一次缓存
+                            if (this.readingTime % 60 === 0) {
+                                this.saveToCache();
+                            }
+                        }
+                    }, 1000);
+                },
+                
+                stopReadingTimer() {
+                    if (this.readingTimer) {
+                        clearInterval(this.readingTimer);
+                        this.saveToCache();
+                    }
+                },
+                
+                formatTime(seconds) {
+                    const hours = Math.floor(seconds / 3600);
+                    const minutes = Math.floor((seconds % 3600) / 60);
+                    const secs = seconds % 60;
+                    
+                    if (hours > 0) {
+                        return `${hours}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+                    } else {
+                        return `${minutes}:${secs.toString().padStart(2, '0')}`;
+                    }
+                },
+                
+                // 搜索相关方法
+                performSearch() {
+                    if (!this.searchQuery.trim()) {
+                        this.searchResults = [];
+                        return;
+                    }
+                    
+                    const query = this.searchQuery.toLowerCase().trim();
+                    this.searchResults = [];
+                    
+                    // 遍历所有小说和章节进行搜索
+                    for (const novel of this.novels) {
+                        for (const chapter of novel.chapters) {
+                            const chapterName = this.getChapterDisplayName(chapter.name).toLowerCase();
+                            const novelName = this.getNovelDisplayName(novel.name).toLowerCase();
+                            
+                            // 搜索章节名称和小说名称
+                            if (chapterName.includes(query) || novelName.includes(query)) {
+                                this.searchResults.push({
+                                    novel: novel.name,
+                                    chapter: chapter
+                                });
+                            }
+                        }
+                    }
+                    
+                    // 限制搜索结果数量，避免显示过多
+                    this.searchResults = this.searchResults.slice(0, 20);
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html> 
