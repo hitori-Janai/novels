@@ -57,6 +57,32 @@
             background: white;
         }
         
+        .cache-info {
+            padding: 10px 20px;
+            background: #e8f5e8;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #2d5f2d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: none;
+        }
+        
+        .cache-clear-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        
+        .cache-clear-btn:hover {
+            background: #c82333;
+        }
+        
         .search-box {
             width: 100%;
             padding: 10px 12px;
@@ -351,6 +377,12 @@
             .content-title {
                 font-size: 20px;
             }
+            
+            .cache-info {
+                flex-direction: column;
+                gap: 5px;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -364,6 +396,12 @@
                     <button class="toggle-btn" @click="toggleSidebar">
                         {{ sidebarCollapsed ? '→' : '←' }}
                     </button>
+                </div>
+                
+                <!-- 缓存信息 -->
+                <div class="cache-info" v-if="!sidebarCollapsed && hasCachedData">
+                    <span>📦 已缓存 {{ cacheStats.count }} 项数据</span>
+                    <button class="cache-clear-btn" @click="clearCacheAndReload">清除缓存</button>
                 </div>
                 
                 <!-- 搜索框 -->
@@ -453,6 +491,79 @@
 
     <script>
         const { createApp } = Vue;
+        
+        // 优雅的缓存管理类
+        class CacheManager {
+            constructor(prefix = 'cache_', defaultTTL = 3600000) { // 默认1小时
+                this.prefix = prefix;
+                this.defaultTTL = defaultTTL;
+            }
+            
+            // 获取缓存
+            get(key) {
+                try {
+                    const item = localStorage.getItem(this.prefix + key);
+                    if (!item) return null;
+                    
+                    const { data, expires } = JSON.parse(item);
+                    
+                    if (Date.now() > expires) {
+                        this.remove(key);
+                        return null;
+                    }
+                    
+                    return data;
+                } catch (error) {
+                    console.warn('Cache get error:', error);
+                    return null;
+                }
+            }
+            
+            // 设置缓存
+            set(key, data, ttl = this.defaultTTL) {
+                try {
+                    const item = {
+                        data,
+                        expires: Date.now() + ttl
+                    };
+                    localStorage.setItem(this.prefix + key, JSON.stringify(item));
+                    return true;
+                } catch (error) {
+                    console.warn('Cache set error:', error);
+                    return false;
+                }
+            }
+            
+            // 检查缓存是否存在且有效
+            has(key) {
+                return this.get(key) !== null;
+            }
+            
+            // 删除特定缓存
+            remove(key) {
+                localStorage.removeItem(this.prefix + key);
+            }
+            
+            // 清除所有相关缓存
+            clear() {
+                const keys = Object.keys(localStorage);
+                keys.forEach(key => {
+                    if (key.startsWith(this.prefix)) {
+                        localStorage.removeItem(key);
+                    }
+                });
+            }
+            
+            // 获取缓存大小信息
+            getStats() {
+                const keys = Object.keys(localStorage);
+                const cacheKeys = keys.filter(key => key.startsWith(this.prefix));
+                return {
+                    count: cacheKeys.length,
+                    keys: cacheKeys.map(key => key.replace(this.prefix, ''))
+                };
+            }
+        }
 
         createApp({
             data() {
@@ -471,7 +582,9 @@
                     readingTimer: null,
                     startTime: null,
                     searchQuery: '',
-                    searchResults: []
+                    searchResults: [],
+                    hasCachedData: false,
+                    cache: new CacheManager('novel_api_') // 创建缓存管理实例
                 }
             },
             
@@ -479,10 +592,22 @@
                 await this.loadNovels();
                 this.loadFromCache();
                 this.startReadingTimer();
+                
+                // 监听页面关闭事件，保存状态
+                window.addEventListener('beforeunload', () => {
+                    this.saveToCache();
+                });
             },
             
             beforeUnmount() {
                 this.stopReadingTimer();
+                this.saveToCache();
+            },
+            
+            computed: {
+                cacheStats() {
+                    return this.cache.getStats();
+                }
             },
             
             methods: {
@@ -491,16 +616,36 @@
                         this.loading = true;
                         this.error = null;
                         
+                        // 尝试从缓存获取小说目录
+                        const cachedNovels = this.cache.get('novels');
+                        if (cachedNovels) {
+                            this.novels = cachedNovels;
+                            this.hasCachedData = true;
+                            this.loading = false;
+                            return;
+                        }
+                        
+                        // 从API获取小说目录
                         const response = await axios.get(this.apiBase);
                         const novelDirs = response.data.filter(item => item.type === 'dir');
                         
                         this.novels = [];
                         
                         for (const novelDir of novelDirs) {
-                            const chaptersResponse = await axios.get(novelDir.url);
-                            const chapters = chaptersResponse.data
-                                .filter(item => item.type === 'file' && item.name.endsWith('.txt'))
-                                .sort((a, b) => a.name.localeCompare(b.name));
+                            const cacheKey = `chapters_${novelDir.name}`;
+                            let chapters = this.cache.get(cacheKey);
+                            
+                            if (!chapters) {
+                                // 从API获取章节列表
+                                const chaptersResponse = await axios.get(novelDir.url);
+                                chapters = chaptersResponse.data
+                                    .filter(item => item.type === 'file' && item.name.endsWith('.txt'))
+                                    .sort((a, b) => a.name.localeCompare(b.name));
+                                
+                                this.cache.set(cacheKey, chapters);
+                            } else {
+                                this.hasCachedData = true;
+                            }
                             
                             this.novels.push({
                                 name: novelDir.name,
@@ -508,6 +653,9 @@
                                 chapters: chapters
                             });
                         }
+                        
+                        // 缓存完整的小说目录
+                        this.cache.set('novels', this.novels);
                         
                     } catch (error) {
                         console.error('Error loading novels:', error);
@@ -532,11 +680,23 @@
                         this.error = null;
                         this.selectedChapter = chapter.path;
                         
-                        const response = await axios.get(chapter.download_url);
-                        this.chapterContent = response.data;
+                        // 尝试从缓存获取章节内容
+                        const cacheKey = `content_${chapter.path.replace(/[^a-zA-Z0-9]/g, '_')}`;
+                        let chapterContent = this.cache.get(cacheKey);
+                        
+                        if (!chapterContent) {
+                            // 从API获取章节内容
+                            const response = await axios.get(chapter.download_url);
+                            chapterContent = response.data;
+                            this.cache.set(cacheKey, chapterContent);
+                        } else {
+                            this.hasCachedData = true;
+                        }
+                        
+                        this.chapterContent = chapterContent;
                         this.currentChapterTitle = `${this.getNovelDisplayName(novelName)} - ${this.getChapterDisplayName(chapter.name)}`;
                         
-                        // 保存缓存
+                        // 保存阅读状态缓存
                         if (saveCache) {
                             this.saveToCache();
                         }
@@ -586,7 +746,7 @@
                     this.sidebarCollapsed = !this.sidebarCollapsed;
                 },
                 
-                // 缓存相关方法
+                // 阅读状态缓存相关方法
                 saveToCache() {
                     const cacheData = {
                         selectedNovel: this.selectedNovel,
@@ -679,6 +839,14 @@
                     } else {
                         return `${minutes}:${secs.toString().padStart(2, '0')}`;
                     }
+                },
+                
+                // 缓存管理方法
+                async clearCacheAndReload() {
+                    this.cache.clear();
+                    this.hasCachedData = false;
+                    this.novels = [];
+                    await this.loadNovels();
                 },
                 
                 // 搜索相关方法
