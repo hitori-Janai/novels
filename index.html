@@ -347,13 +347,53 @@
             color: #2c3e50;
         }
         
+        .mobile-menu-btn {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            font-size: 18px;
+        }
+        
+        .mobile-menu-btn:hover {
+            background: #34495e;
+        }
+        
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+        
         @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .mobile-overlay.show {
+                display: block;
+            }
+            
             .sidebar {
-                width: 100%;
+                width: 300px;
                 position: fixed;
                 z-index: 1000;
                 transform: translateX(-100%);
                 transition: transform 0.3s ease;
+                height: 100vh;
             }
             
             .sidebar.mobile-open {
@@ -362,35 +402,62 @@
             
             .content-area {
                 margin-left: 0;
+                width: 100%;
             }
             
             .content-header {
-                flex-direction: column;
-                gap: 10px;
-                align-items: flex-start;
+                padding: 10px 20px;
+                min-height: auto;
+                cursor: pointer;
             }
             
-            .reading-timer {
-                align-self: flex-end;
+            .content-header.mobile-expanded {
+                white-space: normal;
             }
             
             .content-title {
-                font-size: 20px;
+                font-size: 16px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 200px;
+                transition: all 0.3s ease;
+            }
+            
+            .content-header.mobile-expanded .content-title {
+                white-space: normal;
+                max-width: none;
+                word-break: break-all;
+            }
+            
+            .reading-timer {
+                font-size: 12px;
+            }
+            
+            .timer-display {
+                padding: 6px 10px;
+                font-size: 12px;
             }
             
             .cache-info {
-                flex-direction: column;
-                gap: 5px;
-                text-align: center;
+                display: none; /* 移动端隐藏缓存信息以节省空间 */
             }
         }
     </style>
 </head>
 <body>
     <div id="app">
+        <!-- 移动端菜单按钮 -->
+        <button class="mobile-menu-btn" @click="toggleMobileMenu">
+            {{ mobileMenuOpen ? '✕' : '☰' }}
+        </button>
+        
+        <!-- 移动端遮罩层 -->
+        <div class="mobile-overlay" :class="{ show: mobileMenuOpen }" @click="closeMobileMenu"></div>
+        
         <div class="app-container">
             <!-- 侧边栏 -->
-            <div class="sidebar" :class="{ collapsed: sidebarCollapsed }">
+            <div class="sidebar" :class="{ collapsed: sidebarCollapsed, 'mobile-open': mobileMenuOpen }">
                 <div class="sidebar-header">
                     <div class="sidebar-title" v-if="!sidebarCollapsed">小说阅读器</div>
                     <button class="toggle-btn" @click="toggleSidebar">
@@ -460,7 +527,10 @@
             
             <!-- 内容区域 -->
             <div class="content-area">
-                <div class="content-header" v-if="currentChapterTitle">
+                <div class="content-header" 
+                     v-if="currentChapterTitle" 
+                     :class="{ 'mobile-expanded': mobileHeaderExpanded }"
+                     @click="toggleMobileHeader">
                     <div class="content-title">{{ currentChapterTitle }}</div>
                     <div class="reading-timer">
                         <span class="timer-icon">⏱️</span>
@@ -584,7 +654,9 @@
                     searchQuery: '',
                     searchResults: [],
                     hasCachedData: false,
-                    cache: new CacheManager('novel_api_') // 创建缓存管理实例
+                    cache: new CacheManager('novel_api_'), // 创建缓存管理实例
+                    mobileMenuOpen: false, // 移动端菜单状态
+                    mobileHeaderExpanded: false // 移动端标题展开状态
                 }
             },
             
@@ -701,6 +773,11 @@
                             this.saveToCache();
                         }
                         
+                        // 移动端选择章节后自动关闭侧边栏
+                        if (window.innerWidth <= 768) {
+                            this.closeMobileMenu();
+                        }
+                        
                     } catch (error) {
                         console.error('Error loading chapter:', error);
                         this.error = '加载章节失败: ' + error.message;
@@ -744,6 +821,22 @@
                 
                 toggleSidebar() {
                     this.sidebarCollapsed = !this.sidebarCollapsed;
+                },
+                
+                // 移动端菜单控制
+                toggleMobileMenu() {
+                    this.mobileMenuOpen = !this.mobileMenuOpen;
+                },
+                
+                closeMobileMenu() {
+                    this.mobileMenuOpen = false;
+                },
+                
+                toggleMobileHeader() {
+                    // 只在移动端时才响应点击
+                    if (window.innerWidth <= 768) {
+                        this.mobileHeaderExpanded = !this.mobileHeaderExpanded;
+                    }
                 },
                 
                 // 阅读状态缓存相关方法
