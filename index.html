@@ -348,7 +348,7 @@
             background: #229954;
         }
         
-        .chapter-content.english-only-mode .content-line:not(.english-text) {
+        .chapter-content.english-only-mode .content-line:nth-child(odd) {
             display: none;
         }
         
@@ -1002,8 +1002,11 @@
                     // 将内容按行分割并包装为div，便于控制显示
                     const lines = escapedContent.split('\n');
                     const formattedLines = lines.map((line, index) => {
+                        // 奇数行（索引为偶数，如第0行、第2行）为中文行
+                        // 偶数行（索引为奇数，如第1行、第3行）为英文行
                         const hasEnglish = /[a-zA-Z]/.test(line);
-                        const className = hasEnglish ? 'content-line english-text' : 'content-line';
+                        const isEnglishLine = index % 2 === 1; // 索引奇数的行是英文行
+                        const className = hasEnglish && isEnglishLine ? 'content-line english-text' : 'content-line';
                         return `<div class="${className}">${line || '&nbsp;'}</div>`;
                     });
                     
