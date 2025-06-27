@@ -281,6 +281,37 @@
             font-size: 14px;
         }
         
+        .preload-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #17a2b8;
+            font-size: 12px;
+            background: #e8f4f5;
+            padding: 4px 8px;
+            border-radius: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .preload-indicator.active {
+            opacity: 1;
+        }
+        
+        .preload-spinner {
+            width: 12px;
+            height: 12px;
+            border: 2px solid #e8f4f5;
+            border-top: 2px solid #17a2b8;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
         .timer-display {
             background: #f8f9fa;
             padding: 8px 12px;
@@ -485,6 +516,16 @@
                 font-size: 12px;
                 order: -1; /* 在移动端将按钮排在前面 */
             }
+            
+            .preload-indicator {
+                font-size: 10px;
+                padding: 2px 6px;
+            }
+            
+            .preload-spinner {
+                width: 10px;
+                height: 10px;
+            }
         }
     </style>
 </head>
@@ -581,6 +622,10 @@
                         {{ englishOnlyMode ? '显示全文' : '仅英文' }}
                     </button>
                     <div class="reading-timer">
+                        <div class="preload-indicator" :class="{ active: preloadingNext }">
+                            <div class="preload-spinner"></div>
+                            <span>预加载中</span>
+                        </div>
                         <span class="timer-icon">⏱️</span>
                         <div class="timer-display">{{ formatTime(readingTime) }}</div>
                     </div>
@@ -708,7 +753,9 @@
                     cache: new CacheManager('novel_api_'), // 创建缓存管理实例
                     mobileMenuOpen: false, // 移动端菜单状态
                     mobileHeaderExpanded: false, // 移动端标题展开状态
-                    englishOnlyMode: false // 仅英文模式
+                    englishOnlyMode: false, // 仅英文模式
+                    preloadingNext: false, // 预加载下一章状态
+                    preloadedChapters: new Set() // 已预加载的章节集合
                 }
             },
             
@@ -830,11 +877,114 @@
                             this.closeMobileMenu();
                         }
                         
+                        // 预加载下一章
+                        if (saveCache) {
+                            this.preloadNextChapter(novelName, chapter);
+                        }
+                        
                     } catch (error) {
                         console.error('Error loading chapter:', error);
                         this.error = '加载章节失败: ' + error.message;
                     } finally {
                         this.loading = false;
+                    }
+                },
+                
+                // 预加载下一章
+                async preloadNextChapter(currentNovelName, currentChapter) {
+                    try {
+                        // 如果已经在预加载中，跳过
+                        if (this.preloadingNext) return;
+                        
+                        // 找到当前小说
+                        const novel = this.novels.find(n => n.name === currentNovelName);
+                        if (!novel) return;
+                        
+                        // 找到当前章节在列表中的位置
+                        const currentIndex = novel.chapters.findIndex(ch => ch.path === currentChapter.path);
+                        if (currentIndex === -1 || currentIndex === novel.chapters.length - 1) {
+                            // 当前章节不存在或已是最后一章
+                            return;
+                        }
+                        
+                        // 获取下一章
+                        const nextChapter = novel.chapters[currentIndex + 1];
+                        const cacheKey = `content_${nextChapter.path.replace(/[^a-zA-Z0-9]/g, '_')}`;
+                        
+                        // 检查是否已经缓存或正在预加载
+                        if (this.cache.has(cacheKey) || this.preloadedChapters.has(nextChapter.path)) {
+                            return;
+                        }
+                        
+                        // 开始预加载
+                        this.preloadingNext = true;
+                        this.preloadedChapters.add(nextChapter.path);
+                        
+                        console.log(`🚀 预加载下一章: ${this.getChapterDisplayName(nextChapter.name)}`);
+                        
+                        // 延迟500ms后开始预加载，避免影响当前章节的加载
+                        setTimeout(async () => {
+                            try {
+                                const response = await axios.get(nextChapter.download_url);
+                                this.cache.set(cacheKey, response.data);
+                                console.log(`✅ 预加载完成: ${this.getChapterDisplayName(nextChapter.name)}`);
+                                
+                                // 预加载成功后，继续预加载再下一章（最多预加载2章）
+                                this.preloadFutureChapters(currentNovelName, nextChapter, 1);
+                                
+                            } catch (error) {
+                                console.warn('预加载失败:', error);
+                                // 预加载失败时从集合中移除，允许重试
+                                this.preloadedChapters.delete(nextChapter.path);
+                            } finally {
+                                this.preloadingNext = false;
+                            }
+                        }, 500);
+                        
+                    } catch (error) {
+                        console.warn('预加载下一章出错:', error);
+                        this.preloadingNext = false;
+                    }
+                },
+                
+                // 预加载未来的章节（递归预加载，最多预加载2章）
+                async preloadFutureChapters(novelName, currentChapter, depth) {
+                    if (depth >= 2) return; // 最多预加载2章
+                    
+                    try {
+                        const novel = this.novels.find(n => n.name === novelName);
+                        if (!novel) return;
+                        
+                        const currentIndex = novel.chapters.findIndex(ch => ch.path === currentChapter.path);
+                        if (currentIndex === -1 || currentIndex === novel.chapters.length - 1) return;
+                        
+                        const nextChapter = novel.chapters[currentIndex + 1];
+                        const cacheKey = `content_${nextChapter.path.replace(/[^a-zA-Z0-9]/g, '_')}`;
+                        
+                        if (this.cache.has(cacheKey) || this.preloadedChapters.has(nextChapter.path)) {
+                            return;
+                        }
+                        
+                        this.preloadedChapters.add(nextChapter.path);
+                        
+                        // 延迟更长时间，避免网络拥塞
+                        setTimeout(async () => {
+                            try {
+                                const response = await axios.get(nextChapter.download_url);
+                                this.cache.set(cacheKey, response.data);
+                                console.log(`📚 后续预加载完成: ${this.getChapterDisplayName(nextChapter.name)} (深度: ${depth + 1})`);
+                                
+                                // 继续预加载下一章
+                                this.preloadFutureChapters(novelName, nextChapter, depth + 1);
+                                
+                            } catch (error) {
+                                console.warn('后续预加载失败:', error);
+                                this.preloadedChapters.delete(nextChapter.path);
+                            }
+                        }, 2000 + depth * 1000); // 递增延迟时间
+                        
+                    } catch (error) {
+                        console.warn('预加载未来章节出错:', error);
                     }
                 },
                 
@@ -994,6 +1144,8 @@
                 async clearCacheAndReload() {
                     this.cache.clear();
                     this.hasCachedData = false;
+                    this.preloadedChapters.clear(); // 清除预加载状态
+                    this.preloadingNext = false;
                     this.novels = [];
                     await this.loadNovels();
                 },
