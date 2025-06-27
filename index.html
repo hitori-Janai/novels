@@ -263,6 +263,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
         }
         
         .content-title {
@@ -291,6 +293,34 @@
             font-size: 16px;
         }
         
+        .english-mode-btn {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .english-mode-btn:hover {
+            background: #c0392b;
+        }
+        
+        .english-mode-btn.active {
+            background: #27ae60;
+        }
+        
+        .english-mode-btn.active:hover {
+            background: #229954;
+        }
+        
+        .chapter-content.english-only-mode .content-line:not(.english-text) {
+            display: none;
+        }
+        
         .content-body {
             flex: 1;
             padding: 30px;
@@ -308,12 +338,19 @@
             white-space: pre-wrap;
         }
         
+        .content-line {
+            margin: 0;
+        }
+        
         .english-text {
-            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-weight: 500;
-            color: #2c3e50;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c5aa0;
+            line-height: 1.6;
+            border-left: 3px solid #3498db;
+            padding-left: 8px;
+            margin: 2px 0;
+            display: block;
         }
         
         .loading {
@@ -442,6 +479,12 @@
             .cache-info {
                 display: none; /* 移动端隐藏缓存信息以节省空间 */
             }
+            
+            .english-mode-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+                order: -1; /* 在移动端将按钮排在前面 */
+            }
         }
     </style>
 </head>
@@ -532,6 +575,11 @@
                      :class="{ 'mobile-expanded': mobileHeaderExpanded }"
                      @click="toggleMobileHeader">
                     <div class="content-title">{{ currentChapterTitle }}</div>
+                    <button class="english-mode-btn" 
+                            :class="{ active: englishOnlyMode }"
+                            @click.stop="toggleEnglishMode">
+                        {{ englishOnlyMode ? '显示全文' : '仅英文' }}
+                    </button>
                     <div class="reading-timer">
                         <span class="timer-icon">⏱️</span>
                         <div class="timer-display">{{ formatTime(readingTime) }}</div>
@@ -547,7 +595,10 @@
                         <p>{{ error }}</p>
                     </div>
                     
-                    <div v-else-if="chapterContent" class="chapter-content" v-html="formatContent(chapterContent)">
+                    <div v-else-if="chapterContent" 
+                         class="chapter-content" 
+                         :class="{ 'english-only-mode': englishOnlyMode }"
+                         v-html="formatContent(chapterContent)">
                     </div>
                     
                     <div v-else class="welcome-message">
@@ -656,7 +707,8 @@
                     hasCachedData: false,
                     cache: new CacheManager('novel_api_'), // 创建缓存管理实例
                     mobileMenuOpen: false, // 移动端菜单状态
-                    mobileHeaderExpanded: false // 移动端标题展开状态
+                    mobileHeaderExpanded: false, // 移动端标题展开状态
+                    englishOnlyMode: false // 仅英文模式
                 }
             },
             
@@ -797,13 +849,15 @@
                         .replace(/"/g, '&quot;')
                         .replace(/'/g, '&#39;');
                     
-                    // 高亮英文句子（包含英文字母和基本标点的行）
-                    escapedContent = escapedContent.replace(
-                        /^.*[a-zA-Z].*$/gm,
-                        '<span class="english-text">$&</span>'
-                    );
+                    // 将内容按行分割并包装为div，便于控制显示
+                    const lines = escapedContent.split('\n');
+                    const formattedLines = lines.map((line, index) => {
+                        const hasEnglish = /[a-zA-Z]/.test(line);
+                        const className = hasEnglish ? 'content-line english-text' : 'content-line';
+                        return `<div class="${className}">${line || '&nbsp;'}</div>`;
+                    });
                     
-                    return escapedContent;
+                    return formattedLines.join('');
                 },
                 
                 getNovelDisplayName(name) {
@@ -847,6 +901,7 @@
                         currentChapterTitle: this.currentChapterTitle,
                         expandedNovels: this.expandedNovels,
                         readingTime: this.readingTime,
+                        englishOnlyMode: this.englishOnlyMode,
                         lastReadTime: Date.now()
                     };
                     localStorage.setItem('novelReaderCache', JSON.stringify(cacheData));
@@ -862,6 +917,7 @@
                             this.currentChapterTitle = data.currentChapterTitle;
                             this.expandedNovels = data.expandedNovels || [];
                             this.readingTime = data.readingTime || 0;
+                            this.englishOnlyMode = data.englishOnlyMode || false;
                             
                             // 如果有缓存的章节，自动加载
                             if (this.selectedChapter) {
@@ -940,6 +996,12 @@
                     this.hasCachedData = false;
                     this.novels = [];
                     await this.loadNovels();
+                },
+                
+                // 英文模式切换
+                toggleEnglishMode() {
+                    this.englishOnlyMode = !this.englishOnlyMode;
+                    this.saveToCache();
                 },
                 
                 // 搜索相关方法
