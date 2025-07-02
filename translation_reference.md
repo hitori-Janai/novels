@@ -9,6 +9,8 @@ This file provides suggested translations for recurring names, places, and terms
     *   *Explanation: Main female lead. Transliteration is standard for names.*
 *   **池小橙:** Chi Xiaocheng
     *   *Explanation: The protagonist/narrator. `原主` refers to the "original owner" of her body.*
+*   **系统:** System
+    *   *Explanation: The classic "system" trope in this genre.*
 *   **东方阳:** Dongfang Yang
     *   *Explanation: One of the main male leads.*
 *   **秀花:** Xiu Hua
@@ -23,8 +25,7 @@ This file provides suggested translations for recurring names, places, and terms
 
 ### System & In-World Terms
 
-*   **系统:** System
-    *   *Explanation: The classic "system" trope in this genre.*
+
 *   **情绪值:** Emotion Points
     *   *Explanation: A currency/resource used by the System.*
 *   **男主:** male lead
