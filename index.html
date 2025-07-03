@@ -968,24 +968,25 @@
                     loading: false,
                     error: null,
                     sidebarCollapsed: false,
-                    apiBase: 'https://api.github.com/repos/hitori-janai/novels/contents/books',
+                    dataBase: 'data/', // 数据文件基础URL
                     readingTime: 0,
                     readingTimer: null,
                     startTime: null,
                     searchQuery: '',
                     searchResults: [],
                     hasCachedData: false,
-                    cache: new CacheManager('novel_api_'), // 创建缓存管理实例
+                    cache: new CacheManager('novel_data_'), // 创建缓存管理实例
                     mobileMenuOpen: false, // 移动端菜单状态
                     mobileHeaderExpanded: false, // 移动端标题展开状态
                     displayMode: 'bilingual', // 显示模式: chinese, english, bilingual, audio
                     preloadingNext: false, // 预加载下一章状态
                     preloadedChapters: new Set(), // 已预加载的章节集合
                     sentences: [], // 当前章节的语句对象数组
-                    chineseContent: null, // 中文对照内容（缓存）
+                    currentBookData: null, // 当前书籍数据
+                    currentAudioData: null, // 当前音频数据
                     currentAudio: null, // 当前播放的音频对象
                     currentPlayingId: null, // 当前播放的语句ID
-                    audioBase: 'https://hitori-janai.github.io/novels/books/oap_en/audio', // 音频基础URL
+                    audioBase: '', // 音频基础URL（从音频数据中获取）
                     autoPlaying: false, // 自动播放状态
                     autoPlayIndex: 0 // 自动播放当前索引
                 }
@@ -1041,34 +1042,19 @@
                             return;
                         }
                         
-                        // 从API获取小说目录
-                        const response = await axios.get(this.apiBase);
-                        const novelDirs = response.data.filter(item => item.type === 'dir');
+                        // 从数据文件获取小说目录
+                        const response = await axios.get(this.dataBase + 'novels.json');
+                        const novelsData = response.data;
                         
-                        this.novels = [];
-                        
-                        for (const novelDir of novelDirs) {
-                            const cacheKey = `chapters_${novelDir.name}`;
-                            let chapters = this.cache.get(cacheKey);
-                            
-                            if (!chapters) {
-                                // 从API获取章节列表
-                                const chaptersResponse = await axios.get(novelDir.url);
-                                chapters = chaptersResponse.data
-                                    .filter(item => item.type === 'file' && item.name.endsWith('.txt'))
-                                    .sort((a, b) => a.name.localeCompare(b.name));
-                                
-                                this.cache.set(cacheKey, chapters);
-                            } else {
-                                this.hasCachedData = true;
-                            }
-                            
-                            this.novels.push({
-                                name: novelDir.name,
-                                path: novelDir.path,
-                                chapters: chapters
-                            });
-                        }
+                        this.novels = novelsData.map(novel => ({
+                            name: novel.id,
+                            title: novel.title,
+                            chapters: novel.chapters.map(chapter => ({
+                                name: chapter.id,
+                                title: chapter.title,
+                                path: `${novel.id}_${chapter.id}` // 用于唯一标识
+                            }))
+                        }));
                         
                         // 缓存完整的小说目录
                         this.cache.set('novels', this.novels);
@@ -1099,32 +1085,27 @@
                         // 清空当前音频播放和自动播放状态
                         this.stopAutoPlay();
                         
-                        // 尝试从缓存获取章节内容
-                        const cacheKey = `content_${chapter.path.replace(/[^a-zA-Z0-9]/g, '_')}`;
-                        let chapterContent = this.cache.get(cacheKey);
+                        // 加载书籍数据
+                        await this.loadBookData(novelName);
                         
-                        if (!chapterContent) {
-                            // 从API获取章节内容
-                            const response = await axios.get(chapter.download_url);
-                            chapterContent = response.data;
-                            this.cache.set(cacheKey, chapterContent);
-                        } else {
-                            this.hasCachedData = true;
+                        // 从书籍数据中获取章节内容
+                        if (!this.currentBookData || !this.currentBookData.chapters[chapter.name]) {
+                            throw new Error(`章节 ${chapter.name} 不存在`);
                         }
                         
-                        // 解析英文章节
-                        const englishSentences = this.parseEnglishChapter(chapterContent);
+                        const chapterData = this.currentBookData.chapters[chapter.name];
                         
-                        // 加载中文对照内容
-                        const chineseMap = await this.loadChineseContent();
+                        // 构建语句对象
+                        this.sentences = this.buildSentencesFromData(chapterData, chapter.name);
                         
-                        // 构建完整的语句对象
-                        const chapterName = chapter.name.replace('.txt', '');
-                        this.sentences = await this.buildSentences(englishSentences, chineseMap, chapterName);
+                        // 设置音频基础URL
+                        if (this.currentAudioData) {
+                            this.audioBase = this.currentAudioData.audioBaseUrl;
+                        }
                         
-                        // 保持向后兼容
-                        this.chapterContent = chapterContent;
-                        this.currentChapterTitle = `${this.getNovelDisplayName(novelName)} - ${this.getChapterDisplayName(chapter.name)}`;
+                        // 保持向后兼容（生成文本内容）
+                        this.chapterContent = this.generateTextContent(chapterData);
+                        this.currentChapterTitle = `${this.getNovelDisplayName(novelName)} - ${this.getChapterDisplayName(chapter.title || chapter.name)}`;
                         
                         // 保存阅读状态缓存
                         if (saveCache) {
@@ -1149,6 +1130,83 @@
                     }
                 },
                 
+                // 加载书籍数据
+                async loadBookData(novelName) {
+                    try {
+                        // 检查是否已经加载了相同的书籍数据
+                        if (this.currentBookData && this.currentBookData.bookId === novelName) {
+                            return;
+                        }
+                        
+                        // 尝试从缓存获取书籍数据
+                        const bookCacheKey = `book_${novelName}`;
+                        const audioCacheKey = `audio_${novelName}`;
+                        
+                        let bookData = this.cache.get(bookCacheKey);
+                        let audioData = this.cache.get(audioCacheKey);
+                        
+                        if (!bookData) {
+                            // 从服务器获取书籍数据
+                            const response = await axios.get(this.dataBase + `${novelName}.json`);
+                            bookData = response.data;
+                            this.cache.set(bookCacheKey, bookData);
+                        } else {
+                            this.hasCachedData = true;
+                        }
+                        
+                        if (!audioData) {
+                            // 从服务器获取音频数据
+                            try {
+                                const response = await axios.get(this.dataBase + `${novelName}_audio.json`);
+                                audioData = response.data;
+                                this.cache.set(audioCacheKey, audioData);
+                            } catch (error) {
+                                console.warn('音频数据加载失败:', error);
+                                audioData = { availability: {} };
+                            }
+                        } else {
+                            this.hasCachedData = true;
+                        }
+                        
+                        this.currentBookData = bookData;
+                        this.currentAudioData = audioData;
+                        
+                    } catch (error) {
+                        console.error('Error loading book data:', error);
+                        throw error;
+                    }
+                },
+                
+                // 从数据构建语句对象
+                buildSentencesFromData(chapterData, chapterName) {
+                    const sentences = chapterData.map(sentence => {
+                        const audioAvailable = this.currentAudioData && 
+                                             this.currentAudioData.availability[chapterName] &&
+                                             this.currentAudioData.availability[chapterName].includes(sentence.id);
+                        
+                        return {
+                            id: sentence.id,
+                            englishText: sentence.en,
+                            chineseText: sentence.cn,
+                            speaker: sentence.speaker,
+                            emotion: sentence.emotion,
+                            audioUrl: this.currentAudioData ? 
+                                     `${this.currentAudioData.audioBaseUrl}${chapterName}/${sentence.id}.wav` : '',
+                            hasAudio: audioAvailable
+                        };
+                    });
+                    
+                    return sentences;
+                },
+                
+                // 生成文本内容（向后兼容）
+                generateTextContent(chapterData) {
+                    return chapterData.map(sentence => {
+                        const englishLine = `${sentence.en} [[${sentence.id} ${sentence.speaker} ${sentence.emotion}]]`;
+                        return englishLine;
+                    }).join('\n');
+                },
+                
                 // 预加载下一章
                 async preloadNextChapter(currentNovelName, currentChapter) {
                     try {
@@ -1168,37 +1226,34 @@
                         
                         // 获取下一章
                         const nextChapter = novel.chapters[currentIndex + 1];
-                        const cacheKey = `content_${nextChapter.path.replace(/[^a-zA-Z0-9]/g, '_')}`;
+                        const cacheKey = `book_${currentNovelName}`;
                         
-                        // 检查是否已经缓存或正在预加载
-                        if (this.cache.has(cacheKey) || this.preloadedChapters.has(nextChapter.path)) {
-                            return;
+                        // 检查书籍数据是否已经缓存
+                        if (this.cache.has(cacheKey)) {
+                            console.log(`📚 书籍数据已缓存: ${this.getNovelDisplayName(currentNovelName)}`);
+                            return; // 整本书的数据已经缓存，无需预加载
                         }
                         
-                        // 开始预加载
-                        this.preloadingNext = true;
-                        this.preloadedChapters.add(nextChapter.path);
-                        
-                        console.log(`🚀 预加载下一章: ${this.getChapterDisplayName(nextChapter.name)}`);
-                        
-                        // 延迟500ms后开始预加载，避免影响当前章节的加载
-                        setTimeout(async () => {
-                            try {
-                                const response = await axios.get(nextChapter.download_url);
-                                this.cache.set(cacheKey, response.data);
-                                console.log(`✅ 预加载完成: ${this.getChapterDisplayName(nextChapter.name)}`);
-                                
-                                // 预加载成功后，继续预加载再下一章（最多预加载2章）
-                                this.preloadFutureChapters(currentNovelName, nextChapter, 1);
-                                
-                            } catch (error) {
-                                console.warn('预加载失败:', error);
-                                // 预加载失败时从集合中移除，允许重试
-                                this.preloadedChapters.delete(nextChapter.path);
-                            } finally {
-                                this.preloadingNext = false;
-                            }
-                        }, 500);
+                        // 开始预加载书籍数据
+                        if (!this.preloadedChapters.has(currentNovelName)) {
+                            this.preloadingNext = true;
+                            this.preloadedChapters.add(currentNovelName);
+                            
+                            console.log(`🚀 预加载书籍数据: ${this.getNovelDisplayName(currentNovelName)}`);
+                            
+                            // 延迟500ms后开始预加载，避免影响当前章节的加载
+                            setTimeout(async () => {
+                                try {
+                                    await this.loadBookData(currentNovelName);
+                                    console.log(`✅ 预加载完成: ${this.getNovelDisplayName(currentNovelName)}`);
+                                } catch (error) {
+                                    console.warn('预加载失败:', error);
+                                    this.preloadedChapters.delete(currentNovelName);
+                                } finally {
+                                    this.preloadingNext = false;
+                                }
+                            }, 500);
+                        }
                         
                     } catch (error) {
                         console.warn('预加载下一章出错:', error);
@@ -1206,146 +1261,8 @@
                     }
                 },
                 
-                // 预加载未来的章节（递归预加载，最多预加载2章）
-                async preloadFutureChapters(novelName, currentChapter, depth) {
-                    if (depth >= 2) return; // 最多预加载2章
-                    
-                    try {
-                        const novel = this.novels.find(n => n.name === novelName);
-                        if (!novel) return;
-                        
-                        const currentIndex = novel.chapters.findIndex(ch => ch.path === currentChapter.path);
-                        if (currentIndex === -1 || currentIndex === novel.chapters.length - 1) return;
-                        
-                        const nextChapter = novel.chapters[currentIndex + 1];
-                        const cacheKey = `content_${nextChapter.path.replace(/[^a-zA-Z0-9]/g, '_')}`;
-                        
-                        if (this.cache.has(cacheKey) || this.preloadedChapters.has(nextChapter.path)) {
-                            return;
-                        }
-                        
-                        this.preloadedChapters.add(nextChapter.path);
-                        
-                        // 延迟更长时间，避免网络拥塞
-                        setTimeout(async () => {
-                            try {
-                                const response = await axios.get(nextChapter.download_url);
-                                this.cache.set(cacheKey, response.data);
-                                console.log(`📚 后续预加载完成: ${this.getChapterDisplayName(nextChapter.name)} (深度: ${depth + 1})`);
-                                
-                                // 继续预加载下一章
-                                this.preloadFutureChapters(novelName, nextChapter, depth + 1);
-                                
-                            } catch (error) {
-                                console.warn('后续预加载失败:', error);
-                                this.preloadedChapters.delete(nextChapter.path);
-                            }
-                        }, 2000 + depth * 1000); // 递增延迟时间
-                        
-                    } catch (error) {
-                        console.warn('预加载未来章节出错:', error);
-                    }
-                },
-                
-                // 解析英文章节内容
-                parseEnglishChapter(content) {
-                    const sentences = [];
-                    const lines = content.split('\n');
-                    
-                    lines.forEach(line => {
-                        const match = line.match(/^(.*?)\s*\[\[(\d+)\s+([^\s]+)\s+([^\]]+)\]\]$/);
-                        if (match) {
-                            sentences.push({
-                                id: parseInt(match[2]),
-                                englishText: match[1].trim(),
-                                speaker: match[3],
-                                emotion: match[4]
-                            });
-                        }
-                    });
-                    
-                    return sentences;
-                },
-                
-                // 加载中文对照内容
-                async loadChineseContent() {
-                    if (this.chineseContent) return this.chineseContent;
-                    
-                    try {
-                        const cacheKey = 'chinese_content';
-                        let chineseContent = this.cache.get(cacheKey);
-                        
-                        if (!chineseContent) {
-                            const response = await axios.get('https://hitori-janai.github.io/novels/books/oap_en/cn/cn.txt');
-                            const content = response.data; // 直接使用响应数据，不需要base64解码
-                            chineseContent = this.parseChineseContent(content);
-                            this.cache.set(cacheKey, chineseContent);
-                        }
-                        
-                        this.chineseContent = chineseContent;
-                        return chineseContent;
-                    } catch (error) {
-                        console.error('加载中文内容失败:', error);
-                        return {};
-                    }
-                },
-                
-                // 解析中文内容
-                parseChineseContent(content) {
-                    const chineseMap = {};
-                    const lines = content.split('\n');
-                    
-                    lines.forEach(line => {
-                        const match = line.match(/^(.*?)\s*\[\[(\d+)\]\]$/);
-                        if (match) {
-                            chineseMap[parseInt(match[2])] = match[1].trim();
-                        }
-                    });
-                    
-                    return chineseMap;
-                },
-                
-                // 构建完整的语句对象
-                async buildSentences(englishSentences, chineseMap, chapterName) {
-                    const sentences = englishSentences.map(sentence => ({
-                        ...sentence,
-                        chineseText: chineseMap[sentence.id] || '',
-                        audioUrl: `${this.audioBase}/${chapterName}/${sentence.id}.wav`,
-                        hasAudio: false
-                    }));
-                    
-                    // 检查音频存在性（后台进行，不阻塞渲染）
-                    this.checkAudioExists(sentences);
-                    
-                    return sentences;
-                },
-                
-                // 检查音频是否存在
-                async checkAudioExists(sentences) {
-                    const checks = sentences.map(async sentence => {
-                        try {
-                            const cacheKey = `audio_exists_${sentence.id}`;
-                            let exists = this.cache.get(cacheKey);
-                            
-                            if (exists === null) {
-                                const response = await fetch(sentence.audioUrl, { method: 'HEAD' });
-                                exists = response.ok;
-                                this.cache.set(cacheKey, exists, 24 * 3600000); // 缓存24小时
-                            }
-                            
-                            sentence.hasAudio = exists;
-                        } catch (error) {
-                            sentence.hasAudio = false;
-                        }
-                    });
-                    
-                    // 分批检查，避免过多并发请求
-                    for (let i = 0; i < checks.length; i += 5) {
-                        await Promise.allSettled(checks.slice(i, i + 5));
-                        // 小延迟避免请求过于频繁
-                        await new Promise(resolve => setTimeout(resolve, 100));
-                    }
-                },
+
+
                 
                 formatContent(content) {
                     // 如果有语句对象，优先使用新的渲染方式
@@ -1433,6 +1350,13 @@
                 },
                 
                 getNovelDisplayName(name) {
+                    // 优先使用novels数据中的title
+                    const novel = this.novels.find(n => n.name === name);
+                    if (novel && novel.title) {
+                        return novel.title;
+                    }
+                    
+                    // 回退到硬编码的显示名称
                     const displayNames = {
                         'oap': '桃子和橙子',
                         'oap_en': '桃子和橙子 (English)'
@@ -1440,9 +1364,26 @@
                     return displayNames[name] || name;
                 },
                 
-                getChapterDisplayName(filename) {
-                    // 去掉文件扩展名并格式化章节名
-                    return filename.replace('.txt', '').replace(/_/g, ' ');
+                getChapterDisplayName(identifier) {
+                    // 如果identifier是对象且有title，优先使用title
+                    if (typeof identifier === 'object' && identifier.title) {
+                        return identifier.title;
+                    }
+                    
+                    // 如果是字符串，尝试从章节列表中查找title
+                    if (typeof identifier === 'string') {
+                        for (const novel of this.novels) {
+                            const chapter = novel.chapters.find(ch => ch.name === identifier || ch.title === identifier);
+                            if (chapter && chapter.title) {
+                                return chapter.title;
+                            }
+                        }
+                        
+                        // 回退到格式化字符串
+                        return identifier.replace('.txt', '').replace(/_/g, ' ');
+                    }
+                    
+                    return identifier;
                 },
                 
                 toggleSidebar() {

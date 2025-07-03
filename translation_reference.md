@@ -32,3 +32,4 @@ This file provides suggested translations for recurring names, places, and terms
     *   *Explanation: A common term for the main male character in a story.*
 *   **《炮灰女配全突突，男神全部入我怀》:** "From Sidekick to Center Stage: Winning Over the Male Leads"
     *   *Explanation: The in-world novel's title. 
+*   病娇: Yandere 
