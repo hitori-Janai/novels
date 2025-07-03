@@ -281,6 +281,49 @@
             font-size: 14px;
         }
         
+        .auto-play-btn {
+            background: #17a2b8;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .auto-play-btn:hover:not(:disabled) {
+            background: #138496;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .auto-play-btn.active {
+            background: #dc3545;
+            animation: pulse-auto 2s infinite;
+        }
+        
+        .auto-play-btn.active:hover {
+            background: #c82333;
+        }
+        
+        .auto-play-btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        @keyframes pulse-auto {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        
         .preload-indicator {
             display: flex;
             align-items: center;
@@ -324,32 +367,43 @@
             font-size: 16px;
         }
         
-        .english-mode-btn {
-            background: #e74c3c;
-            color: white;
-            border: none;
+        .display-mode-controls {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+        
+        .mode-btn {
+            background: #f8f9fa;
+            color: #6c757d;
+            border: 1px solid #dee2e6;
             border-radius: 6px;
-            padding: 8px 16px;
+            padding: 6px 8px;
             cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            min-width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
-        .english-mode-btn:hover {
-            background: #c0392b;
+        .mode-btn:hover {
+            background: #e9ecef;
+            transform: translateY(-1px);
         }
         
-        .english-mode-btn.active {
-            background: #27ae60;
+        .mode-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+            box-shadow: 0 2px 4px rgba(0,123,255,0.3);
         }
         
-        .english-mode-btn.active:hover {
-            background: #229954;
-        }
-        
-        .chapter-content.english-only-mode .content-line:nth-child(odd) {
-            display: none;
+        .mode-btn.active:hover {
+            background: #0056b3;
+            border-color: #0056b3;
         }
         
         .content-body {
@@ -383,6 +437,138 @@
             margin: 2px 0;
             display: block;
         }
+        
+        /* 新的语句容器样式 */
+        .sentence-container {
+            margin: 8px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+        }
+        
+        .sentence-container:last-child {
+            border-bottom: none;
+        }
+        
+        .sentence-container.current-playing {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border-left: 4px solid #f39c12;
+            padding-left: 12px;
+            box-shadow: 0 2px 8px rgba(243, 156, 18, 0.2);
+            transform: translateX(4px);
+        }
+        
+        .chinese-sentence {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #2c3e50;
+            margin: 4px 0;
+            padding: 4px 0;
+        }
+        
+        .english-sentence {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: #2c5aa0;
+            margin: 4px 0;
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sentence-meta {
+            font-size: 12px;
+            color: #6c757d;
+            margin: 4px 0;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .sentence-meta .speaker {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .sentence-meta .emotion::before {
+            margin-right: 4px;
+        }
+        
+        .sentence-meta .id {
+            font-family: monospace;
+            background: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        /* 音频按钮样式 */
+        .audio-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-left: auto;
+        }
+        
+        .audio-btn:hover {
+            background: #218838;
+            transform: scale(1.1);
+        }
+        
+        .audio-btn.playing {
+            background: #dc3545;
+            animation: pulse 1s infinite;
+        }
+        
+        .audio-btn.playing:hover {
+            background: #c82333;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* 说话者样式 */
+        .speaker-苏桃 {
+            border-left: 3px solid #ff6b9d;
+            padding-left: 8px;
+        }
+        
+        .speaker-池小橙 {
+            border-left: 3px solid #4ecdc4;
+            padding-left: 8px;
+        }
+        
+        .speaker-旁白 {
+            border-left: 3px solid #95a5a6;
+            padding-left: 8px;
+        }
+        
+        .speaker-系统 {
+            border-left: 3px solid #f39c12;
+            padding-left: 8px;
+        }
+        
+        /* 情绪图标 */
+        .emotion-happy::before { content: '😊 '; }
+        .emotion-sad::before { content: '😢 '; }
+        .emotion-angry::before { content: '😠 '; }
+        .emotion-neutral::before { content: '😐 '; }
         
         .loading {
             text-align: center;
@@ -511,10 +697,16 @@
                 display: none; /* 移动端隐藏缓存信息以节省空间 */
             }
             
-            .english-mode-btn {
-                padding: 6px 12px;
-                font-size: 12px;
+            .display-mode-controls {
                 order: -1; /* 在移动端将按钮排在前面 */
+                gap: 2px;
+            }
+            
+            .mode-btn {
+                padding: 4px 6px;
+                font-size: 14px;
+                min-width: 28px;
+                height: 28px;
             }
             
             .preload-indicator {
@@ -525,6 +717,12 @@
             .preload-spinner {
                 width: 10px;
                 height: 10px;
+            }
+            
+            .auto-play-btn {
+                width: 28px;
+                height: 28px;
+                font-size: 14px;
             }
         }
     </style>
@@ -616,12 +814,40 @@
                      :class="{ 'mobile-expanded': mobileHeaderExpanded }"
                      @click="toggleMobileHeader">
                     <div class="content-title">{{ currentChapterTitle }}</div>
-                    <button class="english-mode-btn" 
-                            :class="{ active: englishOnlyMode }"
-                            @click.stop="toggleEnglishMode">
-                        {{ englishOnlyMode ? '显示全文' : '仅英文' }}
-                    </button>
+                    <div class="display-mode-controls">
+                        <button class="mode-btn" 
+                                :class="{ active: displayMode === 'chinese' }"
+                                @click.stop="setDisplayMode('chinese')"
+                                title="仅中文">
+                            🇨🇳
+                        </button>
+                        <button class="mode-btn" 
+                                :class="{ active: displayMode === 'english' }"
+                                @click.stop="setDisplayMode('english')"
+                                title="仅英文">
+                            🇺🇸
+                        </button>
+                        <button class="mode-btn" 
+                                :class="{ active: displayMode === 'bilingual' }"
+                                @click.stop="setDisplayMode('bilingual')"
+                                title="双语对照">
+                            🌏
+                        </button>
+                        <button class="mode-btn" 
+                                :class="{ active: displayMode === 'audio' }"
+                                @click.stop="setDisplayMode('audio')"
+                                title="音频模式">
+                            🎵
+                        </button>
+                    </div>
                     <div class="reading-timer">
+                        <button class="auto-play-btn" 
+                                :class="{ active: autoPlaying }"
+                                @click.stop="toggleAutoPlay"
+                                :disabled="!sentences.some(s => s.hasAudio)"
+                                title="自动播放">
+                            {{ autoPlaying ? '⏹️' : '▶️' }}
+                        </button>
                         <div class="preload-indicator" :class="{ active: preloadingNext }">
                             <div class="preload-spinner"></div>
                             <span>预加载中</span>
@@ -640,9 +866,8 @@
                         <p>{{ error }}</p>
                     </div>
                     
-                    <div v-else-if="chapterContent" 
-                         class="chapter-content" 
-                         :class="{ 'english-only-mode': englishOnlyMode }"
+                    <div v-else-if="chapterContent || (sentences && sentences.length > 0)" 
+                         class="chapter-content"
                          v-html="formatContent(chapterContent)">
                     </div>
                     
@@ -731,7 +956,7 @@
             }
         }
 
-        createApp({
+        const app = createApp({
             data() {
                 return {
                     novels: [],
@@ -753,9 +978,16 @@
                     cache: new CacheManager('novel_api_'), // 创建缓存管理实例
                     mobileMenuOpen: false, // 移动端菜单状态
                     mobileHeaderExpanded: false, // 移动端标题展开状态
-                    englishOnlyMode: false, // 仅英文模式
+                    displayMode: 'bilingual', // 显示模式: chinese, english, bilingual, audio
                     preloadingNext: false, // 预加载下一章状态
-                    preloadedChapters: new Set() // 已预加载的章节集合
+                    preloadedChapters: new Set(), // 已预加载的章节集合
+                    sentences: [], // 当前章节的语句对象数组
+                    chineseContent: null, // 中文对照内容（缓存）
+                    currentAudio: null, // 当前播放的音频对象
+                    currentPlayingId: null, // 当前播放的语句ID
+                    audioBase: 'https://hitori-janai.github.io/novels/books/oap_en/audio', // 音频基础URL
+                    autoPlaying: false, // 自动播放状态
+                    autoPlayIndex: 0 // 自动播放当前索引
                 }
             },
             
@@ -772,12 +1004,25 @@
             
             beforeUnmount() {
                 this.stopReadingTimer();
+                this.stopAutoPlay();
                 this.saveToCache();
             },
             
             computed: {
                 cacheStats() {
                     return this.cache.getStats();
+                },
+                
+                showChinese() {
+                    return ['chinese', 'bilingual', 'audio'].includes(this.displayMode);
+                },
+                
+                showEnglish() {
+                    return ['english', 'bilingual', 'audio'].includes(this.displayMode);
+                },
+                
+                showMeta() {
+                    return this.displayMode === 'audio';
                 }
             },
             
@@ -851,6 +1096,9 @@
                         this.error = null;
                         this.selectedChapter = chapter.path;
                         
+                        // 清空当前音频播放和自动播放状态
+                        this.stopAutoPlay();
+                        
                         // 尝试从缓存获取章节内容
                         const cacheKey = `content_${chapter.path.replace(/[^a-zA-Z0-9]/g, '_')}`;
                         let chapterContent = this.cache.get(cacheKey);
@@ -864,6 +1112,17 @@
                             this.hasCachedData = true;
                         }
                         
+                        // 解析英文章节
+                        const englishSentences = this.parseEnglishChapter(chapterContent);
+                        
+                        // 加载中文对照内容
+                        const chineseMap = await this.loadChineseContent();
+                        
+                        // 构建完整的语句对象
+                        const chapterName = chapter.name.replace('.txt', '');
+                        this.sentences = await this.buildSentences(englishSentences, chineseMap, chapterName);
+                        
+                        // 保持向后兼容
                         this.chapterContent = chapterContent;
                         this.currentChapterTitle = `${this.getNovelDisplayName(novelName)} - ${this.getChapterDisplayName(chapter.name)}`;
                         
@@ -988,7 +1247,113 @@
                     }
                 },
                 
+                // 解析英文章节内容
+                parseEnglishChapter(content) {
+                    const sentences = [];
+                    const lines = content.split('\n');
+                    
+                    lines.forEach(line => {
+                        const match = line.match(/^(.*?)\s*\[\[(\d+)\s+([^\s]+)\s+([^\]]+)\]\]$/);
+                        if (match) {
+                            sentences.push({
+                                id: parseInt(match[2]),
+                                englishText: match[1].trim(),
+                                speaker: match[3],
+                                emotion: match[4]
+                            });
+                        }
+                    });
+                    
+                    return sentences;
+                },
+                
+                // 加载中文对照内容
+                async loadChineseContent() {
+                    if (this.chineseContent) return this.chineseContent;
+                    
+                    try {
+                        const cacheKey = 'chinese_content';
+                        let chineseContent = this.cache.get(cacheKey);
+                        
+                        if (!chineseContent) {
+                            const response = await axios.get('https://hitori-janai.github.io/novels/books/oap_en/cn/cn.txt');
+                            const content = response.data; // 直接使用响应数据，不需要base64解码
+                            chineseContent = this.parseChineseContent(content);
+                            this.cache.set(cacheKey, chineseContent);
+                        }
+                        
+                        this.chineseContent = chineseContent;
+                        return chineseContent;
+                    } catch (error) {
+                        console.error('加载中文内容失败:', error);
+                        return {};
+                    }
+                },
+                
+                // 解析中文内容
+                parseChineseContent(content) {
+                    const chineseMap = {};
+                    const lines = content.split('\n');
+                    
+                    lines.forEach(line => {
+                        const match = line.match(/^(.*?)\s*\[\[(\d+)\]\]$/);
+                        if (match) {
+                            chineseMap[parseInt(match[2])] = match[1].trim();
+                        }
+                    });
+                    
+                    return chineseMap;
+                },
+                
+                // 构建完整的语句对象
+                async buildSentences(englishSentences, chineseMap, chapterName) {
+                    const sentences = englishSentences.map(sentence => ({
+                        ...sentence,
+                        chineseText: chineseMap[sentence.id] || '',
+                        audioUrl: `${this.audioBase}/${chapterName}/${sentence.id}.wav`,
+                        hasAudio: false
+                    }));
+                    
+                    // 检查音频存在性（后台进行，不阻塞渲染）
+                    this.checkAudioExists(sentences);
+                    
+                    return sentences;
+                },
+                
+                // 检查音频是否存在
+                async checkAudioExists(sentences) {
+                    const checks = sentences.map(async sentence => {
+                        try {
+                            const cacheKey = `audio_exists_${sentence.id}`;
+                            let exists = this.cache.get(cacheKey);
+                            
+                            if (exists === null) {
+                                const response = await fetch(sentence.audioUrl, { method: 'HEAD' });
+                                exists = response.ok;
+                                this.cache.set(cacheKey, exists, 24 * 3600000); // 缓存24小时
+                            }
+                            
+                            sentence.hasAudio = exists;
+                        } catch (error) {
+                            sentence.hasAudio = false;
+                        }
+                    });
+                    
+                    // 分批检查，避免过多并发请求
+                    for (let i = 0; i < checks.length; i += 5) {
+                        await Promise.allSettled(checks.slice(i, i + 5));
+                        // 小延迟避免请求过于频繁
+                        await new Promise(resolve => setTimeout(resolve, 100));
+                    }
+                },
+                
                 formatContent(content) {
+                    // 如果有语句对象，优先使用新的渲染方式
+                    if (this.sentences && this.sentences.length > 0) {
+                        return this.renderSentences();
+                    }
+                    
+                    // 向后兼容：使用旧的渲染方式
                     if (!content) return '';
                     
                     // 转义HTML
@@ -1002,15 +1367,69 @@
                     // 将内容按行分割并包装为div，便于控制显示
                     const lines = escapedContent.split('\n');
                     const formattedLines = lines.map((line, index) => {
-                        // 奇数行（索引为偶数，如第0行、第2行）为中文行
-                        // 偶数行（索引为奇数，如第1行、第3行）为英文行
                         const hasEnglish = /[a-zA-Z]/.test(line);
-                        const isEnglishLine = index % 2 === 1; // 索引奇数的行是英文行
-                        const className = hasEnglish && isEnglishLine ? 'content-line english-text' : 'content-line';
+                        const className = hasEnglish ? 'content-line english-text' : 'content-line';
                         return `<div class="${className}">${line || '&nbsp;'}</div>`;
                     });
                     
                     return formattedLines.join('');
+                },
+                
+                // 渲染语句对象
+                renderSentences() {
+                    return this.sentences.map(sentence => {
+                        const isCurrentPlaying = this.currentPlayingId === sentence.id;
+                        const highlightClass = isCurrentPlaying ? 'current-playing' : '';
+                        let html = '<div class="sentence-container ' + highlightClass + '" data-id="' + sentence.id + '">';
+                        
+                        // 中文部分
+                        if (this.showChinese && sentence.chineseText) {
+                            html += '<div class="chinese-sentence ' + this.getSpeakerClass(sentence.speaker) + '">';
+                            html += this.escapeHtml(sentence.chineseText);
+                            html += '</div>';
+                        }
+                        
+                        // 英文部分
+                        if (this.showEnglish && sentence.englishText) {
+                            html += '<div class="english-sentence ' + this.getSpeakerClass(sentence.speaker) + ' ' + this.getEmotionClass(sentence.emotion) + '">';
+                            html += this.escapeHtml(sentence.englishText);
+                            
+                            // 音频按钮
+                            if (sentence.hasAudio) {
+                                const isPlaying = this.currentPlayingId === sentence.id;
+                                const audioIcon = isPlaying ? '⏸️' : '🔊';
+                                const playingClass = isPlaying ? 'playing' : '';
+                                html += '<button class="audio-btn ' + playingClass + '" onclick="window.appInstance.playAudio(' + JSON.stringify(sentence).replace(/"/g, '&quot;') + ', true)">';
+                                html += audioIcon;
+                                html += '</button>';
+                            }
+                            
+                            html += '</div>';
+                        }
+                        
+                        // 元数据（仅在音频模式显示）
+                        if (this.showMeta) {
+                            html += '<div class="sentence-meta">';
+                            html += '<span class="speaker">' + sentence.speaker + '</span>';
+                            html += '<span class="emotion">' + sentence.emotion + '</span>';
+                            html += '<span class="id">#' + sentence.id + '</span>';
+                            html += '</div>';
+                        }
+                        
+                        html += '</div>';
+                        return html;
+                    }).join('');
+                },
+                
+                // HTML转义函数
+                escapeHtml(text) {
+                    if (!text) return '';
+                    return text
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;')
+                        .replace(/'/g, '&#39;');
                 },
                 
                 getNovelDisplayName(name) {
@@ -1054,7 +1473,7 @@
                         currentChapterTitle: this.currentChapterTitle,
                         expandedNovels: this.expandedNovels,
                         readingTime: this.readingTime,
-                        englishOnlyMode: this.englishOnlyMode,
+                        displayMode: this.displayMode,
                         lastReadTime: Date.now()
                     };
                     localStorage.setItem('novelReaderCache', JSON.stringify(cacheData));
@@ -1070,7 +1489,7 @@
                             this.currentChapterTitle = data.currentChapterTitle;
                             this.expandedNovels = data.expandedNovels || [];
                             this.readingTime = data.readingTime || 0;
-                            this.englishOnlyMode = data.englishOnlyMode || false;
+                            this.displayMode = data.displayMode || 'bilingual';
                             
                             // 如果有缓存的章节，自动加载
                             if (this.selectedChapter) {
@@ -1153,10 +1572,158 @@
                     await this.loadNovels();
                 },
                 
-                // 英文模式切换
-                toggleEnglishMode() {
-                    this.englishOnlyMode = !this.englishOnlyMode;
+                // 显示模式切换
+                setDisplayMode(mode) {
+                    this.displayMode = mode;
                     this.saveToCache();
+                },
+                
+                // 音频播放控制
+                async playAudio(sentence, startAutoPlay = false) {
+                    if (!sentence.hasAudio) {
+                        // 如果当前语句没有音频，在自动播放模式下跳到下一个
+                        if (this.autoPlaying) {
+                            this.playNextSentence();
+                        }
+                        return;
+                    }
+                    
+                    // 如果点击的是当前播放的音频，则暂停
+                    if (this.currentPlayingId === sentence.id && !startAutoPlay) {
+                        this.stopCurrentAudio();
+                        return;
+                    }
+                    
+                    // 停止当前播放的音频
+                    this.stopCurrentAudio();
+                    
+                    try {
+                        this.currentAudio = new Audio(sentence.audioUrl);
+                        this.currentPlayingId = sentence.id;
+                        
+                        // 如果开始自动播放，设置当前索引
+                        if (startAutoPlay) {
+                            this.autoPlaying = true;
+                            this.autoPlayIndex = this.sentences.findIndex(s => s.id === sentence.id);
+                        }
+                        
+                        // 监听播放结束事件
+                        this.currentAudio.addEventListener('ended', () => {
+                            this.currentPlayingId = null;
+                            this.currentAudio = null;
+                            
+                            // 自动播放下一个语句
+                            if (this.autoPlaying) {
+                                setTimeout(() => {
+                                    this.playNextSentence();
+                                }, 500); // 500ms间隔
+                            }
+                        });
+                        
+                        // 监听播放错误事件
+                        this.currentAudio.addEventListener('error', () => {
+                            console.warn('音频播放失败:', sentence.audioUrl);
+                            this.currentPlayingId = null;
+                            this.currentAudio = null;
+                            sentence.hasAudio = false; // 标记为不可用
+                            
+                            // 自动播放模式下跳到下一个
+                            if (this.autoPlaying) {
+                                setTimeout(() => {
+                                    this.playNextSentence();
+                                }, 200);
+                            }
+                        });
+                        
+                        await this.currentAudio.play();
+                        
+                        // 强制更新界面
+                        this.$forceUpdate();
+                        
+                    } catch (error) {
+                        console.warn('音频播放出错:', error);
+                        this.currentPlayingId = null;
+                        this.currentAudio = null;
+                        sentence.hasAudio = false;
+                        
+                        // 自动播放模式下跳到下一个
+                        if (this.autoPlaying) {
+                            setTimeout(() => {
+                                this.playNextSentence();
+                            }, 200);
+                        }
+                    }
+                },
+                
+                // 停止当前音频播放
+                stopCurrentAudio() {
+                    if (this.currentAudio) {
+                        this.currentAudio.pause();
+                        this.currentAudio = null;
+                    }
+                    this.currentPlayingId = null;
+                    // 强制更新界面
+                    this.$forceUpdate();
+                },
+                
+                // 播放下一个语句
+                playNextSentence() {
+                    if (!this.autoPlaying || !this.sentences.length) return;
+                    
+                    // 寻找下一个有音频的语句
+                    let nextIndex = this.autoPlayIndex + 1;
+                    while (nextIndex < this.sentences.length) {
+                        const nextSentence = this.sentences[nextIndex];
+                        if (nextSentence.hasAudio) {
+                            this.autoPlayIndex = nextIndex;
+                            this.playAudio(nextSentence, false);
+                            return;
+                        }
+                        nextIndex++;
+                    }
+                    
+                    // 如果没有更多语句，停止自动播放
+                    console.log('自动播放完成');
+                    this.stopAutoPlay();
+                },
+                
+                // 开始自动播放
+                startAutoPlay() {
+                    if (!this.sentences.length) return;
+                    
+                    // 找到第一个有音频的语句
+                    const firstAudioSentence = this.sentences.find(s => s.hasAudio);
+                    if (firstAudioSentence) {
+                        this.playAudio(firstAudioSentence, true);
+                    }
+                },
+                
+                // 停止自动播放
+                stopAutoPlay() {
+                    this.autoPlaying = false;
+                    this.autoPlayIndex = 0;
+                    this.stopCurrentAudio();
+                    // 强制更新界面
+                    this.$forceUpdate();
+                },
+                
+                // 切换自动播放状态
+                toggleAutoPlay() {
+                    if (this.autoPlaying) {
+                        this.stopAutoPlay();
+                    } else {
+                        this.startAutoPlay();
+                    }
+                },
+                
+                // 获取说话者样式类
+                getSpeakerClass(speaker) {
+                    return `speaker-${speaker}`;
+                },
+                
+                // 获取情绪样式类
+                getEmotionClass(emotion) {
+                    return `emotion-${emotion}`;
                 },
                 
                 // 搜索相关方法
@@ -1189,7 +1756,12 @@
                     this.searchResults = this.searchResults.slice(0, 20);
                 }
             }
-        }).mount('#app');
+        });
+        
+        const appInstance = app.mount('#app');
+        
+        // 创建全局引用以便音频按钮访问
+        window.appInstance = appInstance;
     </script>
 </body>
 </html> 
