@@ -1,0 +1,1352 @@
+{
+  "bookId": "nomoney_en",
+  "bookTitle": "没有钱 英文版",
+  "chapters": {
+    "0001": [
+      {
+        "id": 1,
+        "en": "Chapter 1: The Interview",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第1章 面试"
+      },
+      {
+        "id": 2,
+        "en": "\"Are you there yet?\"",
+        "speaker": "母亲",
+        "emotion": "anxious",
+        "cn": "“到了吗？”"
+      },
+      {
+        "id": 3,
+        "en": "\"Don't be nervous. Your grades are so good, you'll definitely pass.\"",
+        "speaker": "母亲",
+        "emotion": "happy",
+        "cn": "“不要紧张，你成绩这么好，一定能过的。”"
+      },
+      {
+        "id": 4,
+        "en": "\"Don't worry about the surgery fee. Mom found a new part-time job and will definitely save up enough for you. Just focus on your interview.\"",
+        "speaker": "母亲",
+        "emotion": "anxious",
+        "cn": "“手术费的事情不用担心，妈找了个新兼职，一定会帮你凑齐的，你踏踏实实参加面试。”"
+      },
+      {
+        "id": 5,
+        "en": "Looking at the messages from his mother on the screen, Zhang Yu quietly put his phone away, took a deep breath, closed his eyes, and waited silently.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "看着屏幕上母亲发来的消息，张羽默默收起手机，深吸一口气，闭上了眼睛，静静地等待着。"
+      },
+      {
+        "id": 6,
+        "en": "After a long while, a number was called from the front.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "良久之后，前方传来一阵叫号声。"
+      },
+      {
+        "id": 7,
+        "en": "\"Candidate number 989, Zhang Yu.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“989号考生，张羽。”"
+      },
+      {
+        "id": 8,
+        "en": "Zhang Yu stood up and walked into the interview room.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽站了起来，走进了面试的教室内。"
+      },
+      {
+        "id": 9,
+        "en": "He looked at the three interviewers and gave a polite smile he had practiced for a long time. \"Hello, I am Zhang Yu from Dongyang Junior High.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "他看向三位面试官，露出了练习许久的礼貌笑容：“三位好，我是东阳初级中学的张羽。”"
+      },
+      {
+        "id": 10,
+        "en": "The interviewer in the middle looked at him and asked flatly, \"Why do you want to apply to our school?\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "中间的面试官望着他，淡淡道：“你为什么要报考我们的学校？”"
+      },
+      {
+        "id": 11,
+        "en": "Zhang Yu: \"Your school has a long history, a deep cultural background, and rich educational resources. It has produced many outstanding talents for society...\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽：“贵校悠久的历史，深厚的底蕴，丰富的教学资源，一直以来为社会培养出了许多杰出人才……”"
+      },
+      {
+        "id": 12,
+        "en": "The interviewer frowned and interrupted him, \"Don't give me those empty formalities.\"",
+        "speaker": "面试官",
+        "emotion": "angry",
+        "cn": "面试官皱了皱眉，打断道：“别说这些场面话。”"
+      },
+      {
+        "id": 13,
+        "en": "Zhang Yu answered honestly, \"I want to get into a top university, and Songyang High School has the highest university acceptance rate of all the schools I can apply to.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽老实道：“我想考上名牌大学，嵩阳高中是我能报考的学校中，大学录取率最高的一个。”"
+      },
+      {
+        "id": 14,
+        "en": "The interviewer smiled slightly, looked at the documents in his hand, and said, \"Hmm, perfect scores in all subjects, first in the entire school? No wonder you were recommended.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "面试官微微一笑，看着手上的资料说道：“嗯，全科满分，全校第一？怪不得被推荐过来。”"
+      },
+      {
+        "id": 15,
+        "en": "\"Your grades are fine, but if you want to get into Songyang High School, your school exam scores are far from enough.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“你成绩没有问题，但想要进嵩阳高中，光靠校内考试成绩是远远不够的。”"
+      },
+      {
+        "id": 16,
+        "en": "He thought for a moment and asked casually, \"How long do you sleep every day?\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "他想了想，随意问道：“你现在每天睡多久？”"
+      },
+      {
+        "id": 17,
+        "en": "Zhang Yu: \"Five hours.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽：“五个小时。”"
+      },
+      {
+        "id": 18,
+        "en": "The interviewer said with surprise, \"Five hours?\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "面试官意外道：“五小时？”"
+      },
+      {
+        "id": 19,
+        "en": "\"Students at our school, starting from elementary school, sleep for no more than two hours a day on average. And the top graduates from past years almost never sleep at all.\"",
+        "speaker": "面试官",
+        "emotion": "sarcastic",
+        "cn": "“我们学校的学生从小学开始，每天平均睡眠时长都不超过两个小时。而像历届的优秀毕业生基本上都是不睡觉的。”"
+      },
+      {
+        "id": 20,
+        "en": "\"You actually sleep for five hours a day? That means you study three hours less than others every day. Over nine years, that's a difference of almost ten thousand hours...\"",
+        "speaker": "面试官",
+        "emotion": "angry",
+        "cn": "“你每天竟然要睡五个小时，那就是每天要比别人少学三个小时，九年就差了近一万个小时……”"
+      },
+      {
+        "id": 21,
+        "en": "Zhang Yu was stunned. He never thought that even though he considered himself very hardworking, there was still such a huge gap between him and others.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽微微一愣，没想到本以为已经非常努力的自己，在努力上竟然还和他人有这么大的差距。"
+      },
+      {
+        "id": 22,
+        "en": "Zhang Yu quickly said, \"I will work hard to catch up with them.\"",
+        "speaker": "张羽",
+        "emotion": "anxious",
+        "cn": "张羽连忙说道：“我会努力追赶上他们的。”"
+      },
+      {
+        "id": 23,
+        "en": "The interviewer on the left asked, \"How much of the high school curriculum have you studied?\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "左边的面试官问道：“高中课程你学了多少？”"
+      },
+      {
+        "id": 24,
+        "en": "Zhang Yu calmed down a little and said confidently, \"I've already self-studied the entire first year of high school curriculum.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽稍稍镇定下来，自信道：“我已经自学完了高一课程。”"
+      },
+      {
+        "id": 25,
+        "en": "The person frowned slightly. \"Only the first year? Don't you know that we assume all students have already finished the entire high school curriculum before they even start classes here?\"",
+        "speaker": "面试官",
+        "emotion": "sarcastic",
+        "cn": "对方眉头微皱：“才高一？你不知道我们这上课的时候都默认学生已经学完了高中课程的吗？”"
+      },
+      {
+        "id": 26,
+        "en": "Zhang Yu was shocked to hear this. This was more information he didn't know, and what he thought was an advantage had turned into a disadvantage in an instant.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽闻言一呆，这又是他所不知道的情报，本以为的优势转眼成了劣势。"
+      },
+      {
+        "id": 27,
+        "en": "Just as he was at a loss, the middle interviewer asked the next question.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "就在他不知所措时，中间的面试官又问出了下一个问题。"
+      },
+      {
+        "id": 28,
+        "en": "\"To improve learning efficiency and prevent early romance, our school requires all students to undergo a sterilization surgery to remove the relevant organs before enrollment, so they can focus on cultivation.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“本校为了提升学习效率，防止早恋，要求所有学生在入学前要完成把相关器官摘除的绝育手术，从此专心修行。”"
+      },
+      {
+        "id": 29,
+        "en": "\"Did you know about this?\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“这个你知道吗？”"
+      },
+      {
+        "id": 30,
+        "en": "Finally hearing something he knew, he quickly replied, \"My family is already preparing for it. I will definitely complete the sterilization surgery before school starts to keep my hormone levels at the most suitable level for studying.\"",
+        "speaker": "张羽",
+        "emotion": "anxious",
+        "cn": "终于听到一个自己知道的事，他连忙回道：“家里已经在准备了，开学之前我一定会完成绝育手术，将激素水平保持在最适宜上学的水平。”"
+      },
+      {
+        "id": 31,
+        "en": "The interviewer nodded without comment. \"Alright, that's all for today's interview. You can go out now.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "面试官不置可否地点了点头：“行了，今天的面试结束了，你先出去吧。”"
+      },
+      {
+        "id": 32,
+        "en": "Zhang Yu walked out of the classroom, feeling uneasy. He felt that his interview had been shorter than the other students'.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽惴惴不安地走出了教室，他感觉自己的面试时间似乎要短于其他学生。"
+      },
+      {
+        "id": 33,
+        "en": "After he left, the middle interviewer shook his head. \"He hasn't even been sterilized in junior high. This child's determination for the Dao is not strong enough.\"",
+        "speaker": "面试官",
+        "emotion": "sad",
+        "cn": "而在他走后，中间的面试官摇了摇头：“初中了都还没绝育，此子向道之心不够坚定啊。”"
+      },
+      {
+        "id": 34,
+        "en": "The female interviewer on the side smiled. \"It looks like he came here knowing nothing. He doesn't have any of the required test reports or extracurricular exam results. I can only say the quality of recommended students from these ordinary junior highs is getting worse every year. If it weren't for the support policy, he wouldn't even be qualified to see us.\"",
+        "speaker": "女面试官",
+        "emotion": "sarcastic",
+        "cn": "一旁的女面试官笑了笑：“我看他什么都不知道就来了，该有的测试报告和课外考试成绩一个也没有，只能说下面这些普通初中的推荐生质量是一年不如一年，要不是有扶持政策，哪有资格见我们。”"
+      },
+      {
+        "id": 35,
+        "en": "The middle interviewer nodded. \"Sigh, I thought the poor would be more hardworking. Perhaps I expected too much of them.\"",
+        "speaker": "面试官",
+        "emotion": "sad",
+        "cn": "中间的面试官点了点头：“唉，我本以为穷人会更努力一点，也许是我对他们期望过高了。”"
+      },
+      {
+        "id": 36,
+        "en": "\"Let's put him on the waiting list for now.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“这个就暂时备选吧。”"
+      },
+      {
+        "id": 37,
+        "en": "With that, he tossed Zhang Yu's resume into the wastebasket next to him, where it was squeezed in with hundreds of other resumes on the waiting list.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "说罢，他便将张羽的简历扔进了一旁的纸篓里，和另外几百份备选简历挤在了一起。"
+      },
+      {
+        "id": 38,
+        "en": "Although Zhang Yu felt his interview hadn't gone well, he didn't have extra time to think about it. He had already started preparing for one interview after another, visiting many different high schools.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "虽然张羽感觉自己的这趟面试似乎不太成功，但没有多余的时间给他思考这些，他已经开始准备起了一趟又一趟的面试，来到了一个个不同的高中。"
+      },
+      {
+        "id": 39,
+        "en": "\"Student Zhang Yu, we understand that your family's financial situation may not be enough to afford the tuition here. However, we offer a preferential loan service for students from poor families. You just need to be willing to mortgage some of your unimportant organs...\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“张羽同学，我们了解到你的家庭情况恐怕不足以负担这边的学费。不过我们为贫困生提供了优惠的贷款服务，只要你愿意抵押一些不重要的器官就行……”"
+      },
+      {
+        "id": 40,
+        "en": "\"Don't worry, you've come to the right place. We know you are male, and although our school is an all-girls school, we never discriminate against males. As long as you complete gender reassignment surgery, not only can you enroll, but you will also be considered a promising student with a strong Dao Heart and have the opportunity to enter the key class to study the art of Yuan Yin Qi Refining...\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“放心，你没来错地方，我们知道你是男的，而我校虽是女校，但从来不歧视男性，只要你完成了性别转换手术，不但能够入学，更是会被认为道心坚毅的种子学生，有机会进入重点班学习元阴炼气之术……”"
+      },
+      {
+        "id": 41,
+        "en": "\"It's a pity, you're just a little short of our admission standard. However, to help poor students this year, we have introduced a special talent policy. If you are willing to give up your physical body, you can study in the principal's Myriad Soul Banner as a soul cultivation talent...\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“可惜了，你距离我们的入学标准还是差上了一点点。不过今年为了照顾贫困学生，我们推出了一个特长生政策。你如果愿意放弃肉身的话，可以凭借魂修特长生的身份，在校长的万魂幡里学习……”"
+      },
+      {
+        "id": 42,
+        "en": "\"Student, you've come to the right place. This is the most suitable high school for a common genius like you.\"",
+        "speaker": "面试官",
+        "emotion": "happy",
+        "cn": "“同学，你算是来对地方了，我们这就是最适合你这种平民天才的高中。"
+      },
+      {
+        "id": 43,
+        "en": "\"Let me introduce the benefits here. We add intelligence-promoting agents to the drinking water to ensure that students maintain a level-five state of concentration at all times.\"",
+        "speaker": "面试官",
+        "emotion": "happy",
+        "cn": "我来给你介绍介绍这里的福利吧，我们在饮用水中添加了促智剂，保证学生时刻维持在五级专注状态。"
+      },
+      {
+        "id": 44,
+        "en": "\"Every day, the head teacher will give you more than 900 grams of supplements specially for bull demons, ensuring your cultivation effect is more than ten times the original.\"",
+        "speaker": "面试官",
+        "emotion": "happy",
+        "cn": "每天班主任会发给你们900克以上牛妖专用的补剂，保证你们的修炼效果是原先的十倍以上。"
+      },
+      {
+        "id": 45,
+        "en": "\"Even the air circulation system is filled with nerve-stimulating fillers, so you no longer need to sleep, and all of this is free.\"",
+        "speaker": "面试官",
+        "emotion": "happy",
+        "cn": "就连空气循环系统中也充斥着神经兴奋填充剂，让你再也无需睡眠，而这些全都是免费的。"
+      },
+      {
+        "id": 46,
+        "en": "\"Of course, to withstand these performance-enhancing supplements, you must undergo modifications at our designated hospital.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "当然，想要承受这些功能增强补充药剂，你必须在我们指定的医院完成改造。"
+      },
+      {
+        "id": 47,
+        "en": "\"Don't worry, you just need to implant some small magical artifacts to enhance your metabolic capacity. Here is the specific price list...\"",
+        "speaker": "面试官",
+        "emotion": "happy",
+        "cn": "放心，只要植入一些小小的法器来提升你的代谢能力，这是具体价目表……”"
+      },
+      {
+        "id": 48,
+        "en": "One interview after another, one question after another.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一次次的面试，一个又一个的问题。"
+      },
+      {
+        "id": 49,
+        "en": "Either the requirements were impossibly high, leaving him with no hope.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "要么是高不可攀，让他完全看不到希望的门槛。"
+      },
+      {
+        "id": 50,
+        "en": "Or the contracts were full of traps, making him feel like he would be swallowed whole.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "要么就是陷阱重重，让他感觉自己会被一口吞下的合同。"
+      },
+      {
+        "id": 51,
+        "en": "All of this made Zhang Yu feel like he was suffocating under the pressure.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这一切一切都让张羽感觉自己被压得喘不过气来。"
+      },
+      {
+        "id": 52,
+        "en": "At this moment, he suddenly realized that despite being first in his school in a suburban junior high, he was worlds apart from the students in the city center.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "此刻的他骤然发现，在郊区普通初中有着全校第一成绩的他，和市中心的那些学生们比起来便早已经有了天壤之别。"
+      },
+      {
+        "id": 53,
+        "en": "Even now, he only knew the tip of the iceberg about how large the gap between them really was.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "甚至直到此刻，他连双方的具体差距有多大……也只知道了冰山一角。"
+      },
+      {
+        "id": 54,
+        "en": "All his years of hard study seemed like a joke.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "过去这些年的努力学习似乎都成了笑话。"
+      },
+      {
+        "id": 55,
+        "en": "In the end, he was no different from his classmates who didn't study; he couldn't get into high school either.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "到头来他和那些不学无术的同学们并没有差别，同样也上不了高中。"
+      },
+      {
+        "id": 56,
+        "en": "Back at home, Zhang Yu sat silently like a stone statue.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "回到家中，张羽如一尊石像般默默坐着。"
+      },
+      {
+        "id": 57,
+        "en": "The phone on the table vibrated again and again.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "桌上的手机连连震动了起来。"
+      },
+      {
+        "id": 58,
+        "en": "Mother: How was the interview this time?",
+        "speaker": "母亲",
+        "emotion": "anxious",
+        "cn": "母亲：这次面试怎么样？"
+      },
+      {
+        "id": 59,
+        "en": "Mother: I have to work overtime today. Remember to heat up the food in the fridge for yourself.",
+        "speaker": "母亲",
+        "emotion": "neutral",
+        "cn": "母亲：今天要加班，冰箱里的饭菜你记得自己热了吃。"
+      },
+      {
+        "id": 60,
+        "en": "A moment later, the phone vibrated again.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "片刻后，手机又震动了一下。"
+      },
+      {
+        "id": 61,
+        "en": "Mother: Son, don't worry. Whether you choose sterilization or a sex change, Mom will definitely get the money for the surgery for you.",
+        "speaker": "母亲",
+        "emotion": "anxious",
+        "cn": "母亲：儿子，你不要担心，不论你选绝育还是变性，手术的钱妈妈一定会帮你凑齐的。"
+      },
+      {
+        "id": 62,
+        "en": "But Zhang Yu didn't look at the vibrating phone. He just stared blankly at the ceiling, trying to think about the future, but his mind felt empty, unable to squeeze out a single thought.",
+        "speaker": "旁白",
+        "emotion": "desperate",
+        "cn": "但张羽并没有去看震动的手机，他只是呆呆地望着天花板，想要思考关于未来的事情，却又感觉到脑袋里像是空空如也，什么都挤不出来。"
+      },
+      {
+        "id": 63,
+        "en": "Just then, the phone began to vibrate violently again.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "就在这时，手机再次剧烈震动了起来。"
+      },
+      {
+        "id": 64,
+        "en": "Zhang Yu didn't want to answer it at first, but after the phone vibrated for over a minute, he couldn't help but pick it up, only to find that the other party had already hung up.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽原本不想理会，但在手机足足震动了一分多钟后，他终于忍不住地将之拿了起来，却发现对方已经挂了电话。"
+      },
+      {
+        "id": 65,
+        "en": "Then he received a message from them: Your five thousand reserve fund is ready and can be in your account in just ten seconds...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "接着他收到了一条对方发来的消息：您的五千后备金已准备完毕，只需十秒即可到账……"
+      },
+      {
+        "id": 66,
+        "en": "\"A loan advertisement?\"",
+        "speaker": "张羽",
+        "emotion": "sarcastic",
+        "cn": "“小贷广告吗？”"
+      },
+      {
+        "id": 67,
+        "en": "\"Hmph.\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "“哼。”"
+      },
+      {
+        "id": 68,
+        "en": "Zhang Yu thought that his interview information had probably been sold by one of the schools.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽心想自己的面试资料恐怕是被哪个学校给卖了。"
+      },
+      {
+        "id": 69,
+        "en": "But after putting the phone down for a moment, he picked it up again and reopened the message.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但放下手机片刻之后，他又拿了起来，重新点开了那条消息。"
+      },
+      {
+        "id": 70,
+        "en": "...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "……"
+      },
+      {
+        "id": 71,
+        "en": "That night, when his mother came home from working overtime, she found that the once deathly pale Zhang Yu seemed to have recovered and was sitting at the desk reading a book.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "当天夜里，母亲加班回来之后，便发现原本面如死灰的张羽看上去似乎已恢复了过来，正端坐于桌前看书。"
+      },
+      {
+        "id": 72,
+        "en": "\"Mom, don't worry. I won't be defeated so easily.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“妈，你放心，我不会这么容易被打倒的。”"
+      },
+      {
+        "id": 73,
+        "en": "\"If I can't do it this year, I'll try again next year. I will definitely cultivate.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“今年不行，我就明年再考，我一定会修仙的。”"
+      },
+      {
+        "id": 74,
+        "en": "\"I'll go find a cram school tomorrow. I'm going to make up for everything I'm lacking, one by one.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“明天我就去找补习班，我要把我缺的东西一个个补上。”"
+      },
+      {
+        "id": 75,
+        "en": "The next morning, Zhang Yu rushed out, and when he returned that night, his face was full of joy.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第二天一大早，张羽就赶了出去，当天晚上回来时已是一脸喜色。"
+      },
+      {
+        "id": 76,
+        "en": "\"Mom, I found a cultivation cram school. The teachers there are all from top high schools. Studying with them, I'll definitely get into a good high school.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“妈，我找了一家仙道补习班，那里的老师都是从重点高中请来的，跟着他们学一定能考上高中。”"
+      },
+      {
+        "id": 77,
+        "en": "\"Don't worry about the tuition. They think I've had good grades since I was little and know my family isn't wealthy, so they've temporarily waived my tuition. As long as I can get into Songyang High School next year, I won't have to pay it back. It will be like an advertisement for them.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“学费的事情你不用担心，人家觉得我从小成绩就好，又知道我家庭不富裕，就暂时给我免了学费，只要我明年能进嵩阳高中，这学费就不用还了，就当是帮他们做广告了。”"
+      },
+      {
+        "id": 78,
+        "en": "\"Don't worry, they are a big company. They won't trick me.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“你放心吧，人家是大公司，不会骗人的。”"
+      },
+      {
+        "id": 79,
+        "en": "His mother watched as Zhang Yu left for the cram school before dawn every day and studied until two or three in the morning after returning home late at night.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "母亲看着张羽每天天不亮就出门上补习班，每天深夜回到家后还要学到两三点钟。"
+      },
+      {
+        "id": 80,
+        "en": "Seeing him constantly bring back textbooks for the second and third years of high school in subjects like language, math, and physics, and seeing his plan to finish all the general courses besides cultivation in one year, she felt gratified by her son's ambition.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "看着他不断带回来的高二高三的语文、数学、物理等等教材，看着他打算要在一年里把高中这些除了仙道之外的所有通识课程学完，她就为儿子的上进感到欣慰。"
+      },
+      {
+        "id": 81,
+        "en": "But when she saw the boxes of medicine he brought back, a trace of doubt still arose in her heart.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但当她看到那一盒盒拿回来的药品时，心中还是涌起了一丝疑惑。"
+      },
+      {
+        "id": 82,
+        "en": "Zhang Yu explained with a smile, \"Mom, since I was little, I've studied ten thousand hours less than those top students. If I don't work harder, I'll only fall further and further behind them.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "张羽笑着解释道：“妈，从小到大，我已经比那些学霸少学了一万个小时，再不努力的话只会被他们越甩越远。”"
+      },
+      {
+        "id": 83,
+        "en": "\"These nerve-stimulating fillers allow me to sleep only half an hour a day and improve my learning efficiency, so at least I won't fall further behind the students in the city.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“这些神经兴奋填充剂能让我每天只需要睡半个小时，提高我的学习效率，至少不被市里的那些学生继续拉开距离。”"
+      },
+      {
+        "id": 84,
+        "en": "\"Don't worry, these medicines don't cost anything.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“你放心，这些药都不花钱。”"
+      },
+      {
+        "id": 85,
+        "en": "\"The principal of our cram school really values me. He gave me all this medicine.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“我们补习班的校长特别看好我，这些药都是他送我的。”"
+      },
+      {
+        "id": 86,
+        "en": "Hearing that the principal had given them to him, his mother was even happier that her son was being appreciated.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "听到是校长送的，母亲更为儿子受到赏识而高兴。"
+      },
+      {
+        "id": 87,
+        "en": "Soon, Zhang Yu brought back more things.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "很快张羽就带了更多东西回来。"
+      },
+      {
+        "id": 88,
+        "en": "In addition to various high school textbooks and nerve-stimulating fillers, there were also capsules to regulate hormone levels, supplements for demon beasts, and bottles of unlabeled medicinal powder.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "除了各种高中教材，神经兴奋填充剂之外，还有调节激素水平的胶囊，妖兽专用的补剂，还有一瓶瓶没有包装的药粉。"
+      },
+      {
+        "id": 89,
+        "en": "Zhang Yu had many explanations, sometimes saying they were cheap goods bought from a part-time job, sometimes that a classmate gave them to him, and sometimes that they were rewards from the cram school...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽的解释也很多，有时候说是打工买的便宜货，有时候说是同学送的，有时候说是补习班奖励的……"
+      },
+      {
+        "id": 90,
+        "en": "His mother was happy about her son's diligence, and even more pleased with his good relationships and excellent performance at the cram school.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "母亲为儿子的勤奋而开心，更为他在补习班的好人缘和优秀表现而感到高兴。"
+      },
+      {
+        "id": 91,
+        "en": "She transferred 1000 yuan to Zhang Yu, telling him to remember to thank his classmates and teachers.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "她转了1000块钱给张羽，让张羽记得要谢谢同学和老师。"
+      },
+      {
+        "id": 92,
+        "en": "But gradually, she noticed that Zhang Yu's mood began to change. Sometimes he would be happy before leaving in the morning, but when he came back at night, he would go straight to bed without saying a word.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但渐渐的，她发现张羽的情绪开始变得不对劲，有时候早上出门前还高高兴兴的，晚上回来就一言不发直接睡觉了。"
+      },
+      {
+        "id": 93,
+        "en": "Sometimes he would be eating happily, but after answering a phone call, his brow would furrow, and he couldn't eat another bite.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "有时候刚刚还在开开心心吃饭，接了个电话后就眉头紧锁，一口也吃不下了。"
+      },
+      {
+        "id": 94,
+        "en": "She knew it must be the immense pressure of cultivation that was making Zhang Yu so tense.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "她知道一定是修仙的压力太大，让张羽精神紧绷。"
+      },
+      {
+        "id": 95,
+        "en": "She could only buy more of his favorite foods and save more money for his tuition, hoping to relieve some of his pressure.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "她只能多买点他爱吃的东西，多为他存一些学费，只希望能帮他减缓一些压力。"
+      },
+      {
+        "id": 96,
+        "en": "Gradually, she also noticed that Zhang Yu was particularly protective of his phone. Not only did he almost never part with it, but he also didn't allow anyone to touch it. Whenever he got a call, he would go into the bathroom and close the door to answer it.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "渐渐的，她又发现张羽特别在乎自己的手机，不止是平时几乎手机不离身，更是不准任何人随便碰他的手机，有电话也总是走进厕所关门再接。"
+      },
+      {
+        "id": 97,
+        "en": "One time, she saw that his phone was out of battery and took it to charge it, but Zhang Yu got angry and scolded her for it.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "有一次她看到手机没电了拿去充电，竟然都被张羽生气地说了一顿。"
+      },
+      {
+        "id": 98,
+        "en": "Understanding his pressure, she never dared to touch Zhang Yu's phone again, for fear of affecting her son's cultivation.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "明白对方的压力大，她便再也不敢碰张羽的手机，生怕影响了儿子修仙。"
+      },
+      {
+        "id": 99,
+        "en": "Suddenly one day, Zhang Yu asked her for money for cram school fees, saying that the school had invited a senior who had been accepted into a top university to give a lecture, and this was the money for the senior.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "突然有一天，张羽问她要了补习费，说是补习班请了考上顶尖大学的前辈过来为他们讲课，这是要给前辈的钱。"
+      },
+      {
+        "id": 100,
+        "en": "Then there was a recommendation fee for the high school admissions officer.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "然后是给高中招生老师的推荐费。"
+      },
+      {
+        "id": 101,
+        "en": "A fee for a spiritual root test at the hospital.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "给医院的灵根检测费。"
+      },
+      {
+        "id": 102,
+        "en": "And he needed to buy a civilian-grade children's flying sword with his cram school classmates.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "还有要和补习班的同学一起购买民用级的儿童飞剑。"
+      },
+      {
+        "id": 103,
+        "en": "From two or three thousand to seven or eight thousand... the last time, he asked her to transfer twenty thousand yuan directly, saying it was the fee for renting a heavenly spiritual root.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "从两三千到七八千……最后一次让她直接打了两万块钱，张羽说是租借天灵根的费用。"
+      },
+      {
+        "id": 104,
+        "en": "But good news finally came: Zhang Yu had successfully been admitted to Songyang High School.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但好消息终于传来，张羽成功考进嵩阳高中了。"
+      },
+      {
+        "id": 105,
+        "en": "His mother was overjoyed. She was proud of her son's hard work and talent and readily agreed to all of Zhang Yu's subsequent requests for tuition, miscellaneous fees, and medicine costs.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "母亲感到欣喜无比，她对儿子的努力和天赋感到自豪，对接下来张羽说的学费、学杂费、药剂费等等也都一口答应下来。"
+      },
+      {
+        "id": 106,
+        "en": "But after school started, Zhang Yu began asking for more and more money, and the family's income could no longer cover the expenses.",
+        "speaker": "旁白",
+        "emotion": "anxious",
+        "cn": "但开学以后，张羽开口要的钱越来越多，家中逐渐入不敷出。"
+      },
+      {
+        "id": 107,
+        "en": "Finally, one afternoon, listening to the voice on the other end of the phone, her heart trembled.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "终于在某一天下午，听着电话另一头的声音，母亲心中一颤。"
+      },
+      {
+        "id": 108,
+        "en": "\"Hello? Is this Zhang Yu's mother?\"",
+        "speaker": "催债人",
+        "emotion": "neutral",
+        "cn": "“喂？请问是张羽的母亲吗？”"
+      },
+      {
+        "id": 109,
+        "en": "\"Do you know that your son's loan is already 30 days overdue...\"",
+        "speaker": "催债人",
+        "emotion": "angry",
+        "cn": "“你知不知道你儿子的借款已经逾期30天了……”"
+      },
+      {
+        "id": 110,
+        "en": "That night, Zhang Yu confessed everything to his mother.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "当天夜里，张羽向母亲坦白了一切。"
+      },
+      {
+        "id": 111,
+        "en": "For the past year, the various expenses for his studies were not free, appreciated, or gifted as he had claimed... all the money came from loans he had taken out from major platforms.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "过去一年多来，在学习过程中的种种花费并没有他嘴上说的那些免费、赏识、馈赠……钱全都来自于他从各大平台的借贷。"
+      },
+      {
+        "id": 112,
+        "en": "\"Mom, I'm sorry.\"",
+        "speaker": "张羽",
+        "emotion": "sad",
+        "cn": "“妈，对不起。”"
+      },
+      {
+        "id": 113,
+        "en": "\"But I really want to cultivate.\"",
+        "speaker": "张羽",
+        "emotion": "desperate",
+        "cn": "“但我真的想修仙啊。”"
+      },
+      {
+        "id": 114,
+        "en": "\"Even if I have to be in debt for the rest of my life, I want to cultivate...\"",
+        "speaker": "张羽",
+        "emotion": "desperate",
+        "cn": "“哪怕欠上一辈子还不上欠债，我也想修仙……”"
+      },
+      {
+        "id": 115,
+        "en": "After hearing all this, his mother silently sold all the valuable things in the house and then borrowed more money to pay off Zhang Yu's debts.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "听完这一切，母亲默默卖掉了家中所有值钱的东西，然后再借贷一部分钱为张羽还债。"
+      },
+      {
+        "id": 116,
+        "en": "She thought that her son would be able to focus on cultivation after this.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "本以为接下来儿子能够安心修仙。"
+      },
+      {
+        "id": 117,
+        "en": "But she soon discovered her son had new overdue loans.",
+        "speaker": "旁白",
+        "emotion": "anxious",
+        "cn": "但她却很快又发现了儿子新的贷款逾期。"
+      },
+      {
+        "id": 118,
+        "en": "Repay the loan... take out a loan... repay the loan... take out a loan...",
+        "speaker": "旁白",
+        "emotion": "desperate",
+        "cn": "还贷……借贷……还贷……借贷……"
+      },
+      {
+        "id": 119,
+        "en": "His mother finally couldn't help but persuade Zhang Yu to spend less money.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "母亲终于忍不住劝说张羽少花点钱。"
+      },
+      {
+        "id": 120,
+        "en": "\"Mom, I can't stop this medicine. If I stop, my Dao Heart will regress, and all my previous efforts will be wasted...\"",
+        "speaker": "张羽",
+        "emotion": "desperate",
+        "cn": "“妈，这个药不能停，停药后道心会倒退的，我就前功尽弃了……”"
+      },
+      {
+        "id": 121,
+        "en": "\"I have to rent the heavenly spiritual root. Without it, my mana can't keep up...\"",
+        "speaker": "张羽",
+        "emotion": "desperate",
+        "cn": "“天灵根一定要租的，没有天灵根我法力跟不上……”"
+      },
+      {
+        "id": 122,
+        "en": "\"This cram school VIP card needs to be topped up, otherwise I won't be able to understand the techniques the school teacher talks about in class...\"",
+        "speaker": "张羽",
+        "emotion": "desperate",
+        "cn": "“这张补习班的VIP卡要充钱了，不然我听不懂学校老师课上讲的功法……”"
+      },
+      {
+        "id": 123,
+        "en": "Advanced cultivation technology allowed mortals without spiritual roots to walk the path of an immortal, but the price was to regularly undergo the most expensive learning and maintenance to continue on that path.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "发达的仙道技术让没有灵根的凡人也能踏上仙路，但代价则是定期进行最昂贵的学习和维护才能持续走下去。"
+      },
+      {
+        "id": 124,
+        "en": "In the blink of an eye, three months of school had passed. Seeing the growing debt, to the point where they could no longer afford rent, water, and electricity... it all felt like a never-ending nightmare, and his mother could no longer bear it.",
+        "speaker": "旁白",
+        "emotion": "desperate",
+        "cn": "转眼开学三个月的时间过去，看着欠债越来越多，到现在连家里的房租、水电都已经无力负担……这一切一切都好像是一场永无止境的噩梦，母亲终于再也无法承受了。"
+      },
+      {
+        "id": 125,
+        "en": "So, when Zhang Yu came home from school another day, he never saw his mother again.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "于是当又一天放学回家时，张羽再也没有看到母亲的身影。"
+      },
+      {
+        "id": 126,
+        "en": "He sat stunned for a long time after reading his mother's note, and finally walked silently up to the rooftop.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "他看了母亲的留言后呆坐良久，最终默默走上了天台。"
+      },
+      {
+        "id": 127,
+        "en": "...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "……"
+      },
+      {
+        "id": 128,
+        "en": "On the rooftop of the rental apartment.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "出租房的天台上。"
+      },
+      {
+        "id": 129,
+        "en": "A sharp pain shot through the man's mind, gradually waking his chaotic consciousness from the darkness.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一阵剧痛从男人的脑海中传来，将他那混沌的意识从黑暗中渐渐唤醒。"
+      },
+      {
+        "id": 130,
+        "en": "He opened his eyes and looked forward, seeing a street not far away, bustling with people and overflowing with sewage.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他睁开眼向前望去，便看前方不远处那一条人来人往，污水横流的街道。"
+      },
+      {
+        "id": 131,
+        "en": "On both sides of the street, various advertising signs flickered with neon lights. Looking up, he saw dark buildings crowded together, as if trying to cover the entire sky.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "街道两侧闪烁着霓虹光芒的各色广告招牌，再往上看去则是一座座黑漆漆的楼房挤在一起，像是要将整片天空遮蔽。"
+      },
+      {
+        "id": 132,
+        "en": "And the building under his feet was a dilapidated apartment. A video of a financial advertisement was being projected onto its mottled red brick wall, in which high-flying immortals were jointly recommending a cultivation loan with thirty days interest-free for new users.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而脚下的楼房则是一处破旧的公寓，那斑驳的红砖墙上还在投影着理财广告的视频，广告中是一位位飞天遁地的仙人正一同推荐着新用户三十天免息的修仙贷。"
+      },
+      {
+        "id": 133,
+        "en": "\"Wasn't I just playing Black Myth: Wukong?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“我不是在玩黑吗喽吗？”"
+      },
+      {
+        "id": 134,
+        "en": "\"Where is this?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“这是哪？”"
+      },
+      {
+        "id": 135,
+        "en": "Just as he was wondering what was going on, he turned his head and found that the rooftop was filled with candles.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "正想着怎么回事的时候，转过头的他就发现天台上摆满了蜡烛。"
+      },
+      {
+        "id": 136,
+        "en": "Rows of candles flickering with a scarlet glow surrounded him and a worn-out doll.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "闪烁着猩红火光的一排排蜡烛，正环绕着他和一具破旧娃娃。"
+      },
+      {
+        "id": 137,
+        "en": "It was a cloth doll with yellowed, faded fabric and crooked stitches, looking as if it could fall apart at any moment.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "那是一个布料泛黄褪色，缝线歪歪扭扭，仿佛随时会裂开的布娃娃。"
+      },
+      {
+        "id": 138,
+        "en": "The strange scene seemed to stimulate his brain, causing fragmented memories to tumble and leap through his mind.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "诡异的场景似乎刺激到了他的大脑，让一股股破碎的记忆不断在他的脑海中来回翻滚跳跃。"
+      },
+      {
+        "id": 139,
+        "en": "\"This isn't China anymore... I've been sent to another world?\"",
+        "speaker": "张羽",
+        "emotion": "anxious",
+        "cn": "“这不是中国了……给我干到异世界来了？”"
+      },
+      {
+        "id": 140,
+        "en": "He found it hard to accept that he had traveled to another world.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他有些难以接受穿越的事情。"
+      },
+      {
+        "id": 141,
+        "en": "But the real memories of cultivation technology in his head kept冲击ing his consciousness, merging him with the original body while constantly reminding him that he was now in another world.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但脑袋里那些关于仙道技术的真实记忆却不断冲击着他的意识，让他与原身逐渐融合的同时，更不断提醒着他眼前已是另一个世界。"
+      },
+      {
+        "id": 142,
+        "en": "This was Kunxu, a super-structure built like a pyramid on the earth, with thirty-six floors above ground and eighteen floors below.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这里便是昆墟，以类似金字塔形矗立在大地上的超级建筑，共有地上三十六层以及地下十八层。"
+      },
+      {
+        "id": 143,
+        "en": "Starting from the largest, continent-sized first floor, each floor was a new world.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "从面积最大，宛如一片大陆的第一层开始，每一层便都是一方新天地。"
+      },
+      {
+        "id": 144,
+        "en": "As for what the world outside of Kunxu was like, Zhang Yu had no answer in his head.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "至于昆墟之外的世界是什么样子，张羽的脑袋里并没有答案。"
+      },
+      {
+        "id": 145,
+        "en": "He only knew that within Kunxu, it was a world where the major cultivation sects were supreme.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他只知道昆墟之内，是一个以仙道各大宗门为尊的世界。"
+      },
+      {
+        "id": 146,
+        "en": "The major sects were high and mighty, and they had a near-monopoly on all industries such as food, energy, transportation, education, research, medicine, finance, and the internet. In front of the sect's law enforcement teams, the government and army were more like security guards.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "大宗门高高在上，也几乎垄断了粮食、能源、交通、教育、科研、医疗、金融、互联网等等各行各业，政府军队在宗门执法队前更像是看门的保安。"
+      },
+      {
+        "id": 147,
+        "en": "But ordinary people could not enjoy most of the benefits brought by cultivation technology and were instead busy making a living every day.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但普通人无福享受仙道技术带来的大部分福利，反而每日忙于生计之中。"
+      },
+      {
+        "id": 148,
+        "en": "And he was a high school student named Zhang Yu, living on the first floor of Kunxu, who had recently been obsessed with some strange ritual...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而他便是生活在昆墟第一层，一名考进嵩阳高中名叫张羽的高中生，最近正沉迷于某种古怪仪式……"
+      },
+      {
+        "id": 149,
+        "en": "\"I have now become the Zhang Yu of another world.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“现在的我，已经成了另一个世界的张羽。”"
+      },
+      {
+        "id": 150,
+        "en": "Just then, a sharp pain came from his palm, waking Zhang Yu from the shock of his memories.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "就在这时，一阵刺痛从掌心传来，将沉浸在记忆冲击中的张羽唤醒。"
+      },
+      {
+        "id": 151,
+        "en": "He looked down and saw a transparent symbol appear in his palm, which was slowly turning black at an extremely slow speed.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他低头望去，便看到一个透明符号出现在掌中，并在以一种极为缓慢的速度渐渐变黑。"
+      },
+      {
+        "id": 152,
+        "en": "\"What is this thing?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“这又是什么东西？”"
+      },
+      {
+        "id": 153,
+        "en": "As the night wind blew, the surrounding scarlet candlelight flickered.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "伴随着夜风吹过，四周围的猩红烛光一阵摇曳。"
+      },
+      {
+        "id": 154,
+        "en": "And the worn-out doll on the ground stared at him with empty eyes made of black buttons.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而地上那具破旧娃娃瞪着一双黑色纽扣组成的空洞眼眸，正直挺挺地看向他。"
+      },
+      {
+        "id": 155,
+        "en": "He wanted to remember what had happened, but the more he thought, the dizzier and more pained his head became.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他想要回忆到底是怎么回事，但越想脑袋就越疼越晕。"
+      },
+      {
+        "id": 156,
+        "en": "The atmosphere in the air became more and more gloomy and strange. Zhang Yu clutched his still-dizzy head, feeling the world spin around him.",
+        "speaker": "旁白",
+        "emotion": "anxious",
+        "cn": "空气中的气氛越发阴森诡异，张羽捂着还在眩晕的脑袋，只觉得周围一片天旋地转。"
+      },
+      {
+        "id": 157,
+        "en": "When he came to his senses, he found that he had dazedly left the rooftop and walked step by step back to his front door.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "当他回过神来时，便发现自己已经迷迷糊糊地离开了天台，一步步回到自己家门前。"
+      },
+      {
+        "id": 158,
+        "en": "He glanced at the rent collection notice, stepped through the door, and all that greeted his eyes was a bed and a table.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "扫了一眼催缴房租的单子，跨入房门，映入张羽眼帘的只有一张床和一张桌子。"
+      },
+      {
+        "id": 159,
+        "en": "\"Is this my home?\"",
+        "speaker": "张羽",
+        "emotion": "sad",
+        "cn": "“这就是我家吗？”"
+      },
+      {
+        "id": 160,
+        "en": "Feeling his sticky skin soaked with sweat and the incredibly stuffy environment, Zhang Yu wanted to find the air conditioner remote, but then he remembered that there was no air conditioner in this house at all.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "感受自己被汗水浸透的黏腻皮肤，还有周围那无比闷热的环境，张羽想要找空调遥控器，却想起来这房子里根本没空调。"
+      },
+      {
+        "id": 161,
+        "en": "He wanted to take a shower, but found that the water had been shut off.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他又想要冲一冲水，却发现水已经给停了。"
+      },
+      {
+        "id": 162,
+        "en": "Zhang Yu sat down on the bed, feeling helpless.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "张羽有些无奈地坐倒在床上。"
+      },
+      {
+        "id": 163,
+        "en": "\"What a dump.\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "“什么破地方。”"
+      },
+      {
+        "id": 164,
+        "en": "\"So what if there are real immortals? This life is worse than in a world without them.\"",
+        "speaker": "张羽",
+        "emotion": "desperate",
+        "cn": "“真有仙人又怎么样？这日子过得还不如没有仙人的世界。”"
+      },
+      {
+        "id": 165,
+        "en": "Zhang Yu's gaze swept across the wall and found that the wall behind the desk was covered with award certificates from his childhood.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽目光扫过墙面，发现桌子后面的墙壁上贴满了从小到大的奖状。"
+      },
+      {
+        "id": 166,
+        "en": "First grade, second grade, third grade... all the way to the third year of junior high, the original Zhang Yu was almost always number one in his grade.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一年级、二年级、三年级……一直到初三，原来的张羽几乎每年都是年级第一。"
+      },
+      {
+        "id": 167,
+        "en": "Looking at these awards, various memories of receiving them flooded his mind: \"The original Zhang Yu was a diligent and hardworking student who had excellent grades since he was a child.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "看着这些奖状，各种领奖的记忆也从张羽脑海中涌出：“原先的张羽是个勤学刻苦，从小就成绩优秀的学生。”"
+      },
+      {
+        "id": 168,
+        "en": "\"The Songyang High School I'm currently attending is also a key high school in the city.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“现在就读的嵩阳高中也是市里的重点高中。”"
+      },
+      {
+        "id": 169,
+        "en": "\"I'm a top student.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "“老子是学霸啊。”"
+      },
+      {
+        "id": 170,
+        "en": "Recalling the knowledge in his mind, Zhang Yu's eyes gradually brightened: \"If I get into a top university, I can reach Foundation Establishment. If I join a major sect, I can form a golden core. I can also climb higher in Kunxu, leave this slum, and enjoy more of the benefits of cultivation technology. Living a few hundred more years won't be a problem then.\"",
+        "speaker": "张羽",
+        "emotion": "happy",
+        "cn": "回忆着脑海中的知识，张羽目光渐渐亮了起来：“考上名牌大学就能筑基，加入大宗门就能结丹，还能在昆墟往上爬，离开这个贫民窟，享受更多仙道技术的福利，到时候多活个几百年也没问题。”"
+      },
+      {
+        "id": 171,
+        "en": "Thinking of this, Zhang Yu suddenly felt that coming to this world seemed to be a good thing after all.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "想到这里，张羽突然觉得来到这个世界似乎也是个不错的事情。"
+      },
+      {
+        "id": 172,
+        "en": "Just as he was thinking this, his phone suddenly rang.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "就在他这么想着的时候，手机铃声突然响了起来。"
+      },
+      {
+        "id": 173,
+        "en": "\"Hello?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“喂？”"
+      },
+      {
+        "id": 174,
+        "en": "\"Hello, Mr. Zhang Yu, your loan on our platform is already 3 days overdue...\"",
+        "speaker": "催债人",
+        "emotion": "angry",
+        "cn": "“张羽先生你好，您在我们平台的借款已经逾期3天了……”"
+      },
+      {
+        "id": 175,
+        "en": "After hanging up, Zhang Yu scrolled through his text messages and found a dense collection of payment reminder messages, all overdue notices from the original body's loans on various platforms.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "挂了电话，张羽翻动着手机中的短信箱，便发现了密密麻麻的催款短信，都是原身在各大平台借贷逾期后的催缴。"
+      },
+      {
+        "id": 176,
+        "en": "At the same time, related memories flooded his mind.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "与此同时，脑海中的相关记忆也涌了出来。"
+      },
+      {
+        "id": 177,
+        "en": "\"This guy started borrowing money for cram school before he even got into high school. After getting into Songyang High School, in order to keep up with everyone's grades, he had a bright idea and started borrowing more to pay off old loans to improve his grades, borrowing money from everywhere to take medicine and attend cram schools, forcibly stimulating his potential. In the end, not only did he borrow more and more money, but his potential was also gradually exhausted.\"",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "“这家伙进高中之前就开始借贷补课了，进嵩阳高中后为了跟上大家的成绩，于是他又灵机一动，开始为了提升成绩以贷养贷，四处借钱吃药补课，强行激发潜力，最终不但钱越借越多，潜力也被渐渐榨干。”"
+      },
+      {
+        "id": 178,
+        "en": "\"This guy is a fake cultivation genius, propped up by loans.\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "“这逼养的是一个靠着平台借贷伪装的修仙天才。”"
+      },
+      {
+        "id": 179,
+        "en": "\"Even his mom couldn't stand him and finally left him.\"",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "“甚至他妈都受不了他，最后一走了之了。”"
+      },
+      {
+        "id": 180,
+        "en": "Calculating the total overdue loans, cold sweat immediately broke out on Zhang Yu's forehead.",
+        "speaker": "旁白",
+        "emotion": "anxious",
+        "cn": "算了算一共逾期的借贷，张羽额头上立刻不断有冷汗冒了出来。"
+      },
+      {
+        "id": 181,
+        "en": "It was because he discovered that with the interest rolling over, Zhang Yu already owed various platforms a total of more than seven hundred thousand yuan.",
+        "speaker": "旁白",
+        "emotion": "desperate",
+        "cn": "只因为他发现利滚利下来，张羽已经欠了各大平台总共七十多万的钱。"
+      },
+      {
+        "id": 182,
+        "en": "And looking at his account, he only had a little over fifty yuan left.",
+        "speaker": "旁白",
+        "emotion": "desperate",
+        "cn": "而再看了看自己的账户，总共只剩下五十多块钱了。"
+      },
+      {
+        "id": 183,
+        "en": "\"I actually owe seven hundred thousand... Damn it!\"",
+        "speaker": "张羽",
+        "emotion": "desperate",
+        "cn": "“竟然欠了七十万……靠！”"
+      },
+      {
+        "id": 184,
+        "en": "Zhang Yu slammed his fist on the bed and said angrily, \"In this world... even for a top student graduating from high school, this is a huge debt.\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "张羽猛地一拳捶在床上，怒道：“这个世界里……就算对高中毕业的天之骄子来说，这也是一笔巨债啊。”"
+      },
+      {
+        "id": 185,
+        "en": "\"No wonder this guy was obsessed with some weird ritual... He's a hopeless loan addict.\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "“怪不得这家伙沉迷什么乱七八糟的仪式……这就是个人生无望的借贷狗。”"
+      },
+      {
+        "id": 186,
+        "en": "\"He had his fun, and now I'm the one who has to pay his debts?\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "“他自己爽够了，现在我来给他还债？”"
+      },
+      {
+        "id": 187,
+        "en": "At the same time, the lights in the room suddenly went out.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "与此同时，房间中的灯光骤然熄灭。"
+      },
+      {
+        "id": 188,
+        "en": "After flipping the switch several times and observing the situation of his neighbors, Zhang Yu confirmed one thing... his power had been cut off.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽在反复按了几次开关，又观察了一下其他邻居们的状况后，确定了一件事情……他被断电了。"
+      },
+      {
+        "id": 189,
+        "en": "\"This stupid place...\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "“这破地方……”"
+      },
+      {
+        "id": 190,
+        "en": "\"It would be great if I could just go back when I wake up tomorrow morning...\"",
+        "speaker": "张羽",
+        "emotion": "desperate",
+        "cn": "“要是明天一早醒来就回去了，那就好了……”"
+      },
+      {
+        "id": 191,
+        "en": "With all sorts of chaotic thoughts swirling in his mind, Zhang Yu eventually fell into a drowsy sleep on the bed.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "脑中翻涌着各种乱七八糟的想法，张羽最终还是在床上昏昏沉沉地睡了过去。"
+      },
+      {
+        "id": 192,
+        "en": "And on his palm, the once-transparent symbol was now one-tenth filled with black.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而他的掌心上，原本透明的符号已被黑色填充了十分之一。"
+      }
+    ]
+  }
+}

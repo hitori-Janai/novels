@@ -1335,6 +1335,1354 @@
         "emotion": "angry",
         "cn": "冷冷地看着西装保镖，“出去，否则你知道是什么下场！”"
       }
+    ],
+    "0003": [
+      {
+        "id": 193,
+        "en": "Chapter 3: I'm Going to Break",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第3章 要坏掉惹"
+      },
+      {
+        "id": 194,
+        "en": "Seeing the cold glint of the small knife, the man in the suit felt his scalp tingle with fear.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "见到那折射着寒芒的小刀，西装男顿时头皮发麻。"
+      },
+      {
+        "id": 195,
+        "en": "The beautiful moment from just now seemed like an illusion.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "刚刚略显美好的一幕好似幻觉。"
+      },
+      {
+        "id": 196,
+        "en": "Crazed and cornered—that was the true nature of the young, red-eyed girl before him, whose eyes seemed to glow with a demonic light.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "疯癫且走投无路，才是眼前这个泛着妖艳红芒的赤瞳萝莉的本质。"
+      },
+      {
+        "id": 197,
+        "en": "He swallowed hard, glanced at Su Tao who was trembling with her eyes shut, and took a small step forward as he spoke.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他咽了一口唾沫，暗暗瞥了眼紧闭双眼并正在颤抖的苏桃，轻轻迈出一步，同时说道。"
+      },
+      {
+        "id": 198,
+        "en": "\"D-don't do anything rash, I...\"",
+        "speaker": "西装男",
+        "emotion": "sad",
+        "cn": "“你...你别冲动，我......”"
+      },
+      {
+        "id": 199,
+        "en": "Before he could finish, Chi Xiaocheng cut him off. \"I'll count to three. If you're not out by then, you can come back for her body!\"",
+        "speaker": "池小橙",
+        "emotion": "angry",
+        "cn": "话还没说完，就被池小橙打断道，“我数到3，你不出去就等着替她收尸吧！”"
+      },
+      {
+        "id": 200,
+        "en": "As she spoke, she turned her gaze back to Su Tao, as if mesmerized, and whispered, \"It's okay, Tao Tao. I've wanted to end this for a long time, but it would be so lonely without you~\"",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "说着，又自顾自沉醉地看向了苏桃，低声地说着，“没事的哦桃桃，现在这样我早就想结束了，但是路上没有你的陪伴会很寂寞呢~”"
+      },
+      {
+        "id": 201,
+        "en": "I'm not trying to take you down with me.",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "我不是要拉你垫背。"
+      },
+      {
+        "id": 202,
+        "en": "It's because I like you.",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "是我喜欢你。"
+      },
+      {
+        "id": 203,
+        "en": "That's why we have to be together, no matter what!",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "所以不管在哪，我们都要在一起！"
+      },
+      {
+        "id": 204,
+        "en": "Without even giving Su Tao a chance to speak, Chi Xiaocheng glared at the man in the suit again. \"Three!\"",
+        "speaker": "池小橙",
+        "emotion": "angry",
+        "cn": "甚至不给苏桃开口的机会，池小橙又瞪向西装男，“3！”"
+      },
+      {
+        "id": 205,
+        "en": "\"?\"",
+        "speaker": "西装男",
+        "emotion": "neutral",
+        "cn": "“？”"
+      },
+      {
+        "id": 206,
+        "en": "The man in the suit was stunned.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "西装男顿时大惊失色。"
+      },
+      {
+        "id": 207,
+        "en": "What happened to one and two?",
+        "speaker": "西装男",
+        "emotion": "neutral",
+        "cn": "1和2哪去了！"
+      },
+      {
+        "id": 208,
+        "en": "His scalp was tingling. He had no choice but to quickly exit the room.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他头皮发麻，没办法只得迅速退出门外。"
+      },
+      {
+        "id": 209,
+        "en": "He even thoughtfully closed the basement door for Chi Xiaocheng and took out his phone to quickly call his young master, Ye Liang.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "同时还贴心地为池小橙关上了地下室的门，拿出手机迅速给自家少爷叶良打电话。"
+      },
+      {
+        "id": 210,
+        "en": "The moment she saw him leave, Chi Xiaocheng breathed a secret sigh of relief.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而见到他出去的那一刻，池小橙也是在心中暗暗地松了口气。"
+      },
+      {
+        "id": 211,
+        "en": "At the same time, the System's voice echoed in her mind.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "同时，系统声音在脑海响起。"
+      },
+      {
+        "id": 212,
+        "en": "[Ding! Congratulations, Host. You have reached 100 Emotion Points. Would you like to redeem the starter pack?]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【叮！恭喜宿主达到100点情绪值，是否兑换新手礼包？】"
+      },
+      {
+        "id": 213,
+        "en": "\"Redeem!\"",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "“兑换！”"
+      },
+      {
+        "id": 214,
+        "en": "After shouting this in her mind, a virtual panel that only she could see appeared before her eyes.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "在心中喊了一声，池小橙眼前跳出只有她能看到的虚拟面板。"
+      },
+      {
+        "id": 215,
+        "en": "[Starter pack redeemed successfully.]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【新手礼包兑换成功】"
+      },
+      {
+        "id": 216,
+        "en": "[Obtained random skills: Acting (Intermediate), Pain Reduction (Intermediate), Spiked Liquid (Beginner).]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【获得随机技能演技（中级）、痛感减弱（中级）、加料液体（初级）】"
+      },
+      {
+        "id": 217,
+        "en": "Chi Xiaocheng could understand the first two skills.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "前两个技能池小橙还能理解。"
+      },
+      {
+        "id": 218,
+        "en": "But the third skill...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第三个技能就"
+      },
+      {
+        "id": 219,
+        "en": "\"System, what does 'Spiked Liquid' mean?\"",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "“系统，加料液体是什么意思？”"
+      },
+      {
+        "id": 220,
+        "en": "[The Host can control the taste, nutritional value, and harmfulness of any liquid the Host touches, directly or indirectly.]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【只要是宿主直接或间接触碰得到的液体，都可以由宿主自主控制其中的味道、营养、是否有害】"
+      },
+      {
+        "id": 221,
+        "en": "Chi Xiaocheng: \"???\"",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "池小橙：“？？？”"
+      },
+      {
+        "id": 222,
+        "en": "She thought of some scenarios that only appear in certain comic books.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "她想到了一些本子上才会出现的展开。"
+      },
+      {
+        "id": 223,
+        "en": "As everyone knows, a girl has many, many liquids on her body that can be 'spiked'.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "众所周知，女孩子身上可以加料的液体有很多很多。"
+      },
+      {
+        "id": 224,
+        "en": "But the situation was urgent now, so she had no time for wild thoughts.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "不过现在情况危急，顾不得她瞎想。"
+      },
+      {
+        "id": 225,
+        "en": "Originally, Chi Xiaocheng had planned to escape through another secret door before the male lead arrived.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "原本，池小橙打算趁着男主还没来，从另一个暗门赶紧跑。"
+      },
+      {
+        "id": 226,
+        "en": "But now...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "现在的话"
+      },
+      {
+        "id": 227,
+        "en": "Her gaze fell on Su Tao's face.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "她视线停在了苏桃脸上。"
+      },
+      {
+        "id": 228,
+        "en": "The idealized female lead seemed to have had her brain shut down from everything that had happened.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这位白月光女主因为发生的事情太多了，大脑似乎已经宕机。"
+      },
+      {
+        "id": 229,
+        "en": "She just stared blankly with her mouth slightly open.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "只是呆呆地微微张嘴。"
+      },
+      {
+        "id": 230,
+        "en": "Her eyes were empty.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "瞳孔无神。"
+      },
+      {
+        "id": 231,
+        "en": "She looked as if she had been broken.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "像是被玩坏了的样子。"
+      },
+      {
+        "id": 232,
+        "en": "Actually, Chi Xiaocheng knew she was just overwhelmed with information and had spaced out.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "其实池小橙知道，她只是处理不过来这么多信息量，失神了而已。"
+      },
+      {
+        "id": 233,
+        "en": "Fortune favors the bold!",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "所谓富贵险中求！"
+      },
+      {
+        "id": 234,
+        "en": "Chi Xiaocheng had an idea for something even more memorable.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙有了更加让人记忆深刻的想法。"
+      },
+      {
+        "id": 235,
+        "en": "She smiled.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "勾唇一笑。"
+      },
+      {
+        "id": 236,
+        "en": "Tao Tao might not be able to accept it, but as the female lead, she must have a very strong will, right?",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "那样子可能桃桃会接受不了，但作为女主一定是有非常坚定的意志吧？"
+      },
+      {
+        "id": 237,
+        "en": "So, should we give it a try?",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "那么，要试试吗？"
+      },
+      {
+        "id": 238,
+        "en": "Su Tao couldn't speak. The only response was the sound of the bed frame shaking continuously.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "苏桃没能说话，回应她的，是床板不断摇晃的声音。"
+      },
+      {
+        "id": 239,
+        "en": "Outside the door, the man in the suit finally got through to Ye Liang. He said anxiously, \"Young Master, where are you? Something big has happened here, what should I do!\"",
+        "speaker": "西装男",
+        "emotion": "sad",
+        "cn": "而在门外，西装男终于拨通了叶良的电话，着急地说道，“少爷你到哪里了，我这边发生大事了，要怎么办啊！”"
+      },
+      {
+        "id": 240,
+        "en": "Ye Liang's deep voice carried a trace of anxiety. \"I'll be there in two minutes. What's the situation on your end?\"",
+        "speaker": "叶良",
+        "emotion": "neutral",
+        "cn": "叶良深沉的声音中带着一丝焦急，“再有两分钟我就能到了，你那边什么情况？”"
+      },
+      {
+        "id": 241,
+        "en": "\"I found the basement, but that Chi Xiaocheng is using Miss Su Tao to threaten me. I can't do anything!\"",
+        "speaker": "西装男",
+        "emotion": "sad",
+        "cn": "“我找到地下室了，但那个池小橙拿苏桃小姐威胁我，我动不了手啊！”"
+      },
+      {
+        "id": 242,
+        "en": "\"Damn bitch!\" Ye Liang cursed. \"I think that woman has gone crazy. Keep her calm for now, I'm on my way!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "“该死的贱人！”叶良骂了一句，“我看那女人八成是疯了，你先稳住她的情绪，我立刻就来！”"
+      },
+      {
+        "id": 243,
+        "en": "Just then, the sound of Su Tao's struggling breaths and the creaking of the wooden bed came from the basement. Ye Liang, on the other end of the phone, was startled. \"What's that sound on your end?\"",
+        "speaker": "叶良",
+        "emotion": "neutral",
+        "cn": "也是在这时，地下室内苏桃挣扎的喘息声和木板床咯吱咯吱响的声音传出，电话对面的叶良顿时愣了一下，“你那边是什么声音？”"
+      },
+      {
+        "id": 244,
+        "en": "\"This...\"",
+        "speaker": "西装男",
+        "emotion": "neutral",
+        "cn": "“这......”"
+      },
+      {
+        "id": 245,
+        "en": "The man in the suit looked back at the wooden door, speechless for a moment.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "西装男回头看着木门，一时语塞。"
+      },
+      {
+        "id": 246,
+        "en": "He couldn't help but recall the scene he had just witnessed.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他不由回想到了刚刚见到的一幕。"
+      },
+      {
+        "id": 247,
+        "en": "A moment ago, it was just a kiss.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "刚刚还只是亲一下。"
+      },
+      {
+        "id": 248,
+        "en": "Now the bed is creaking.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "现在床板都响了。"
+      },
+      {
+        "id": 249,
+        "en": "He didn't dare to imagine what they were doing inside!",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "在里面干什么他都不敢想！"
+      },
+      {
+        "id": 250,
+        "en": "You're both girls, how can you play so rough?",
+        "speaker": "西装男",
+        "emotion": "neutral",
+        "cn": "你们两个都是女孩子啊，怎么玩得这么大的？"
+      },
+      {
+        "id": 251,
+        "en": "He looked at his phone, still on the call, and fell into deep thought.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他看着仍在通话的手机，陷入了沉思。"
+      },
+      {
+        "id": 252,
+        "en": "Ye Liang urged, \"Speak up! What's going on over there!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "叶良催促道，“说啊，你那边什么情况！”"
+      },
+      {
+        "id": 253,
+        "en": "The man in the suit took a deep breath. \"Young... Young Master, what I'm about to say is very shocking. Please don't get angry.\"",
+        "speaker": "西装男",
+        "emotion": "sad",
+        "cn": "西装男深呼吸了一口气，“少...少爷，我接下来要说的事很恐怖，您千万别生气。”"
+      },
+      {
+        "id": 254,
+        "en": "\"Stop wasting time and just say it! What the hell is going on!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "“废什么话，快说！你那边到底是什么情况！”"
+      },
+      {
+        "id": 255,
+        "en": "The man in the suit said, \"Young Master, I suspect... you've been cheated on.\"",
+        "speaker": "西装男",
+        "emotion": "sad",
+        "cn": "西装男：“少爷，我猜测，您可能被绿了。”"
+      },
+      {
+        "id": 256,
+        "en": "Ye Liang: \"Who would be so bold!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "叶良：“谁那么大胆子！”"
+      },
+      {
+        "id": 257,
+        "en": "\"Chi... Chi Xiaocheng?\"",
+        "speaker": "西装男",
+        "emotion": "sad",
+        "cn": "“池...池小橙？”"
+      },
+      {
+        "id": 258,
+        "en": "\"???\"",
+        "speaker": "叶良",
+        "emotion": "neutral",
+        "cn": "“？？？”"
+      },
+      {
+        "id": 259,
+        "en": "A full three minutes later, Ye Liang finally arrived.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "足有三分钟，叶良终于赶了过来。"
+      },
+      {
+        "id": 260,
+        "en": "With his side-swept bangs, black jacket, and imposing 1.8-meter height, he arrived at the basement door with several bodyguards.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "斜刘海，黑夹克，一米八的身高很有气势，他带着好几个保镖来到了地下室门口。"
+      },
+      {
+        "id": 261,
+        "en": "Seeing the timid man in the suit at the door, he couldn't help but scold him with a cold face, \"Useless!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "瞥见在门口唯唯诺诺的西装男，不由冷着脸臭骂了一句，“废物！”"
+      },
+      {
+        "id": 262,
+        "en": "Then, he kicked the door open.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而后，一脚将门踢开。"
+      },
+      {
+        "id": 263,
+        "en": "\"Chi Xiaocheng, I'm warning you—\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "“池小橙，我警告你——”"
+      },
+      {
+        "id": 264,
+        "en": "Before he could finish, Chi Xiaocheng was nowhere to be seen in the room.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "话音未落，房间哪里还有池小橙的身影。"
+      },
+      {
+        "id": 265,
+        "en": "Su Tao was still tied to the bed, her mouth slightly open and her eyes empty.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "苏桃依旧被绑在床上，微微张嘴，双眼无神。"
+      },
+      {
+        "id": 266,
+        "en": "Her beautiful hair was scattered over her shoulders, and her face was pale.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一头秀发披散两肩，脸色惨白。"
+      },
+      {
+        "id": 267,
+        "en": "On one side of the basement, a secret door was half-open.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "地下室的一侧，一扇暗门半遮半掩。"
+      },
+      {
+        "id": 268,
+        "en": "Ye Liang quickly came to his senses and rushed to Su Tao's side. \"Su Tao, are you okay?!\"",
+        "speaker": "叶良",
+        "emotion": "sad",
+        "cn": "叶良赶忙回神，迅速走到苏桃身边，“苏桃，你没事吧？！”"
+      },
+      {
+        "id": 269,
+        "en": "Hearing the anxious male voice, Su Tao paused for a moment and slowly came back to her senses.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "听到这紧张的男声，苏桃愣了一下，缓缓回神。"
+      },
+      {
+        "id": 270,
+        "en": "Her smile was like a withered rose. \"Ye Liang, you're here...\"",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "笑容宛若凋零的玫瑰，“叶良，你来啦...”"
+      },
+      {
+        "id": 271,
+        "en": "Hearing her hoarse voice, Ye Liang's heart ached even more.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "听到这沙哑的声音，叶良更是心中一疼。"
+      },
+      {
+        "id": 272,
+        "en": "He clenched his fists. \"Chi Xiaocheng, I'll make her pay!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "攥紧拳头，“池小橙，我一定要让她付出代价！”"
+      },
+      {
+        "id": 273,
+        "en": "Hearing that name, Su Tao's heart tightened again.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "苏姚听到这个名字，顿时又是心中一紧。"
+      },
+      {
+        "id": 274,
+        "en": "That sickly sweet voice seemed to still be lingering in her ears.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "耳边仿佛还萦绕着那病态软的声线。"
+      },
+      {
+        "id": 275,
+        "en": "That voice kept telling her—I like you.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "那声音不断地对她说——我喜欢你。"
+      },
+      {
+        "id": 276,
+        "en": "She licked the orange juice from her lips and looked at Ye Liang. \"Let's... let's not worry about Xiaocheng for now.\"",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "她抿了抿唇边的橙汁，看向叶良，“先...先别管小橙了吧。”"
+      },
+      {
+        "id": 277,
+        "en": "Ye Liang was still furious. \"Su Tao, you're just too kind! She tormented you like this, and you want me to let it go!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "叶良依旧怒火滔天，“苏桃，你就是太善良了，你都被她折磨成这样了，我不管池小橙还管什么！”"
+      },
+      {
+        "id": 278,
+        "en": "\"Um...\" the man in the suit beside them weakly raised his hand. \"Young Master, shouldn't we unlock Miss Su Tao's shackles first?\"",
+        "speaker": "西装男",
+        "emotion": "neutral",
+        "cn": "“额......”一旁的西装男弱弱举手，“少爷，要不先把苏桃小姐身上的镣铐打开？”"
+      },
+      {
+        "id": 279,
+        "en": "Ye Liang's face immediately turned awkward.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "叶良顿时脸色一尬。"
+      },
+      {
+        "id": 280,
+        "en": "\"Sorry, I was so emotional I forgot. Su Tao, I'll untie you right now.\"",
+        "speaker": "叶良",
+        "emotion": "neutral",
+        "cn": "“抱歉，情绪太激动我忘了，苏桃我这就帮你解开。”"
+      },
+      {
+        "id": 281,
+        "en": "After some searching, they quickly found the key that Chi Xiaocheng had intentionally left on the table.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一番寻找，很快就找到了池小橙刻意留在桌面上的钥匙。"
+      },
+      {
+        "id": 282,
+        "en": "\"Su Tao, Chi Xiaocheng didn't... do anything to you, did she?\"",
+        "speaker": "叶良",
+        "emotion": "neutral",
+        "cn": "“苏桃，池小橙她没对你怎么样吧？”"
+      },
+      {
+        "id": 283,
+        "en": "Hearing this, Su Tao subconsciously touched her fingertips to her lips.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "听到这话，苏桃下意识地将指尖搭在唇边。"
+      },
+      {
+        "id": 284,
+        "en": "My first... is gone.",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "初......没了。"
+      },
+      {
+        "id": 285,
+        "en": "She even used her tongue...",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "她还伸了舌……"
+      },
+      {
+        "id": 286,
+        "en": "She and the man in the suit looked at each other, and both fell silent.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "她和那个西装男对视了一眼，二人都沉默了。"
+      }
+    ],
+    "0004": [
+      {
+        "id": 288,
+        "en": "Chapter 4: Her Taste",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第4章 她的味道"
+      },
+      {
+        "id": 289,
+        "en": "Ye Liang noticed that something was wrong with Su Tao's expression.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "叶良看出了苏桃脸色的不对劲。"
+      },
+      {
+        "id": 290,
+        "en": "His heart tightened.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "心中一紧。"
+      },
+      {
+        "id": 291,
+        "en": "He looked at the man in the suit. \"What just happened? Tell me!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "又看向西装男，“刚刚发生了什么，你说！”"
+      },
+      {
+        "id": 292,
+        "en": "The man in the suit shrank back and glanced at Su Tao, who was silent with her lips pressed together.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "西装男缩了缩脖子，又看了眼抿嘴不语的苏桃。"
+      },
+      {
+        "id": 293,
+        "en": "Finally, he gritted his teeth and said, \"Young Master, when I came in, I saw Miss Su Tao tied to the bed, and then...\"",
+        "speaker": "西装男",
+        "emotion": "sad",
+        "cn": "还是一咬牙说道，“少爷，我刚刚进来的时候是看到，苏桃小姐被绑在床上，然后......”"
+      },
+      {
+        "id": 294,
+        "en": "His voice trailed off. \"Then, Chi Xiaocheng was on top of Miss Su Tao, and they were ki... kissing...\"",
+        "speaker": "西装男",
+        "emotion": "sad",
+        "cn": "他声音又弱了下来，“然后池小橙骑在苏桃小姐身上，她们两个在亲...亲......”"
+      },
+      {
+        "id": 295,
+        "en": "Hearing this, Ye Liang's eyes widened in shock.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "叶良闻言，陡然瞪大眼睛。"
+      },
+      {
+        "id": 296,
+        "en": "The other bodyguards also looked completely shocked.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "其余几个保镖也是一脸震惊。"
+      },
+      {
+        "id": 297,
+        "en": "Everyone knew how deeply their young master cared for Miss Su Tao.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "谁不知道他们少爷对苏桃小姐一片深情。"
+      },
+      {
+        "id": 298,
+        "en": "How could he say something that would cause trouble like this?",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这种不利于团结的话能说的？"
+      },
+      {
+        "id": 299,
+        "en": "\"Su Tao, is that true?!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "“苏桃，这是真的吗！”"
+      },
+      {
+        "id": 300,
+        "en": "Su Tao glanced away and shook her head gently. \"No, she just tied me to the bed and left me here. She warned me... warned me not to get close to you again.\"",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "苏桃眼睛瞥向一边，轻轻摇了摇头，“没有，她只是把我绑在床上，然后晾着我，警告我...警告我不要再接近你了。”"
+      },
+      {
+        "id": 301,
+        "en": "\"Whew, that's a relief.\" Ye Liang turned to the man in the suit. \"How dare you damage Su Tao's reputation? What are you still looking at? Go chase Chi Xiaocheng through the secret door now!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "“呼，那就好。”叶良又看向了西装男，“你个家伙敢损坏苏桃清白，还在这里看什么看，还不顺着暗门去追池小橙！”"
+      },
+      {
+        "id": 302,
+        "en": "Hearing this, Su Tao reached out, as if to stop the man in the suit.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "苏桃闻言，伸手又想叫停西装男。"
+      },
+      {
+        "id": 303,
+        "en": "But the words wouldn't come out; she didn't know how to start.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "可话到嘴边，又不知如何开口。"
+      },
+      {
+        "id": 304,
+        "en": "She didn't even know why she wanted to defend Chi Xiaocheng.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "连她自己都不知道，为什么会想帮池小橙辩解。"
+      },
+      {
+        "id": 305,
+        "en": "What Chi Xiaocheng had done was clearly terrible.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "她做的事情，明明很过分。"
+      },
+      {
+        "id": 306,
+        "en": "Su Tao had always wanted to be friends with Chi Xiaocheng again, like they used to be.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "苏桃一直想的，是和池小橙恢复曾经朋友的关系。"
+      },
+      {
+        "id": 307,
+        "en": "But after this, could they really still be friends?",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "可现在这样了，真的还能当朋友吗？"
+      },
+      {
+        "id": 308,
+        "en": "Memories of their past together flooded her mind, and then she imagined Chi Xiaocheng suddenly becoming a yandere.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "昔日相处的点点滴滴又涌入脑海，下一秒又幻视到了池小橙刚刚陡然变成病娇的形态。"
+      },
+      {
+        "id": 309,
+        "en": "After more than ten years, how did I never know that Xiaocheng liked me?",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "十几年了，为什么我一点都不知道小橙喜欢我？"
+      },
+      {
+        "id": 310,
+        "en": "I always just thought of her as a younger sister...",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "明明我只是把她当妹妹……"
+      },
+      {
+        "id": 311,
+        "en": "She composed herself and said to Ye Liang, \"Ye Liang, maybe we should... just leave Xiaocheng alone?\"",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "她定了定神，对叶良道，“叶良，要不就...就别管小橙了吧？”"
+      },
+      {
+        "id": 312,
+        "en": "\"You're still defending her?\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "“你还在为她说话？”"
+      },
+      {
+        "id": 313,
+        "en": "\"I... She didn't really do anything to me, it's just... it's just...\"",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "“我...她也没对我怎么样，只是...只是......”"
+      },
+      {
+        "id": 314,
+        "en": "Su Tao was stumbling over her words, not knowing how to explain what had just happened.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "苏桃语无伦次，不知该如何解释刚刚发生的事情。"
+      },
+      {
+        "id": 315,
+        "en": "Ye Liang snorted. \"I know, she just has a crush on me. But she should look at herself. She's short and unattractive, with more foundation on her face than dirt on the bottom of my shoe. She simply doesn't know what's good for her!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "叶良哼了一声，“我知道，她不就是喜欢我吗，也不看看自己什么鸟样，长得又矮又挫，脸上的粉底比我鞋底的污渍还要厚，简直是不识好歹！”"
+      },
+      {
+        "id": 316,
+        "en": "\"There's no way I would ever be interested in her!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "“我要是能看上她，除非天塌下来！”"
+      },
+      {
+        "id": 317,
+        "en": "His words were filled with contempt.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "言语尽是蔑视。"
+      },
+      {
+        "id": 318,
+        "en": "Ye Liang was arrogant and confident.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "叶良高傲且自信。"
+      },
+      {
+        "id": 319,
+        "en": "Su Tao opened her mouth to speak again, but in the end, she didn't defend Chi Xiaocheng.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "苏桃又张了张嘴，最终还是没有为池小橙辩解。"
+      },
+      {
+        "id": 320,
+        "en": "She just said weakly, \"Xiaocheng... she knows she was wrong. She told me just now that she won't bother you anymore. Can we just... give her one more chance, okay?\"",
+        "speaker": "苏桃",
+        "emotion": "sad",
+        "cn": "只是弱弱地说道，“小橙她其实...知道错了，刚刚和我说以后不会缠着你了，我们就...再给她一次机会，好吗？”"
+      },
+      {
+        "id": 321,
+        "en": "Seeing the girl he liked with tears in her eyes, Ye Liang's heart softened.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "叶良看着喜欢的人儿泪眼婆娑，心不由软了下来。"
+      },
+      {
+        "id": 322,
+        "en": "\"Alright, whatever you say.\"",
+        "speaker": "叶良",
+        "emotion": "happy",
+        "cn": "“好，都依你。”"
+      },
+      {
+        "id": 323,
+        "en": "His tone became gentle, and he reached out to pull Su Tao into his arms.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他语气也很温柔，伸手就想将苏桃揽到怀中。"
+      },
+      {
+        "id": 324,
+        "en": "But to his surprise, Su Tao quickly took a small step back.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "只是让他没想到的是，苏桃竟然迅速后退了半步。"
+      },
+      {
+        "id": 325,
+        "en": "She dodged his embrace.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "躲开了他的怀抱。"
+      },
+      {
+        "id": 326,
+        "en": "He looked a little stunned.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他眼神有些错愕。"
+      },
+      {
+        "id": 327,
+        "en": "Seeing the complex expression on Su Tao's face, he thought he understood.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "见苏桃脸上的复杂之色，转而又理解了。"
+      },
+      {
+        "id": 328,
+        "en": "That's right, Su Tao hadn't accepted his advances yet.",
+        "speaker": "叶良",
+        "emotion": "neutral",
+        "cn": "也是，苏桃都没答应自己的追求呢。"
+      },
+      {
+        "id": 329,
+        "en": "She must want to be alone right now, right?",
+        "speaker": "叶良",
+        "emotion": "neutral",
+        "cn": "她现在，一定是想静静吧？"
+      },
+      {
+        "id": 330,
+        "en": "Or maybe she's just shy because I came to her rescue in time?",
+        "speaker": "叶良",
+        "emotion": "happy",
+        "cn": "或者说是因为我英雄救美来得及时，所以害羞了？"
+      },
+      {
+        "id": 331,
+        "en": "Yes, that must be it!",
+        "speaker": "叶良",
+        "emotion": "happy",
+        "cn": "嗯，一定是这样的！"
+      },
+      {
+        "id": 332,
+        "en": "Ye Liang pushed his hair back and said to Su Tao, \"Let's go. We'll go to my private hospital, and I'll have a doctor check on you.\"",
+        "speaker": "叶良",
+        "emotion": "neutral",
+        "cn": "叶良伸手撩了一下碎发，对苏桃道，“我们先出去吧，去我的私人医院，我让医生帮你看看身体。”"
+      },
+      {
+        "id": 333,
+        "en": "\"Okay.\"",
+        "speaker": "苏桃",
+        "emotion": "neutral",
+        "cn": "“嗯。”"
+      },
+      {
+        "id": 334,
+        "en": "Su Tao nodded blankly.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "苏桃呆呆地点头。"
+      },
+      {
+        "id": 335,
+        "en": "She kept a step away from Ye Liang.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "始终离叶良有一步的距离。"
+      },
+      {
+        "id": 336,
+        "en": "He became even more sure that Su Tao was just being shy.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他更加确信，苏桃是害羞了。"
+      },
+      {
+        "id": 337,
+        "en": "He didn't know that Su Tao was touching a spot inside her mouth where she had been bitten, her mind filled with that small figure.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "殊不知，苏桃小舌正抵弄着腔内被咬破了的地方，满脑子都是那小小的身影。"
+      },
+      {
+        "id": 338,
+        "en": "She felt confused, but also relieved.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "既迷茫，又庆幸。"
+      },
+      {
+        "id": 339,
+        "en": "Meanwhile, after escaping the basement through the secret door, Chi Xiaocheng quickly headed home from memory.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而池小橙，在通过暗门逃离了地下室后，凭着记忆辨别了一下方向，就迅速往家里跑去。"
+      },
+      {
+        "id": 340,
+        "en": "Her hair was a bit messy, her hands were in her pockets, and her head was lowered to avoid being noticed.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "秀发有些散乱，双手放在口袋里，脑袋低得厉害，以免让路人发现不对。"
+      },
+      {
+        "id": 341,
+        "en": "But her small face was full of anxiety.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "只是那张小脸，满是焦急。"
+      },
+      {
+        "id": 342,
+        "en": "\"Damn, I overestimated this body. I only ran for a little while and I already feel dizzy.\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "“该死，还是高估了这具身体，就跑了那么一会儿，竟然感觉头昏脑涨的。”"
+      },
+      {
+        "id": 343,
+        "en": "More importantly, the man in the suit was still chasing her.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "更重要的是，身后那个西装男还紧追不舍。"
+      },
+      {
+        "id": 344,
+        "en": "[Host, keep going, you're almost home!]",
+        "speaker": "系统",
+        "emotion": "happy",
+        "cn": "【宿主，加油啊，就快要到家了！】"
+      },
+      {
+        "id": 345,
+        "en": "\"Shut up, you useless System, or at least do something helpful!\"",
+        "speaker": "池小橙",
+        "emotion": "angry",
+        "cn": "“闭嘴啊你个废物系统，或者给我来点作用都行！”"
+      },
+      {
+        "id": 346,
+        "en": "[20 Emotion Points have been used to temporarily boost the Host's physique. Duration: 3 minutes.]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【已消耗宿主20点情绪值，临时提升宿主体质，时限：3分钟】"
+      },
+      {
+        "id": 347,
+        "en": "A warm feeling spread from her stomach to her limbs. Chi Xiaocheng, who was about to collapse, stumbled but steadied herself.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一阵暖流自小腹涌向四肢，差点力竭的池小橙一个踉跄，稳住了身体。"
+      },
+      {
+        "id": 348,
+        "en": "But even so, she still felt tired and weak.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "可即便如此，依旧又累又虚。"
+      },
+      {
+        "id": 349,
+        "en": "She looked back at the man in the suit.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "回头看了眼西装男。"
+      },
+      {
+        "id": 350,
+        "en": "He was now less than twenty meters away from her.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他此时已经追到了离自己二十米不到的地方。"
+      },
+      {
+        "id": 351,
+        "en": "\"This is not good, he's going to catch me. I need to think of something.\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "“不行，这样会被追上的，得想想办法才行。”"
+      },
+      {
+        "id": 352,
+        "en": "Chi Xiaocheng looked around.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙左右看了几眼。"
+      },
+      {
+        "id": 353,
+        "en": "Suddenly, her eyes lit up.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "忽然眼前一亮。"
+      },
+      {
+        "id": 354,
+        "en": "A tall and strong boy was walking towards her, with the unique look of a naive college student.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "迎面走来的是一个高高壮壮的男生，眼神中还透露着大学生特有的愚蠢。"
+      },
+      {
+        "id": 355,
+        "en": "In just a few steps, Chi Xiaocheng's acting skills kicked in.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙三步做两步，顿时演技爆发。"
+      },
+      {
+        "id": 356,
+        "en": "She stumbled and fell in front of the boy.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一个踉跄，扑倒在了男生面前。"
+      },
+      {
+        "id": 357,
+        "en": "Chen Kun quickly caught Chi Xiaocheng. It was the first time in his 23 years of being single that he was so close to a girl, and his heart was racing.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "陈坤眼疾手快，连忙扶住了池小橙，单身23年的他第一次离女孩子这么近，有些心慌。"
+      },
+      {
+        "id": 358,
+        "en": "He instinctively looked away. \"Are you okay?\"",
+        "speaker": "陈坤",
+        "emotion": "sad",
+        "cn": "眼神下意识地就看向了别处，“你没事吧？”"
+      },
+      {
+        "id": 359,
+        "en": "Chi Xiaocheng let out a sob, forcing out tears, and said in a panic, \"Please, brother, help me. There's a man in a suit chasing me!\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "池小橙一声呜咽，挤出了泪水，慌乱道，“哥哥，哥哥帮我一下，后面有个穿西装的男人一直追着我！”"
+      },
+      {
+        "id": 360,
+        "en": "\"What?!\"",
+        "speaker": "陈坤",
+        "emotion": "angry",
+        "cn": "“什么？！”"
+      },
+      {
+        "id": 361,
+        "en": "Chen Kun's eyes widened.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "陈坤瞪大眼睛。"
+      },
+      {
+        "id": 362,
+        "en": "To make the man in the suit seem even worse, Chi Xiaocheng added, \"He suddenly grabbed me and tried to kidnap me. I just managed to escape, and now he's chasing me, boohoo...\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "怕西装男不够坏，池小橙还给他上了个标记，“刚刚他忽然掳走我，想绑架我，我好不容易跑了出来，他又一直追着我，呜呜呜呜......”"
+      },
+      {
+        "id": 363,
+        "en": "Tears streamed down her face.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "泪如雨下。"
+      },
+      {
+        "id": 364,
+        "en": "Chi Xiaocheng was using the new skill from the System perfectly.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "系统给的新技能被池小橙使用得炉火纯青。"
+      },
+      {
+        "id": 365,
+        "en": "Now, Chen Kun couldn't just stand by.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这下陈坤彻底坐不住了。"
+      },
+      {
+        "id": 366,
+        "en": "Anger rose in his heart.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "怒从心头起。"
+      },
+      {
+        "id": 367,
+        "en": "\"How can something like this happen in broad daylight!\"",
+        "speaker": "陈坤",
+        "emotion": "angry",
+        "cn": "“光天化日朗朗乾坤，居然还有这种事！”"
+      },
+      {
+        "id": 368,
+        "en": "Chen Kun quickly moved Chi Xiaocheng behind him and looked towards the man in the suit. \"Is that the guy over there?\"",
+        "speaker": "陈坤",
+        "emotion": "angry",
+        "cn": "陈坤连忙将池小橙护在身后，看向了西装男，“就是那边那个人吗？”"
+      },
+      {
+        "id": 369,
+        "en": "\"Yes, yes!\" Chi Xiaocheng nodded hard, then asked innocently, \"But big brother, he looks pretty strong. If you can't handle him, maybe we should run?\"",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "“嗯嗯！”池小橙用力点了点头，又茶茶地问道，“那个大哥哥，我看他挺壮的，你要是不行的话，咱们还是跑吧？”"
+      },
+      {
+        "id": 370,
+        "en": "Could a man admit he couldn't handle something?",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "男人能说不行？"
+      },
+      {
+        "id": 371,
+        "en": "Chen Kun rolled up his sleeves and walked straight towards the man.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "陈坤一撸袖子，就是直直走了上去。"
+      },
+      {
+        "id": 372,
+        "en": "Seeing this, Chi Xiaocheng smirked.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "池小橙见状，唇角勾起一抹坏笑。"
+      },
+      {
+        "id": 373,
+        "en": "She took the chance to run away, shouting, \"Help, I'm being kidnapped!\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "趁机迅速向后跑去，同时大喊道，“救命啊，绑架啦！”"
+      },
+      {
+        "id": 374,
+        "en": "Chen Kun, hearing her, also called out to the passersby, pointing at the man in the suit, \"It's him! That guy is a kidnapper!\"",
+        "speaker": "陈坤",
+        "emotion": "angry",
+        "cn": "陈坤见状，也是顺着池小橙的话招呼热心群众，指着西装男道，“就是他，那个家伙是绑架犯！”"
+      },
+      {
+        "id": 375,
+        "en": "The confused crowd was already suspicious seeing Chi Xiaocheng run away, and his shout made them understand.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "本来懵逼的群众看到逃窜的池小橙已经心生疑惑了，这一喊，顿时反应了过来。"
+      },
+      {
+        "id": 376,
+        "en": "No wonder the little girl was running in such a panic.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "难怪这小家伙跑得那么慌乱。"
+      },
+      {
+        "id": 377,
+        "en": "She was being kidnapped!",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "原来是被人绑架威胁了！"
+      },
+      {
+        "id": 378,
+        "en": "Suddenly, people came from all directions to help, and the man in the suit had no choice but to retreat.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "顿时，四处都是见义勇为的人，西装男没办法，只得褪去。"
+      },
+      {
+        "id": 379,
+        "en": "When he reported back to Ye Liang, he was yelled at again. \"Useless! You're 1.8 meters tall and you can't even catch a 1.5-meter-tall girl. What's the point of having you around!\"",
+        "speaker": "叶良",
+        "emotion": "angry",
+        "cn": "而回去汇报叶良时，又是遭一阵狂喷，“废物！你一个1米8的高个，追不上一个1米5的家伙，养着你有什么用！”"
+      },
+      {
+        "id": 380,
+        "en": "Su Tao was nearby, and when she heard the man's report, she breathed a sigh of relief.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "苏桃就在旁边，听到西装男的汇报后，心中长舒了一口气。"
+      },
+      {
+        "id": 381,
+        "en": "That's great, Xiaocheng wasn't caught. If Ye Liang, in his anger, had caught her, the consequences would have been unimaginable!",
+        "speaker": "苏桃",
+        "emotion": "happy",
+        "cn": "太好了，小橙没有被抓住，如果被正在气头上的叶良抓住，后果恐怕不堪设想！"
+      },
+      {
+        "id": 382,
+        "en": "At that moment, Ye Liang kicked the man in the suit away, glanced at Su Tao beside him, and patted his chest to comfort himself.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "此时，叶良一脚将西装男踹开，瞥了眼身旁的苏桃，又自我安慰地拍了拍胸口。"
+      },
+      {
+        "id": 383,
+        "en": "Oh well, at least Su Tao is safe. That's great.",
+        "speaker": "叶良",
+        "emotion": "happy",
+        "cn": "算了，苏桃没有出事真是太好了。"
+      },
+      {
+        "id": 384,
+        "en": "Su Tao had the same thought as Ye Liang.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "苏桃也和叶良同一个想法。"
+      },
+      {
+        "id": 385,
+        "en": "Even though her mind was a mess, it was great that Xiaocheng was safe.",
+        "speaker": "苏桃",
+        "emotion": "happy",
+        "cn": "虽然脑子很乱，但小橙没有出事真是太好了。"
+      }
     ]
   }
 }

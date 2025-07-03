@@ -772,7 +772,7 @@
                          :class="{ active: selectedChapter === result.chapter.path }"
                          @click="loadChapter(result.novel, result.chapter)">
                         <div class="search-novel-name">{{ getNovelDisplayName(result.novel) }}</div>
-                        <div class="search-chapter-name">{{ getChapterDisplayName(result.chapter.name) }}</div>
+                        <div class="search-chapter-name">{{ getChapterDisplayName(result.chapter) }}</div>
                     </div>
                 </div>
                 
@@ -800,7 +800,7 @@
                                  class="chapter-item"
                                  :class="{ active: selectedChapter === chapter.path }"
                                  @click="loadChapter(novel.name, chapter)">
-                                {{ getChapterDisplayName(chapter.name) }}
+                                {{ getChapterDisplayName(chapter) }}
                             </div>
                         </div>
                     </div>
@@ -1261,9 +1261,6 @@
                     }
                 },
                 
-
-
-                
                 formatContent(content) {
                     // 如果有语句对象，优先使用新的渲染方式
                     if (this.sentences && this.sentences.length > 0) {
@@ -1364,26 +1361,16 @@
                     return displayNames[name] || name;
                 },
                 
-                getChapterDisplayName(identifier) {
-                    // 如果identifier是对象且有title，优先使用title
-                    if (typeof identifier === 'object' && identifier.title) {
-                        return identifier.title;
+                getChapterDisplayName(chapter) {
+                    // 优先使用chapter对象中的title
+                    if (chapter && chapter.title) {
+                        return chapter.title;
                     }
-                    
-                    // 如果是字符串，尝试从章节列表中查找title
-                    if (typeof identifier === 'string') {
-                        for (const novel of this.novels) {
-                            const chapter = novel.chapters.find(ch => ch.name === identifier || ch.title === identifier);
-                            if (chapter && chapter.title) {
-                                return chapter.title;
-                            }
-                        }
-                        
-                        // 回退到格式化字符串
-                        return identifier.replace('.txt', '').replace(/_/g, ' ');
+                    // 如果没有title，回退到使用name
+                    if (chapter && chapter.name) {
+                        return chapter.name.replace('.txt', '').replace(/_/g, ' ');
                     }
-                    
-                    return identifier;
+                    return ''; // 默认返回空字符串
                 },
                 
                 toggleSidebar() {
@@ -1680,11 +1667,11 @@
                     // 遍历所有小说和章节进行搜索
                     for (const novel of this.novels) {
                         for (const chapter of novel.chapters) {
-                            const chapterName = this.getChapterDisplayName(chapter.name).toLowerCase();
-                            const novelName = this.getNovelDisplayName(novel.name).toLowerCase();
+                            const chapterTitle = (chapter.title || '').toLowerCase();
+                            const novelTitle = this.getNovelDisplayName(novel.name).toLowerCase();
                             
-                            // 搜索章节名称和小说名称
-                            if (chapterName.includes(query) || novelName.includes(query)) {
+                            // 搜索章节标题和小说标题
+                            if (chapterTitle.includes(query) || novelTitle.includes(query)) {
                                 this.searchResults.push({
                                     novel: novel.name,
                                     chapter: chapter
@@ -1694,7 +1681,7 @@
                     }
                     
                     // 限制搜索结果数量，避免显示过多
-                    this.searchResults = this.searchResults.slice(0, 20);
+                    this.searchResults = this.searchResults.slice(0, 50);
                 }
             }
         });

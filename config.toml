@@ -6,7 +6,17 @@ title = "桃子和橙子 英文版"
 audio = "books/oap_en/audio/"
 cn = "books/oap_en/cn/cn.txt"
 
+[novels.nomoney_en]
+title = "没有钱 英文版"
+audio = "books/nomoney_en/audio/"
+cn = "books/nomoney_en/cn/cn_new.txt"
+
 [novels.oap_en.chap]
 1 = {en = "books/oap_en/0001.txt", title = "第1章 反派？但我是病娇"}
-2 = {en = "books/oap_en/0002.txt", title = "第2章 待定"}
+2 = {en = "books/oap_en/0002.txt", title = "第2章 喜欢你喜欢你喜欢你"}
+3 = {en = "books/oap_en/0003.txt", title = "第3章 待定"}
+4 = {en = "books/oap_en/0004.txt", title = "第4章 待定"}
+
+[novels.nomoney_en.chap]
+1 = {en = "books/nomoney_en/0001.txt", title = "第1章 面试"}
 
