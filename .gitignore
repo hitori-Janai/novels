@@ -1,2 +1,4 @@
 test.py
 merge_files.py
+books/oap_en/audio/*/output.wav
+books/oap_en/audio/*/mylist.txt
