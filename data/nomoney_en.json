@@ -4690,6 +4690,13 @@
     ],
     "0006": [
       {
+        "id": 674,
+        "en": "Chapter 6: Freedom",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第6章 自由"
+      },
+      {
         "id": 675,
         "en": "\"Damn it!\"",
         "speaker": "张羽",
@@ -5371,6 +5378,13 @@
     ],
     "0007": [
       {
+        "id": 773,
+        "en": "Chapter 7: The Gap Between People",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第7章 人和人的差距"
+      },
+      {
         "id": 774,
         "en": "On the bus.",
         "speaker": "旁白",
@@ -5488,6 +5502,13 @@
         "speaker": "旁白",
         "emotion": "neutral",
         "cn": "转眼间时间过去，张羽便维持着基础吐纳法，直到下车前的那一刻。"
+      },
+      {
+        "id": 791,
+        "en": "...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "……"
       },
       {
         "id": 792,
@@ -5812,6 +5833,13 @@
         "cn": "周围的同学不伦关系好还是差，若成绩不同，都将分道扬镳。"
       },
       {
+        "id": 838,
+        "en": "...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "……"
+      },
+      {
         "id": 839,
         "en": "In the blink of an eye, it was time for the three-period-long PE class.",
         "speaker": "旁白",
@@ -5838,6 +5866,13 @@
         "speaker": "旁白",
         "emotion": "neutral",
         "cn": "于是张羽只能当作没看见，继续着自己的练习。"
+      },
+      {
+        "id": 843,
+        "en": "Body-Strengthening Thirty-Six Forms Level 2 (1/20)",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "健体三十六式2级（1/20）"
       },
       {
         "id": 844,
@@ -5873,6 +5908,13 @@
         "speaker": "旁白",
         "emotion": "neutral",
         "cn": "在花了两个多课时之后，张羽终于彻底躺倒在了地上，再也不想动弹一下。"
+      },
+      {
+        "id": 849,
+        "en": "Body-Strengthening Thirty-Six Forms Level 2 (17/20)",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "健体三十六式2级（17/20）"
       },
       {
         "id": 850,
@@ -11325,6 +11367,13 @@
     ],
     "0018": [
       {
+        "id": 1822,
+        "en": "Chapter 18: The Deva-Human Martial Arts Diagram",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第18章 天人演武图"
+      },
+      {
         "id": 1823,
         "en": "Under the gazes of the guests, a tall woman slowly approached, surrounded by a crowd.",
         "speaker": "旁白",
@@ -16085,6 +16134,13 @@
     ],
     "0025": [
       {
+        "id": 2508,
+        "en": "Chapter 25: The Qi Sea",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第25章 气海"
+      },
+      {
         "id": 2509,
         "en": "\"That Yuanyang Spiritual Root is also very popular among the Heavenly Spiritual Roots. After all, most of the guys at our school are virgins. The Yuanyang Spiritual Root can refine the pure yang essence in a virgin's body into mana; it's very powerful.\"",
         "speaker": "赵天行",
@@ -17404,6 +17460,13 @@
       }
     ],
     "0027": [
+      {
+        "id": 2699,
+        "en": "Chapter 27: The Pre-Exam Sprint",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第27章 考间冲刺"
+      },
       {
         "id": 2700,
         "en": "Three in the morning.",
