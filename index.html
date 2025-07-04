@@ -950,10 +950,9 @@
             <!-- 内容区域 -->
             <div class="content-area">
                 <div class="content-header" 
-                     v-if="currentChapterTitle" 
                      :class="{ 'mobile-expanded': mobileHeaderExpanded, 'mobile-hidden': !headerVisible }"
                      @click="toggleMobileHeader">
-                    <div class="content-title">{{ currentChapterTitle }}</div>
+                    <div class="content-title">{{ currentChapterTitle || '小说阅读器' }}</div>
                     <div class="display-mode-controls">
                         <!-- 移动端菜单按钮 -->
                         <button class="mobile-menu-btn" @click.stop="toggleMobileMenu">
@@ -966,32 +965,36 @@
                                 title="智能刷新">
                             <span :class="{ 'refresh-indicator': refreshing }">🔄</span>
                         </button>
-                        <button class="mode-btn" 
-                                :class="{ active: displayMode === 'chinese' }"
-                                @click.stop="setDisplayMode('chinese')"
-                                title="仅中文">
-                            🇨🇳
-                        </button>
-                        <button class="mode-btn" 
-                                :class="{ active: displayMode === 'english' }"
-                                @click.stop="setDisplayMode('english')"
-                                title="仅英文">
-                            🇺🇸
-                        </button>
-                        <button class="mode-btn" 
-                                :class="{ active: displayMode === 'bilingual' }"
-                                @click.stop="setDisplayMode('bilingual')"
-                                title="双语对照">
-                            🌏
-                        </button>
-                        <button class="mode-btn" 
-                                :class="{ active: displayMode === 'audio' }"
-                                @click.stop="setDisplayMode('audio')"
-                                title="音频模式">
-                            🎵
-                        </button>
+                        <!-- 只在有章节内容时显示显示模式按钮 -->
+                        <template v-if="currentChapterTitle">
+                            <button class="mode-btn" 
+                                    :class="{ active: displayMode === 'chinese' }"
+                                    @click.stop="setDisplayMode('chinese')"
+                                    title="仅中文">
+                                🇨🇳
+                            </button>
+                            <button class="mode-btn" 
+                                    :class="{ active: displayMode === 'english' }"
+                                    @click.stop="setDisplayMode('english')"
+                                    title="仅英文">
+                                🇺🇸
+                            </button>
+                            <button class="mode-btn" 
+                                    :class="{ active: displayMode === 'bilingual' }"
+                                    @click.stop="setDisplayMode('bilingual')"
+                                    title="双语对照">
+                                🌏
+                            </button>
+                            <button class="mode-btn" 
+                                    :class="{ active: displayMode === 'audio' }"
+                                    @click.stop="setDisplayMode('audio')"
+                                    title="音频模式">
+                                🎵
+                            </button>
+                        </template>
                     </div>
-                    <div class="reading-timer">
+                    <!-- 只在有章节内容时显示阅读计时器和自动播放 -->
+                    <div class="reading-timer" v-if="currentChapterTitle">
                         <button class="auto-play-btn" 
                                 :class="{ active: autoPlaying }"
                                 @click.stop="toggleAutoPlay"
@@ -1958,7 +1961,13 @@
                 
                 // 设置移动端滑动监听
                 setupMobileScrollHandler() {
-                    if (window.innerWidth > 768) return; // 只在移动端启用
+                    if (window.innerWidth > 768) {
+                        this.headerVisible = true; // 桌面端始终显示
+                        return; // 只在移动端启用滑动隐藏
+                    }
+                    
+                    // 移动端确保顶部栏初始可见
+                    this.headerVisible = true;
                     
                     // 延迟设置，确保DOM已渲染
                     this.$nextTick(() => {
