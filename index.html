@@ -633,11 +633,29 @@
             align-items: center;
             justify-content: center;
             margin-right: 4px;
+            position: relative;
         }
         
         .refresh-btn:hover:not(:disabled) {
             background: #218838;
             transform: translateY(-1px);
+        }
+        
+        .refresh-btn:hover:not(:disabled)::after {
+            content: "右键强制刷新";
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            white-space: nowrap;
+            z-index: 1000;
+            pointer-events: none;
+            opacity: 0.9;
         }
         
         .refresh-btn:disabled {
@@ -811,6 +829,10 @@
                 height: 28px;
             }
             
+            .refresh-btn:hover:not(:disabled)::after {
+                display: none; /* 移动端隐藏悬停提示 */
+            }
+            
             .preload-indicator {
                 font-size: 10px;
                 padding: 2px 6px;
@@ -960,9 +982,10 @@
                         </button>
                         <!-- 刷新按钮 -->
                         <button class="refresh-btn" 
-                                @click.stop="smartRefresh"
+                                @click.stop="handleRefreshClick"
+                                @contextmenu.prevent="forceRefresh"
                                 :disabled="refreshing"
-                                title="智能刷新">
+                                :title="refreshing ? '刷新中...' : '左键智能刷新，右键强制刷新'">
                             <span :class="{ 'refresh-indicator': refreshing }">🔄</span>
                         </button>
                         <!-- 只在有章节内容时显示显示模式按钮 -->
@@ -1218,24 +1241,38 @@
                     return hash.toString();
                 },
                 
-                async loadNovels() {
+                async loadNovels(forceReload = false) {
                     try {
                         this.loading = true;
                         this.error = null;
                         
-                        // 尝试从缓存获取小说目录
-                        const cachedNovels = this.cache.get('novels');
-                        if (cachedNovels) {
-                            this.novels = cachedNovels;
-                            this.hasCachedData = true;
-                            // 从缓存获取hash值
-                            this.lastNovelsHash = this.cache.get('novels_hash');
-                            this.loading = false;
-                            return;
+                        // 如果不是强制重新加载，尝试从缓存获取小说目录
+                        if (!forceReload) {
+                            const cachedNovels = this.cache.get('novels');
+                            if (cachedNovels) {
+                                this.novels = cachedNovels;
+                                this.hasCachedData = true;
+                                // 从缓存获取hash值
+                                this.lastNovelsHash = this.cache.get('novels_hash');
+                                this.loading = false;
+                                return;
+                            }
                         }
                         
                         // 从数据文件获取小说目录
-                        const response = await axios.get(this.dataBase + 'novels.json');
+                        const requestConfig = {
+                            headers: {},
+                            params: {}
+                        };
+                        
+                        // 如果是强制重新加载，添加缓存控制头
+                        if (forceReload) {
+                            requestConfig.headers['Cache-Control'] = 'no-cache';
+                            requestConfig.headers['Pragma'] = 'no-cache';
+                            requestConfig.params['_t'] = Date.now();
+                        }
+                        
+                        const response = await axios.get(this.dataBase + 'novels.json', requestConfig);
                         const novelsData = response.data;
                         
                         this.novels = novelsData.map(novel => ({
@@ -1255,6 +1292,8 @@
                         const novelsHash = this.calculateStringHash(JSON.stringify(novelsData));
                         this.cache.set('novels_hash', novelsHash);
                         this.lastNovelsHash = novelsHash;
+                        
+                        console.log('📚 小说列表加载完成', forceReload ? '(强制刷新)' : '(正常加载)');
                         
                     } catch (error) {
                         console.error('Error loading novels:', error);
@@ -1697,12 +1736,21 @@
                 
                 // 缓存管理方法
                 async clearCacheAndReload() {
+                    console.log('🗑️ 清除所有缓存并重新加载...');
                     this.cache.clear();
                     this.hasCachedData = false;
                     this.preloadedChapters.clear(); // 清除预加载状态
                     this.preloadingNext = false;
+                    this.currentBookData = null;
+                    this.currentAudioData = null;
                     this.novels = [];
-                    await this.loadNovels();
+                    await this.loadNovels(true); // 强制重新加载
+                    
+                    // 如果当前有打开的章节，重新加载
+                    if (this.selectedChapter) {
+                        await this.reloadCurrentChapter();
+                    }
+                    console.log('✅ 缓存清除完成');
                 },
                 
                 // 显示模式切换
@@ -1879,45 +1927,38 @@
                         this.refreshing = true;
                         console.log('🔄 开始智能刷新...');
                         
-                        // 获取最新的novels.json
-                        const response = await axios.get(this.dataBase + 'novels.json', {
-                            headers: {
-                                'Cache-Control': 'no-cache',
-                                'Pragma': 'no-cache'
-                            },
-                            params: {
-                                '_t': Date.now() // 添加时间戳防止缓存
-                            }
-                        });
-                        
-                        const novelsData = response.data;
-                        const currentHash = this.calculateStringHash(JSON.stringify(novelsData));
-                        
-                        // 获取上次的hash值
+                        // 获取上次的hash值用于比较
                         const lastHash = this.cache.get('novels_hash');
                         
+                        // 强制重新加载novels.json并重新缓存
+                        this.novels = [];
+                        await this.loadNovels(true); // 传入true强制重新加载
+                        
+                        // 获取新的hash值
+                        const currentHash = this.cache.get('novels_hash');
+                        
                         if (lastHash && lastHash === currentHash) {
-                            console.log('📚 novels.json 无变化，无需刷新缓存');
+                            console.log('📚 novels.json 无变化');
                             this.showTemporaryMessage('数据无变化');
                             return;
                         }
                         
-                        console.log('🆕 检测到 novels.json 变化，清除所有缓存...');
+                        console.log('🆕 检测到 novels.json 变化，清除其他缓存...');
                         
-                        // 清除所有缓存
-                        this.cache.clear();
+                        // 清除除了novels相关之外的其他缓存
+                        const keysToKeep = ['novels', 'novels_hash'];
+                        const allKeys = this.cache.getStats().keys;
+                        allKeys.forEach(key => {
+                            if (!keysToKeep.includes(key)) {
+                                this.cache.remove(key);
+                            }
+                        });
+                        
                         this.hasCachedData = false;
                         this.preloadedChapters.clear();
                         this.preloadingNext = false;
                         this.currentBookData = null;
                         this.currentAudioData = null;
-                        
-                        // 保存新的hash值
-                        this.cache.set('novels_hash', currentHash);
-                        
-                        // 重新加载小说数据
-                        this.novels = [];
-                        await this.loadNovels();
                         
                         // 如果当前有打开的章节，重新加载
                         if (this.selectedChapter) {
@@ -1925,7 +1966,7 @@
                         }
                         
                         console.log('✅ 智能刷新完成');
-                        this.showTemporaryMessage('刷新完成');
+                        this.showTemporaryMessage(lastHash ? '刷新完成' : '初次加载完成');
                         
                     } catch (error) {
                         console.error('智能刷新失败:', error);
@@ -1948,9 +1989,49 @@
                             break;
                         }
                     }
-                                 },
-                 
-                 // 显示临时消息
+                                                 },
+                
+                // 处理刷新按钮点击事件
+                async handleRefreshClick() {
+                    await this.smartRefresh();
+                },
+                
+                // 强制刷新所有数据
+                async forceRefresh() {
+                    try {
+                        this.refreshing = true;
+                        console.log('💪 开始强制刷新所有数据...');
+                        
+                        // 清除所有缓存
+                        this.cache.clear();
+                        this.hasCachedData = false;
+                        this.preloadedChapters.clear();
+                        this.preloadingNext = false;
+                        this.currentBookData = null;
+                        this.currentAudioData = null;
+                        
+                        // 强制重新加载所有数据
+                        this.novels = [];
+                        await this.loadNovels(true);
+                        
+                        // 如果当前有打开的章节，重新加载
+                        if (this.selectedChapter) {
+                            await this.reloadCurrentChapter();
+                        }
+                        
+                        console.log('✅ 强制刷新完成');
+                        this.showTemporaryMessage('强制刷新完成');
+                        
+                    } catch (error) {
+                        console.error('强制刷新失败:', error);
+                        this.error = '强制刷新失败: ' + error.message;
+                        this.showTemporaryMessage('强制刷新失败');
+                    } finally {
+                        this.refreshing = false;
+                    }
+                },
+                
+                // 显示临时消息
                 showTemporaryMessage(message) {
                     const originalError = this.error;
                     this.error = message;
