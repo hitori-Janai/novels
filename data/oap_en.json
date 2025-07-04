@@ -2683,6 +2683,722 @@
         "emotion": "happy",
         "cn": "虽然脑子很乱，但小橙没有出事真是太好了。"
       }
+    ],
+    "0005": [
+      {
+        "id": 387,
+        "en": "Chapter 5: Sorry, But I Like You",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "第5章 对不起你，但喜欢你"
+      },
+      {
+        "id": 388,
+        "en": "As for Chi Xiaocheng, the person everyone was worried about, she collapsed on the entryway rug the moment she got home.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而被关心念叨的池小橙本人，回到自己所在的小区后，一进门，就重重摔在了玄关的地毯上。"
+      },
+      {
+        "id": 389,
+        "en": "Her mind was dizzy, and her breathing was rapid.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "脑海一阵眩晕，呼吸急促。"
+      },
+      {
+        "id": 390,
+        "en": "This body was too weak.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这具身体太虚弱了。"
+      },
+      {
+        "id": 391,
+        "en": "She was already a malnourished and sickly girl, and now she had just been chased.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "本身就是一个营养不良的病弱萝莉，现在还经历了这样一段追逐。"
+      },
+      {
+        "id": 392,
+        "en": "The moment the adrenaline faded, Chi Xiaocheng felt a suffocating discomfort.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "当肾上腺素褪去的一瞬间，池小橙才后知后觉地感觉到窒息般的难受。"
+      },
+      {
+        "id": 393,
+        "en": "She was dizzy and lightheaded, relying on a thread of reason to keep herself from collapsing.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "头晕眼花，仅靠着一丝理智强撑着不让自己倒下。"
+      },
+      {
+        "id": 394,
+        "en": "\"System, how many Emotion Points do I have now?\"",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "“系统，我现在有多少情绪值？”"
+      },
+      {
+        "id": 395,
+        "en": "Chi Xiaocheng forced herself up, her small body leaning against the shoe cabinet, her legs spread out straight in an ungraceful pose that made her skirt ride up.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙用力爬了起来，小小的身子靠在鞋柜，双腿向外敞开伸直，不雅的动作将裙摆上翻。"
+      },
+      {
+        "id": 396,
+        "en": "Even though it was an unflattering pose, Chi Xiaocheng couldn't care less.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "即便形象很是不雅，但池小橙也在乎不了那么多了。"
+      },
+      {
+        "id": 397,
+        "en": "The System in her mind responded.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "脑海中的系统回应道。"
+      },
+      {
+        "id": 398,
+        "en": "[Replying to Host, you have 68 points.]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【回宿主，68点。】"
+      },
+      {
+        "id": 399,
+        "en": "\"That's quite a lot.\"",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "“居然还挺多。”"
+      },
+      {
+        "id": 400,
+        "en": "She thought buying the beginner's gift pack had used up all her Emotion Points.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "她还以为购买新手礼包，已经消耗了自己的全部情绪值。"
+      },
+      {
+        "id": 401,
+        "en": "[Ye Liang also had an emotional reaction to you because of Su Tao's words.]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【叶良也因为苏桃的话，对宿主产生了情绪反应。】"
+      },
+      {
+        "id": 402,
+        "en": "Chi Xiaocheng checked the log; Ye Liang had only provided 30 Emotion Points.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙看了下记录，叶良提供的情绪值仅仅30点。"
+      },
+      {
+        "id": 403,
+        "en": "If someone wanted to kill another person,",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一个人如果想杀另一个人。"
+      },
+      {
+        "id": 404,
+        "en": "they would never provide so few Emotion Points.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "绝不会就提供那么点情绪值。"
+      },
+      {
+        "id": 405,
+        "en": "It seemed Su Tao had talked him out of it.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "看来是苏桃劝住了他。"
+      },
+      {
+        "id": 406,
+        "en": "As expected of Tao Tao.",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "真不愧是桃桃呢"
+      },
+      {
+        "id": 407,
+        "en": "She saved my life.",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "替自己保住了小命。"
+      },
+      {
+        "id": 408,
+        "en": "Chi Xiaocheng showed a happy smile, but with her slightly chapped lips, the smile looked a bit enchanting.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙露出开心的笑容，只是配上那有着些许干涸的唇角，这笑容显得有些妖艳。"
+      },
+      {
+        "id": 409,
+        "en": "\"System, filter the items for me. I need medicine I can afford that will heal my body immediately.\"",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "“系统，帮我筛选商品，在能购买的情况下我需要能立即对我的身体进行治疗的药品。”"
+      },
+      {
+        "id": 410,
+        "en": "[Recommended purchase: System-brand Vitamin C pills. Effective in one dose.]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【推荐购买系统牌维生素C药物，一粒见效。】"
+      },
+      {
+        "id": 411,
+        "en": "\"Buy, buy, buy!\"",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "“买买买！”"
+      },
+      {
+        "id": 412,
+        "en": "[50 Emotion Points have been spent.]",
+        "speaker": "系统",
+        "emotion": "neutral",
+        "cn": "【已消费50点情绪值。】"
+      },
+      {
+        "id": 413,
+        "en": "With a flash of white light, a pill appeared in Chi Xiaocheng's hand, and the System thoughtfully provided a glass of water in her other hand.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "白光一闪，池小橙手里就多了一粒药丸，同时另一只手系统还贴心地准备了一杯水。"
+      },
+      {
+        "id": 414,
+        "en": "She swallowed it immediately.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "当即咽下。"
+      },
+      {
+        "id": 415,
+        "en": "A moment later, she felt a comfortable warmth spreading through her body.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "没一会儿，她就感觉自己身体传来了阵阵舒适的暖和感。"
+      },
+      {
+        "id": 416,
+        "en": "Her lower abdomen felt warm.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "小腹热热的。"
+      },
+      {
+        "id": 417,
+        "en": "The ringing in her ears gradually faded, and some strength returned to her body.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "本来产生的耳鸣渐渐消退，身体也恢复了些许力气。"
+      },
+      {
+        "id": 418,
+        "en": "After resting for about ten minutes, Chi Xiaocheng slowly got up.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "缓了十多分钟，池小橙才慢慢起身。"
+      },
+      {
+        "id": 419,
+        "en": "\"It works fast, but it's too expensive.\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "“起效快是快，就是太贵了。”"
+      },
+      {
+        "id": 420,
+        "en": "50 Emotion Points! I risked my life for that!",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "50点情绪值，这可是自己拿命换的啊！"
+      },
+      {
+        "id": 421,
+        "en": "Now that she was out of danger, Chi Xiaocheng finally had a chance to reflect on her character's situation.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "直到现在，脱离了危险，池小橙才有机会回顾自己这个角色的境况。"
+      },
+      {
+        "id": 422,
+        "en": "Without a doubt, she was the villainess side character meant to be sacrificed.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "毫无疑问，炮灰反派女配无疑。"
+      },
+      {
+        "id": 423,
+        "en": "And a foolish one at that, who didn't know how to assess situations or use her advantages.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而且是个智商低下，不懂审时度势，也不懂利用自己优势的炮灰。"
+      },
+      {
+        "id": 424,
+        "en": "The female lead was very good to her, and besides the male leads, there were plenty of other supporting male characters pursuing the female lead.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "女主对她很好，身边除了那几个男主，也不乏一大堆男配舔狗追求她。"
+      },
+      {
+        "id": 425,
+        "en": "If she had just used the female lead and the supporting characters around her, played the innocent \"white lotus\" to drive a wedge between the female lead and the other male characters, she could have lived a good life. With some luck, she might have even won over one of the male leads.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但凡多利用一下女主和身边的配角们，当一个白莲花的角色离间一下女主和其他男配的关系，都能过上不错的生活，运气好没准能逆袭其中一个男主。"
+      },
+      {
+        "id": 426,
+        "en": "But it was as if she were cursed.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "奈何像是被下了降头一样。"
+      },
+      {
+        "id": 427,
+        "en": "She relentlessly targeted the female lead who cherished her, and the male leads who originally had a decent impression of her.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "疯狂针对珍视自己的女主，和那些本来好感还不错的男主们。"
+      },
+      {
+        "id": 428,
+        "en": "If Su Tao's affection for Chi Xiaocheng was at 80 points two years ago,",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "如果说两年前女主苏桃对池小橙的好感度是80点。"
+      },
+      {
+        "id": 429,
+        "en": "then now, more than half of it was probably gone.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "那么现在估计被败坏了一大半。"
+      },
+      {
+        "id": 430,
+        "en": "\"What a waste of this body and its advantageous relationships.\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "“真是白瞎了这具身体和自身关系的优势。”"
+      },
+      {
+        "id": 431,
+        "en": "Chi Xiaocheng sighed and took a sip of water, \"Maybe this is the fate of a side character. Life or death depends entirely on what the author writes.\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "池小橙感叹着喝了口水，“也许这就是炮灰的命数吧，是死是活全看作者怎么写。”"
+      },
+      {
+        "id": 432,
+        "en": "It wouldn't be easy to change this deadly ending.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "想要改变这样的死亡结局不简单。"
+      },
+      {
+        "id": 433,
+        "en": "But.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但。"
+      },
+      {
+        "id": 434,
+        "en": "It wasn't completely hopeless.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "也不是完全没有机会。"
+      },
+      {
+        "id": 435,
+        "en": "As long as the female lead, Su Tao, didn't give up on her, she could rely on the \"protagonist's halo\" to stay alive for now.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "只要女主苏桃没放弃自己，凭着女主光环，也能暂时保一条小命。"
+      },
+      {
+        "id": 436,
+        "en": "Shaking her head, Chi Xiaocheng temporarily pushed those thoughts aside.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "甩了甩脑袋，池小橙暂时将那些想法扔出去。"
+      },
+      {
+        "id": 437,
+        "en": "After spending so long in the basement, having a close interaction with Su Tao, and then being chased, Chi Xiaocheng felt dirty all over.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "在地下室待了那么久，又和苏桃亲密互动，最后还被追逐了一路，池小橙感觉自己身上脏兮兮的。"
+      },
+      {
+        "id": 438,
+        "en": "She couldn't wait to take a shower.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "迫不及待地想去洗个澡。"
+      },
+      {
+        "id": 439,
+        "en": "Before she even took off her clothes, she went to the sink outside the bathroom and was startled when she saw her reflection.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "还未脱衣服，她来到浴室外的洗漱台前，看向镜中的自己时，顿时被吓了一跳。"
+      },
+      {
+        "id": 440,
+        "en": "\"What is this?\"",
+        "speaker": "池小橙",
+        "emotion": "angry",
+        "cn": "“这是什么鬼？”"
+      },
+      {
+        "id": 441,
+        "en": "In the mirror, her slightly round face was covered in terrible foundation, and her makeup was smudged in many places from sweating.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "只见镜子中，那张略微圆润的脸蛋满是糟糕的粉底，因为出过汗不少地方妆都花了。"
+      },
+      {
+        "id": 442,
+        "en": "The eyeliner was poorly drawn, the blush was applied carelessly—it was clearly very low-quality makeup.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "眼线不会画，腮红乱抹，这一看就知道是极为劣质的化妆品。"
+      },
+      {
+        "id": 443,
+        "en": "No matter how pretty a girl is, ruining her looks like this wouldn't score her any points, right?",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "再漂亮的女孩子，这样糟蹋颜值分数也高不到哪去吧？"
+      },
+      {
+        "id": 444,
+        "en": "It was only then that Chi Xiaocheng remembered. The original owner had been influenced by her friends to believe that college students should wear beautiful makeup. How it was applied didn't matter; what mattered was the confidence it gave.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "直到这时，池小橙才想起来，原主被身边的姐妹影响，认为大学生就该美美地化妆，画得怎样不重要，重要的是一种自信。"
+      },
+      {
+        "id": 445,
+        "en": "Every time she put on this clownish makeup, her so-called friends would praise her, saying, \"You look great, girl, shining with confidence!\" When she posted photos online, she would get a stream of comments like, \"You're so pretty,\" and \"You have great features.\" The simple-minded original owner actually believed them.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "每次这样鬼画符后，那些所谓的姐妹都会夸她“姐妹好看自信放光芒”，发照片到小红薯也是清一色地被人夸“妹妹这样很漂亮”“妹妹底子很好”之类的话，一根筋的原主还真信了她们的话。"
+      },
+      {
+        "id": 446,
+        "en": "She wore a clown face every day.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "每天都一副鬼脸。"
+      },
+      {
+        "id": 447,
+        "en": "\"No wonder the male leads' affection for her is so low. This is a society that judges by looks!\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "“怪不得男主们的好感低得不行，这可是一个看脸的社会啊！”"
+      },
+      {
+        "id": 448,
+        "en": "Chi Xiaocheng was incredibly thankful that she hadn't looked up and shown her face to the helpful stranger earlier.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "池小橙无比庆幸，刚刚让那位柚子厨路人老哥帮忙伸张正义时没抬头给她看脸。"
+      },
+      {
+        "id": 449,
+        "en": "Otherwise, the outcome would have been very different.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "否则结果就不是现在这样了。"
+      },
+      {
+        "id": 450,
+        "en": "\"It's so messy, even I can't stand looking at it.\"",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "“脏得连我自己都看不下去了。”"
+      },
+      {
+        "id": 451,
+        "en": "She tried to wipe it off with water, but then remembered, \"I should use makeup remover for this. Let me see where it is...\"",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "她用水就抹，旋即又想起了什么，“这种应该用卸妆水来着，我看看在哪......”"
+      },
+      {
+        "id": 452,
+        "en": "In her past life, she had barely touched makeup. Now... well, she was fitting nicely into the role of a delicate girl like the original owner.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "前世她都没怎么碰过化妆品，现在……嗯，很好地代入了原主小姐这样娇嫩女孩子的身份。"
+      },
+      {
+        "id": 453,
+        "en": "After some effort, the cheap makeup was finally removed.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一番折腾，廉价的化妆品终于被抹去。"
+      },
+      {
+        "id": 454,
+        "en": "Her bare face, dotted with water droplets, appeared in the mirror.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "那张掺着水珠的素颜小脸跃然镜前。"
+      },
+      {
+        "id": 455,
+        "en": "She had a small, delicate nose and exquisite features. Although her face was a bit pale, her naturally frail expression added a touch of pitiable weakness.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "琼鼻小巧，五官精致，面容虽然有些憔悴，可本就病恹恹的表情平添一抹我见犹怜的病弱感。"
+      },
+      {
+        "id": 456,
+        "en": "Her long, tea-colored hair was down. Chi Xiaocheng touched it, her big eyes shining.",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "一头茶色长发披散，池小橙摸了摸，大眼睛迸射出光芒。"
+      },
+      {
+        "id": 457,
+        "en": "The hair quality was excellent; it didn't look like she was malnourished.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "发质很好，看不出是营养不良的样子。"
+      },
+      {
+        "id": 458,
+        "en": "And most importantly, her bare face was so cute!",
+        "speaker": "旁白",
+        "emotion": "happy",
+        "cn": "而且关键是这素颜也太可爱了！"
+      },
+      {
+        "id": 459,
+        "en": "With a slight pout of her chubby cheeks, her cuteness was enough to be a critical hit for any fan of cute girls.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "稍许婴儿肥的脸蛋一嘟嘴，合法萝莉的可爱杀伤力足以对任何一个萝莉控产生暴击。"
+      },
+      {
+        "id": 460,
+        "en": "Her skin was also as white as fine jade.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "肌肤也如羊脂玉般白皙。"
+      },
+      {
+        "id": 461,
+        "en": "\"What was the original owner thinking? Her natural face could outshine so many girls her age. That clownish makeup lowered her attractiveness by several levels!\"",
+        "speaker": "池小橙",
+        "emotion": "angry",
+        "cn": "“原主怎么想的，这素颜那得爆杀多少同龄女生，那样鬼画符一样的化妆把颜值拉低了好几个档次啊！”"
+      },
+      {
+        "id": 462,
+        "en": "\"At the very least, she could have worn black-rimmed glasses and an ugly, thick coat to look weaker. Just with this pitiful face, she could cosplay as Shen Youchu.\"",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "“再不济，戴个黑框眼镜，穿件厚实的丑大衣，表现较弱一点，光是这张惹人怜惜的小脸蛋都能cos沈幼楚了。”"
+      },
+      {
+        "id": 463,
+        "en": "\"Ah—\"",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "“啊——”"
+      },
+      {
+        "id": 464,
+        "en": "Chi Xiaocheng opened her mouth and took another look.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙又张开嘴巴看了一眼。"
+      },
+      {
+        "id": 465,
+        "en": "Her tongue was pink, her teeth small and even. A small, sharp canine tooth stuck out slightly, but it didn't ruin the overall look. For some people, it was even a cute feature.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "舌头粉嫩，皓齿小巧平整，一颗尖尖的小虎牙略微突出，但并不影响整体观看，对于某些受众群体来说这还是萌点之一。"
+      },
+      {
+        "id": 466,
+        "en": "\"With these looks, so cute... if I had transmigrated back when she was a child, the male leads wouldn't have stood a chance.\"",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "“这颜值，这么可爱，要是穿越的时间线是小时候，哪里还有所谓男主们的事情。”"
+      },
+      {
+        "id": 467,
+        "en": "Chi Xiaocheng could have easily won over Su Tao.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙随随便便就能把苏桃拿下。"
+      },
+      {
+        "id": 468,
+        "en": "She stepped into the bathroom to shower.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "她迈进浴室洗澡。"
+      },
+      {
+        "id": 469,
+        "en": "Size isn't everything; shape and fullness are what matter.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "很多东西都不需要在意大小，有型则灵，圆润则行。"
+      },
+      {
+        "id": 470,
+        "en": "Her own assets were already perfect enough.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "自身的条件已经足够完美。"
+      },
+      {
+        "id": 471,
+        "en": "Although she was a bit thin, for her height of 152cm, she wasn't underdeveloped.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "虽然身子瘦了点，但于1米52的身高来说不算贫瘠。"
+      },
+      {
+        "id": 472,
+        "en": "If her body weren't so weak right now, Chi Xiaocheng would have really liked to... experience it.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "要不是现在身体太虚了点，池小橙还真想体验一下。"
+      },
+      {
+        "id": 473,
+        "en": "She dried the water droplets from her body.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "擦干身上的水珠。"
+      },
+      {
+        "id": 474,
+        "en": "Then she went into her room and opened the closet.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "又走进房间打开衣柜。"
+      },
+      {
+        "id": 475,
+        "en": "After getting dressed, she frowned at the room's decor.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "穿好衣服后，她才皱眉地看着房间的摆设。"
+      },
+      {
+        "id": 476,
+        "en": "Unlike her cute but frail appearance, the room was filled with ominous things.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "与本身病弱可爱的样貌不同，房间里布满了不祥的东西。"
+      },
+      {
+        "id": 477,
+        "en": "On the wall were photos of Su Tao with the male leads. A notebook on the desk was filled with the name \"Su Tao,\" along with the names of the male leads, which were all crossed out in thick, red ink. Even the faces in the photos on the wall had been scratched out.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "墙上贴着几张苏桃和男主的合照，桌上是的一个笔记本也写满了“苏桃”二字，除此之外还有各个男主的名字，一大片的红笔线将这些名字涂得深红，就连墙壁上的合照，一张张人脸也被划烂。"
+      },
+      {
+        "id": 478,
+        "en": "Chi Xiaocheng sighed and got to work.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "池小橙叹了一口气，开始忙活起来。"
+      },
+      {
+        "id": 479,
+        "en": "She packed up all these old things and threw them away, only stopping to wipe the sweat from her brow when the room was simple and plain.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "把这些曾经的东西全部打包扔掉，直至房间变得朴素简单后，才擦了擦香汗。"
+      },
+      {
+        "id": 480,
+        "en": "She took out her phone again.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "又拿出手机。"
+      },
+      {
+        "id": 481,
+        "en": "After thinking it over, she pointed her camera at her bare face, used a cool light to make her skin look paler, and squeezed out a couple of tears.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "思索再三，她对着自己素颜小脸，打了一个冷光灯让自己更趋近于冷白皮后，拼命挤出两滴眼泪。"
+      },
+      {
+        "id": 482,
+        "en": "*Click—*",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "“咔嚓——”"
+      },
+      {
+        "id": 483,
+        "en": "The photo was taken.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "照片拍摄完毕。"
+      },
+      {
+        "id": 484,
+        "en": "\"A true natural beauty, no filter or editing needed. So cute.\"",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "“真是素颜战神，都不用美颜p图了，可爱滴捏。”"
+      },
+      {
+        "id": 485,
+        "en": "She added a caption and posted it.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "配文，发朋友圈。"
+      },
+      {
+        "id": 486,
+        "en": "\"Sorry sorry sorry sorry sorry sorry sorry.\" — Visible to everyone.",
+        "speaker": "池小橙",
+        "emotion": "sad",
+        "cn": "“对不起对不起对不起对不起对不起对不起对不起。”——所有人可见。"
+      },
+      {
+        "id": 487,
+        "en": "\"Like you like you like you like you like you like you like you.\" — Visible only to Su Tao.",
+        "speaker": "池小橙",
+        "emotion": "happy",
+        "cn": "“喜欢你喜欢你喜欢你喜欢你喜欢你喜欢你喜欢你。”——仅苏桃可见。"
+      },
+      {
+        "id": 488,
+        "en": "Xiaocheng",
+        "speaker": "池小橙",
+        "emotion": "neutral",
+        "cn": "小橙"
+      }
     ]
   }
 }

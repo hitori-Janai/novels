@@ -17,6 +17,6 @@ Your translation must adhere to the following principles:
         *   **Output:** `"Xiaocheng, why?" [[62 苏桃 sad]]`
         *   **Source:** `她从小和苏桃一起长大，说是青梅竹马也不过分。 [[20]]`
         *   **Output:** `She grew up with Su Tao, so it wouldn't be an exaggeration to call them childhood friends. [[20 旁白 neutral]]`
-4.  **Consistency:** Use the provided `translation_reference.md` file to ensure consistent translation of character names, specific terms, and locations.
+4.  **Consistency:** Use the provided `books/oap_en/cn/translation_reference.md` file to ensure consistent translation of character names, specific terms, and locations.
 5. Save the final, formatted result directly into a new .txt file (e.g., 0001.txt)  within the /books/oap_en/ folder. 
 Translate the text below following these instructions.

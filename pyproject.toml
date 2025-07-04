@@ -5,5 +5,5 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "jieba>=0.42.1",
+    "toml>=0.10.2",
 ]

@@ -14,9 +14,9 @@ cn = "books/nomoney_en/cn/cn_new.txt"
 [novels.oap_en.chap]
 1 = {en = "books/oap_en/0001.txt", title = "第1章 反派？但我是病娇"}
 2 = {en = "books/oap_en/0002.txt", title = "第2章 喜欢你喜欢你喜欢你"}
-3 = {en = "books/oap_en/0003.txt", title = "第3章 待定"}
-4 = {en = "books/oap_en/0004.txt", title = "第4章 待定"}
+3 = {en = "books/oap_en/0003.txt", title = "第3章 要坏掉惹"}
+4 = {en = "books/oap_en/0004.txt", title = "第4章 她的味道"}
+5 = {en = "books/oap_en/0005.txt", title = "第5章 对不起你，但喜欢你"}
 
 [novels.nomoney_en.chap]
 1 = {en = "books/nomoney_en/0001.txt", title = "第1章 面试"}
-
