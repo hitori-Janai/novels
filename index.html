@@ -564,11 +564,7 @@
             padding-left: 8px;
         }
         
-        /* 情绪图标 */
-        .emotion-happy::before { content: '😊 '; }
-        .emotion-sad::before { content: '😢 '; }
-        .emotion-angry::before { content: '😠 '; }
-        .emotion-neutral::before { content: '😐 '; }
+        /* 情绪图标已移除，保持界面简洁 */
         
         .loading {
             text-align: center;
@@ -654,6 +650,40 @@
             animation: spin 1s linear infinite;
         }
         
+        /* 跳转到当前语句按钮 */
+        .scroll-to-current-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 950;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        
+        .scroll-to-current-btn.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .scroll-to-current-btn:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0,123,255,0.6);
+        }
+        
         .mobile-overlay {
             display: none;
             position: fixed;
@@ -693,13 +723,34 @@
             }
             
             .content-header {
-                padding: 10px 20px;
+                padding: 10px 15px;
                 min-height: auto;
                 cursor: pointer;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 900;
+                background: white;
+                border-bottom: 1px solid #e0e0e0;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+            
+            .content-header.mobile-hidden {
+                transform: translateY(-100%);
             }
             
             .content-header.mobile-expanded {
                 white-space: normal;
+            }
+            
+            .content-body {
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 10px;
+                padding-top: 80px; /* 为固定顶部栏留出空间 */
             }
             
             .content-title {
@@ -774,6 +825,49 @@
                 width: 28px;
                 height: 28px;
                 font-size: 14px;
+            }
+            
+            /* 移动端语句容器优化 */
+            .sentence-container {
+                margin: 6px 0;
+                padding: 6px 0;
+            }
+            
+            .english-sentence {
+                font-size: 16px;
+                line-height: 1.5;
+                gap: 6px;
+                flex-wrap: wrap;
+            }
+            
+            .chinese-sentence {
+                font-size: 15px;
+                line-height: 1.6;
+                margin: 2px 0;
+            }
+            
+            .sentence-meta {
+                font-size: 11px;
+                gap: 6px;
+                flex-wrap: wrap;
+            }
+            
+            /* 情绪表情符号样式已移除 */
+            
+            .audio-btn {
+                width: 24px;
+                height: 24px;
+                font-size: 10px;
+                margin-left: 6px;
+            }
+            
+            /* 移动端跳转按钮调整 */
+            .scroll-to-current-btn {
+                bottom: 15px;
+                right: 15px;
+                width: 48px;
+                height: 48px;
+                font-size: 16px;
             }
         }
     </style>
@@ -857,7 +951,7 @@
             <div class="content-area">
                 <div class="content-header" 
                      v-if="currentChapterTitle" 
-                     :class="{ 'mobile-expanded': mobileHeaderExpanded }"
+                     :class="{ 'mobile-expanded': mobileHeaderExpanded, 'mobile-hidden': !headerVisible }"
                      @click="toggleMobileHeader">
                     <div class="content-title">{{ currentChapterTitle }}</div>
                     <div class="display-mode-controls">
@@ -935,6 +1029,14 @@
                 </div>
             </div>
         </div>
+        
+        <!-- 跳转到当前语句按钮 -->
+        <button class="scroll-to-current-btn" 
+                :class="{ show: showScrollToCurrentBtn }"
+                @click="scrollToCurrentSentence"
+                title="跳转到当前语句">
+            🎯
+        </button>
     </div>
 
     <script>
@@ -1041,6 +1143,15 @@
                     refreshing: false, // 刷新状态
                     lastNovelsHash: null, // 上次novels.json的hash值
                     
+                    // 移动端滑动相关
+                    lastScrollY: 0, // 上次滚动位置
+                    headerVisible: true, // 顶部栏是否可见
+                    
+                    // 自动滚动相关
+                    autoScrollEnabled: true, // 是否启用自动滚动
+                    showScrollToCurrentBtn: false, // 是否显示跳转到当前语句按钮
+                    scrollToCurrentTimer: null, // 跳转按钮隐藏定时器
+                    
                     preloadingNext: false, // 预加载下一章状态
                     preloadedChapters: new Set(), // 已预加载的章节集合
                     sentences: [], // 当前章节的语句对象数组
@@ -1058,6 +1169,7 @@
                 await this.loadNovels();
                 this.loadFromCache();
                 this.startReadingTimer();
+                this.setupMobileScrollHandler();
                 
                 // 监听页面关闭事件，保存状态
                 window.addEventListener('beforeunload', () => {
@@ -1068,6 +1180,7 @@
             beforeUnmount() {
                 this.stopReadingTimer();
                 this.stopAutoPlay();
+                this.hideScrollToCurrentButton(); // 清理跳转按钮定时器
                 this.saveToCache();
             },
             
@@ -1201,6 +1314,11 @@
                         // 预加载下一章
                         if (saveCache) {
                             this.preloadNextChapter(novelName, chapter);
+                        }
+                        
+                        // 重新设置移动端滑动监听
+                        if (window.innerWidth <= 768) {
+                            setTimeout(() => this.setupMobileScrollHandler(), 100);
                         }
                         
                     } catch (error) {
@@ -1387,6 +1505,9 @@
                         // 英文部分
                         if (this.showEnglish && sentence.englishText) {
                             html += '<div class="english-sentence ' + this.getSpeakerClass(sentence.speaker) + ' ' + this.getEmotionClass(sentence.emotion) + '">';
+                            
+                            // 表情符号已移除，保持界面简洁
+                            
                             html += this.escapeHtml(sentence.englishText);
                             
                             // 音频按钮
@@ -1646,6 +1767,11 @@
                         
                         await this.currentAudio.play();
                         
+                        // 自动滚动到当前播放的语句
+                        if (this.autoScrollEnabled) {
+                            this.scrollToCurrentSentence();
+                        }
+                        
                         // 强制更新界面
                         this.$forceUpdate();
                         
@@ -1671,6 +1797,12 @@
                         this.currentAudio = null;
                     }
                     this.currentPlayingId = null;
+                    
+                    // 如果不是自动播放模式，隐藏跳转按钮
+                    if (!this.autoPlaying) {
+                        this.hideScrollToCurrentButton();
+                    }
+                    
                     // 强制更新界面
                     this.$forceUpdate();
                 },
@@ -1712,6 +1844,7 @@
                     this.autoPlaying = false;
                     this.autoPlayIndex = 0;
                     this.stopCurrentAudio();
+                    this.hideScrollToCurrentButton(); // 隐藏跳转按钮
                     // 强制更新界面
                     this.$forceUpdate();
                 },
@@ -1734,6 +1867,8 @@
                 getEmotionClass(emotion) {
                     return `emotion-${emotion}`;
                 },
+                
+                // getEmotionEmoji 方法已移除，保持代码简洁
                 
                 // 智能刷新相关方法
                 async smartRefresh() {
@@ -1819,6 +1954,136 @@
                     setTimeout(() => {
                         this.error = originalError;
                     }, 2000);
+                },
+                
+                // 设置移动端滑动监听
+                setupMobileScrollHandler() {
+                    if (window.innerWidth > 768) return; // 只在移动端启用
+                    
+                    // 延迟设置，确保DOM已渲染
+                    this.$nextTick(() => {
+                        const contentBody = document.querySelector('.content-body');
+                        if (!contentBody) {
+                            // 如果还没有找到元素，再次延迟尝试
+                            setTimeout(() => this.setupMobileScrollHandler(), 1000);
+                            return;
+                        }
+                        
+                        let ticking = false;
+                        
+                        const handleScroll = () => {
+                            if (!ticking) {
+                                requestAnimationFrame(() => {
+                                    const currentScrollY = contentBody.scrollTop;
+                                    const scrollDifference = currentScrollY - this.lastScrollY;
+                                    
+                                    // 滚动阈值，避免微小滚动触发
+                                    if (Math.abs(scrollDifference) > 10) {
+                                        if (scrollDifference > 0 && currentScrollY > 50) {
+                                            // 向下滚动且不在顶部，隐藏顶部栏
+                                            this.headerVisible = false;
+                                        } else if (scrollDifference < 0) {
+                                            // 向上滚动，显示顶部栏
+                                            this.headerVisible = true;
+                                        }
+                                        
+                                        this.lastScrollY = currentScrollY;
+                                        
+                                        // 检查是否需要显示跳转按钮
+                                        this.checkScrollToCurrentButton();
+                                    }
+                                    
+                                    ticking = false;
+                                });
+                                ticking = true;
+                            }
+                        };
+                        
+                        contentBody.addEventListener('scroll', handleScroll, { passive: true });
+                        
+                        // 监听窗口大小变化，重新设置
+                        window.addEventListener('resize', () => {
+                            if (window.innerWidth > 768) {
+                                this.headerVisible = true; // 桌面端始终显示
+                                contentBody.removeEventListener('scroll', handleScroll);
+                            } else {
+                                this.setupMobileScrollHandler(); // 重新设置移动端监听
+                            }
+                        });
+                    });
+                },
+                
+                // 滚动到当前播放语句
+                scrollToCurrentSentence() {
+                    if (!this.currentPlayingId) return;
+                    
+                    this.$nextTick(() => {
+                        const currentElement = document.querySelector(`[data-id="${this.currentPlayingId}"]`);
+                        if (currentElement) {
+                            currentElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'center'
+                            });
+                            
+                            // 暂时禁用自动滚动检查，避免立即显示跳转按钮
+                            this.autoScrollEnabled = false;
+                            setTimeout(() => {
+                                this.autoScrollEnabled = true;
+                            }, 1000);
+                        }
+                    });
+                },
+                
+                // 检查是否需要显示跳转到当前语句按钮
+                checkScrollToCurrentButton() {
+                    if (!this.currentPlayingId || !this.autoPlaying) {
+                        this.hideScrollToCurrentButton();
+                        return;
+                    }
+                    
+                    const currentElement = document.querySelector(`[data-id="${this.currentPlayingId}"]`);
+                    if (!currentElement) return;
+                    
+                    const contentBody = document.querySelector('.content-body');
+                    if (!contentBody) return;
+                    
+                    const elementRect = currentElement.getBoundingClientRect();
+                    const containerRect = contentBody.getBoundingClientRect();
+                    
+                    // 检查当前播放语句是否在可视区域中心附近
+                    const elementCenter = elementRect.top + elementRect.height / 2;
+                    const containerCenter = containerRect.top + containerRect.height / 2;
+                    const threshold = containerRect.height * 0.3; // 30% 的容器高度作为阈值
+                    
+                    if (Math.abs(elementCenter - containerCenter) > threshold) {
+                        this.showScrollToCurrentButton();
+                    } else {
+                        this.hideScrollToCurrentButton();
+                    }
+                },
+                
+                // 显示跳转按钮
+                showScrollToCurrentButton() {
+                    this.showScrollToCurrentBtn = true;
+                    
+                    // 清除之前的定时器
+                    if (this.scrollToCurrentTimer) {
+                        clearTimeout(this.scrollToCurrentTimer);
+                    }
+                    
+                    // 5秒后自动隐藏按钮
+                    this.scrollToCurrentTimer = setTimeout(() => {
+                        this.hideScrollToCurrentButton();
+                    }, 5000);
+                },
+                
+                // 隐藏跳转按钮
+                hideScrollToCurrentButton() {
+                    this.showScrollToCurrentBtn = false;
+                    if (this.scrollToCurrentTimer) {
+                        clearTimeout(this.scrollToCurrentTimer);
+                        this.scrollToCurrentTimer = null;
+                    }
                 },
                 
                 // 搜索相关方法
