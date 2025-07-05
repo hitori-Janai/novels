@@ -7,7 +7,7 @@ audio = "books/oap_en/audio/"
 cn = "books/oap_en/cn/cn.txt"
 
 [novels.nomoney_en]
-title = "没有钱 英文版"
+title = "借贷修仙 英文版"
 audio = "books/nomoney_en/audio/"
 cn = "books/nomoney_en/cn/cn_new.txt"
 
@@ -32,6 +32,18 @@ cn = "books/nomoney_en/cn/cn_new.txt"
 18 = {en = "books/oap_en/0018.txt", title = "第18章 对我来说，她比你更重要"}
 19 = {en = "books/oap_en/0019.txt", title = "第19章 这是礼物吗？"}
 20 = {en = "books/oap_en/0020.txt", title = "第20章 我变成这样，都是因为你呢~"}
+21 = {en = "books/oap_en/0021.txt", title = "第21章 老天爷在敲门"}
+22 = {en = "books/oap_en/0022.txt", title = "第22章 放心，我又不是真的病娇"}
+23 = {en = "books/oap_en/0023.txt", title = "第23章 让女主爱上我"}
+24 = {en = "books/oap_en/0024.txt", title = "第24章 你知道病娇吗？"}
+25 = {en = "books/oap_en/0025.txt", title = "第25章 你喜欢过她吗？"}
+26 = {en = "books/oap_en/0026.txt", title = "第26章 你喜欢吗？"}
+27 = {en = "books/oap_en/0027.txt", title = "第27章 她怪可爱的"}
+28 = {en = "books/oap_en/0028.txt", title = "第28章 谎言"}
+29 = {en = "books/oap_en/0029.txt", title = "第29章 你怎么不朝我撒娇？"}
+30 = {en = "books/oap_en/0030.txt", title = "第30章 系统奖励，巨大提升！"}
+31 = {en = "books/oap_en/0031.txt", title = "第31章 危机，被怀疑了！"}
+32 = {en = "books/oap_en/0032.txt", title = "第32章 昔日的“姐妹”"}
 
 [novels.nomoney_en.chap]
 1 = {en = "books/nomoney_en/0001.txt", title = "第1章 面试"}
@@ -44,11 +56,13 @@ cn = "books/nomoney_en/cn/cn_new.txt"
 8 = {en = "books/nomoney_en/0008.txt", title = "第8章 老师的关心"}
 9 = {en = "books/nomoney_en/0009.txt", title = "第9章 工作"}
 10 = {en = "books/nomoney_en/0010.txt", title = "第10章 竞争激烈和3级健体"}
+11 = {en = "books/nomoney_en/0011.txt", title = "第11章 周天采气"}
 12 = {en = "books/nomoney_en/0012.txt", title = "第12章 勇猛精进（感谢‘水"}
 13 = {en = "books/nomoney_en/0013.txt", title = "第13章 法赛"}
 14 = {en = "books/nomoney_en/0014.txt", title = "第14章 准备和新工作"}
 15 = {en = "books/nomoney_en/0015.txt", title = "第15章 中心大厦"}
 16 = {en = "books/nomoney_en/0016.txt", title = "第16章 巡逻"}
+17 = {en = "books/nomoney_en/0017.txt", title = "第17章 分数和秘辛"}
 18 = {en = "books/nomoney_en/0018.txt", title = "第18章 天人演武图"}
 19 = {en = "books/nomoney_en/0019.txt", title = "第19章 惊怖和道心"}
 20 = {en = "books/nomoney_en/0020.txt", title = "第20章 参悟"}

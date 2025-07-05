@@ -1,6 +1,6 @@
 {
   "bookId": "nomoney_en",
-  "bookTitle": "没有钱 英文版",
+  "bookTitle": "借贷修仙 英文版",
   "chapters": {
     "0001": [
       {
@@ -8191,6 +8191,631 @@
         "cn": "张羽无奈地耸了耸肩：“没办法，我急用钱，只能试试看了。”"
       }
     ],
+    "0011": [
+      {
+        "id": 1178,
+        "en": "Chapter 11: Celestial Cycle Qi Gathering",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第11章 周天采气"
+      },
+      {
+        "id": 1179,
+        "en": "In front of a skyscraper in the city center.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "市中心的一座摩天大楼前。"
+      },
+      {
+        "id": 1180,
+        "en": "Zhang Yu lifted his head and looked up at the towering building that seemed to pierce the sky. He could faintly see what looked like a celestial palace floating at the top of the skyscraper.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽抬着头，望着那高耸入云，好似要洞穿天空的大厦，隐约能看到摩天大楼的顶部好像有一座仙宫隐约浮现。"
+      },
+      {
+        "id": 1181,
+        "en": "This was the Xianyun Group's office building in downtown Songyang.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这里便是仙韵集团在嵩阳市中心的办公大楼。"
+      },
+      {
+        "id": 1182,
+        "en": "Beyond that, Zhang Yu could also see an even taller giant building in the distance, as if it connected to the real edge of the sky. He knew that was Songyang City's tallest building, the legendary 999-floor Central Tower, which was also a landmark he often saw on his way to and from school.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "除此之外，张羽还能看到远处有一栋更高的巨楼，像是连接到了真正的天际尽头一样，他知道那是嵩阳市的第一高楼，据说有999层的中心大厦，也是他上下学路上经常看到的地标。"
+      },
+      {
+        "id": 1183,
+        "en": "At this moment, he turned his head again to look at the office building in front of him.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "此刻，他再次转头看向了眼前的办公大楼。"
+      },
+      {
+        "id": 1184,
+        "en": "\"Xianyun Group?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“仙韵集团吗？”"
+      },
+      {
+        "id": 1185,
+        "en": "On the way here, Zhang Yu had already searched online for information about Xianyun Group.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "来的路上张羽已经在网上搜索了一番仙韵集团的相关资料。"
+      },
+      {
+        "id": 1186,
+        "en": "This was a giant corporation under the Wanfa Sect, with business including developing cultivation techniques, selling cultivation techniques, cultivation education, books and cultural products, and more.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这是万法宗门下的一家巨型企业，所经营的业务包括开发功法、售卖功法、仙道教育、图书文创等方面。"
+      },
+      {
+        "id": 1187,
+        "en": "And the Wanfa Sect was one of the Ten Great Sects. In this Kunxu, from food, clothing, housing and transportation to birth, aging, sickness and death, a person's entire life was inseparable from the Ten Great Sects. Cultivation was naturally even more so.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而万法宗便是十大宗门之一，在这个昆墟之中，从衣食住行到生老病死，人的一生都离不开十大宗门，仙道修炼就自然更是如此。"
+      },
+      {
+        "id": 1188,
+        "en": "So Zhang Yu was not surprised at all that a giant corporation like Xianyun Group belonged to the Wanfa Sect, one of the Ten Great Sects.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "所以对于仙韵集团这样的巨企属于万法宗这个十大宗门门下，如今的张羽也毫不意外。"
+      },
+      {
+        "id": 1189,
+        "en": "He walked into the building with his head down. After explaining his purpose at the front desk, Zhang Yu went through registration, contract signing, and a simple physical examination. Finally, he was led to a place that looked like a classroom.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "低头走进大楼，张羽在前台说明了来意之后，又陆续经过了登记、签合同和一通简单的体检，最后被引到了一处像是教室的地方。"
+      },
+      {
+        "id": 1190,
+        "en": "He saw that besides him, several other students were already sitting in the classroom.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "便看到教室里除了他以外已经坐了几名学生。"
+      },
+      {
+        "id": 1191,
+        "en": "After waiting for a while, when the number of students in the classroom reached fifteen, a middle-aged man in a suit walked in and began explaining today's technique testing content.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "又等待了一段时间，在教室里学生数目达到十五人之后，一名西装革履的中年男子走了进来，开始讲述起了今天的试功内容。"
+      },
+      {
+        "id": 1192,
+        "en": "\"Hello everyone, I am today's instructor.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“大家好，我是今天的指导老师。”"
+      },
+      {
+        "id": 1193,
+        "en": "\"Everyone here has already signed the contract, but I still need to remind you that everything we discuss here today cannot be shared with anyone. If our company discovers that any of you has leaked information, we will find you no matter where you run to.\"",
+        "speaker": "面试官",
+        "emotion": "angry",
+        "cn": "“在场的各位都已经签过了合同，但我还是要提醒一下，今天我们在这里讲述的一切都不允许传播出去，一旦被我司发现有哪一位走漏了消息，那不论诸位跑到天涯海角，我们都一定会找到你。”"
+      },
+      {
+        "id": 1194,
+        "en": "Hearing these words, the many students felt a chill in their hearts, but they knew the man's words were true. With Xianyun Group's strength and the Wanfa Sect behind them, doing this would indeed not be difficult.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "听着这番话的众多学生心中一凛，却知道对方所言不虚，以仙韵集团的实力，以及对方背后的万法宗，要做到这点确实不难。"
+      },
+      {
+        "id": 1195,
+        "en": "\"The cultivation technique you will try to learn today is what we call Experimental Technique Number 113. Now please everyone watch the instructional video first...\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“各位今天要尝试学习的功法，我们称呼为试验功法113号，接下来请大家先看一遍教学视频……”"
+      },
+      {
+        "id": 1196,
+        "en": "According to the introduction in the short instructional film, this technique was a Qi Refining stage breathing technique, but unlike the basic breathing method, this technique was much more complex, like establishing some kind of mana circulation throughout the entire body.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "按照教学短片中的介绍，这门功法是一门炼气境界的吐纳功法，但和基础吐纳法不同的点，在于这门功法要复杂了许多，就像是要在全身上下建立某种法力的循环一样。"
+      },
+      {
+        "id": 1197,
+        "en": "So after watching the instructional video, most of the students who came to test the technique were still completely confused.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "以至于看完了教学视频之后，大部分来试功的学生仍旧是一头雾水。"
+      },
+      {
+        "id": 1198,
+        "en": "It wasn't until the instructor's detailed explanation that followed that the students had a rough understanding, but they felt increasingly scared.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "直到在接下来指导老师的详细讲解中，众多学生们才隐隐有了一个大概的了解，却越发感觉到头皮发麻。"
+      },
+      {
+        "id": 1199,
+        "en": "\"No way... you want us to practice this kind of technique? Are we qualified?\"",
+        "speaker": "陌生男1",
+        "emotion": "angry",
+        "cn": "“不是……让我们练这种功法？我们配吗？”"
+      },
+      {
+        "id": 1200,
+        "en": "The cultivation route of this technique was really too complex and difficult, like trying to draw the Qingming Riverside Scene on a piece of A4 paper.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "实在是这门功法的运功路线太复杂，难度太高了，宛如是在一张4A纸上画清明上河图一样。"
+      },
+      {
+        "id": 1201,
+        "en": "If Zhang Yu had to describe it, it was as difficult as carving flowers on poop.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "要让张羽来形容的话，就是这和屎上雕花一样难。"
+      },
+      {
+        "id": 1202,
+        "en": "Let alone following the cultivation route in the instruction to practice, everyone present couldn't even memorize the cultivation route. They had almost forgotten most of it right after the explanation.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "别说照着教学中的运功路线来运功了，在场众人根本连这运功路线都背不下来，几乎刚讲完就已经忘了大半。"
+      },
+      {
+        "id": 1203,
+        "en": "Forget about spreading it - the students had no confidence at all about whether they could successfully practice this technique and complete the experiment.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "别说传播了，对于接下来能不能练成这门武功完成试验，学生们都可谓是全无信心。"
+      },
+      {
+        "id": 1204,
+        "en": "Seeming to sense the emotional changes of the many students, the instructor said from above: \"Everyone, don't worry. This experiment doesn't require you to master this technique.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "似乎是感受到了众多学生的情绪变化，指导老师在上方说道：“各位放心，这次试验并不要求你们练成这门功法。”"
+      },
+      {
+        "id": 1205,
+        "en": "\"In fact, beginners cannot possibly master this technique on their own.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“事实上初学者光靠自己，也是不可能练成这门功法的。”"
+      },
+      {
+        "id": 1206,
+        "en": "\"What we're testing this time includes the auxiliary cultivation equipment that matches Technique 113...\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“我们这次要测试的东西，还有与113相匹配的辅助运功设备……”"
+      },
+      {
+        "id": 1207,
+        "en": "Next, all the students were sent to a testing room, where mana detection patches were attached to their hands, feet, chest, back, and other positions.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "接下来，在场的众多学生们被送到了一处检测室，在双手、双脚还有胸口、后背等位置贴上了法力检测贴片。"
+      },
+      {
+        "id": 1208,
+        "en": "Then needle-like things connected to wires were brought in front of the students by mechanical arms.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "然后一根根银针似的东西则连着线路，被机械臂送到了学生们的面前。"
+      },
+      {
+        "id": 1209,
+        "en": "The instructor continued: \"When you start practicing, the detection patches will constantly monitor the flow of mana in your body.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "一旁的指导老师继续说道：“当你们开始运功之后，检测贴片会时时监控你们体内法力运转的状况。”"
+      },
+      {
+        "id": 1210,
+        "en": "\"The magnetic needles will stimulate points along your mana circulation route under the control of mechanical arms, helping you identify and correct your cultivation route...\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“而元磁针则会在机械臂的操作下，在你们法力运转路线上进行刺激，辅助你们识别和纠正运功路线……”"
+      },
+      {
+        "id": 1211,
+        "en": "After listening for a while, Zhang Yu understood - it was like automatic pathfinding... oh no, automatic technique finding.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽听了一会儿便明白了，就是个自动寻路……哦不，不自动寻功是吧。"
+      },
+      {
+        "id": 1212,
+        "en": "Because Technique 113's mana route was too complex, with extremely high requirements for timing and positioning of spiritual energy and mana circulation, it needed to monitor the practitioner's cultivation path while using magnetic needles to stimulate various parts of the body for guidance.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "因为这113功法的法力路线太过复杂，对于灵机和法力运转的时机、点位都要求太高，所以需要一边检测修炼者的运功路径，一边用元磁针刺激体内各部位来进行引导。"
+      },
+      {
+        "id": 1213,
+        "en": "However, this process was also quite dangerous, because Technique 113's cultivation route was too complex.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "不过这个过程的危险却也不小，因为113功法的运功路线太过复杂。"
+      },
+      {
+        "id": 1214,
+        "en": "With such a complex cultivation route, if the mana circulation path had even the slightest error, it would cause mana to go out of control, overflow in the body, causing itching and pain, hot and cold sensations, easily leading to greater loss of control.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "如此复杂的运功路线下，一旦法力的运转路径稍有差错，便会引得法力失控，溢散体内，搅得体内又痒又疼，忽冷忽热，容易引起更大失控。"
+      },
+      {
+        "id": 1215,
+        "en": "If it dragged on too long, it would cause internal injuries. The longer it dragged on, the more serious the internal injuries would become.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "若是时间拖得久了，还将导致内伤，时间拖得越久，内伤便越是严重。"
+      },
+      {
+        "id": 1216,
+        "en": "After that, you would either go to the hospital and pay a high price for a powerful cultivator to use strong mana to suppress the out-of-control mana in the injured person's body, or rely on physical strength to endure it and wait for the mana to naturally exhaust and dissipate, or the practitioner would master this technique themselves and use the technique to actively control the out-of-control scattered mana on the cultivation route.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "此后要么去医院以高价请强者以强横法力镇压伤者体内失控的法力，要么凭借肉体强度硬抗，等待法力自行耗尽散去，要么便是修炼者自身练成此功，以行功之法，去主动收束运功路线上失控散逸的法力。"
+      },
+      {
+        "id": 1217,
+        "en": "At the same time, the instructor continued: \"...Everything is as stated in the contracts you signed. The payment for this technique testing will be distributed according to the percentage of the cultivation route each of you completes. Only by completing 100% of the cultivation route can you receive the full ten thousand yuan.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "与此同时，指导老师接着说道：“……一切如各位所签的合同那样，这次试功的酬劳，将按照各位完成的运功路线占比来发放，只有走完100%的运功路线，才能获得完整的一万块。”"
+      },
+      {
+        "id": 1218,
+        "en": "\"If the mana only goes halfway, then you'll only get five thousand.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“如果法力只走了一半的话，那便只有五千了。”"
+      },
+      {
+        "id": 1219,
+        "en": "\"Alright everyone, if there are no problems, please begin.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "“好了各位，如果没有问题的话，便请开始吧。”"
+      },
+      {
+        "id": 1220,
+        "en": "Zhang Yu looked at the information displayed on the Feather Book.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽看了一眼浮现在羽书上的资料。"
+      },
+      {
+        "id": 1221,
+        "en": "Celestial Cycle Qi Gathering Method Level 0 (0/1)",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "周天采气法0级（0/1）"
+      },
+      {
+        "id": 1222,
+        "en": "He thought to himself: \"This means I just need to practice it once?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "他心中暗道：“这意思只要练一遍就成了？”"
+      },
+      {
+        "id": 1223,
+        "en": "Zhang Yu closed his eyes and tried to circulate the technique he had just learned, starting from his dantian and moving toward his spine.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽闭上双眼试着运转刚刚学的这门功法，由丹田开始向着背脊转移过去。"
+      },
+      {
+        "id": 1224,
+        "en": "At the same time, he felt a slight stinging sensation in his spine, knowing that was the magnetic needle guiding him to circulate mana there.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "同时，他感觉到背脊处有一点点刺痛，知道那便是元磁针在指引着他将法力运转过去。"
+      },
+      {
+        "id": 1225,
+        "en": "So he followed the magnetic needle's guidance, slowly circulating his mana bit by bit.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "于是接下来他便按着元磁针的指引，一点一点地运转法力跟了上去。"
+      },
+      {
+        "id": 1226,
+        "en": "...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "……"
+      },
+      {
+        "id": 1227,
+        "en": "At the same time, outside the testing room, a group of people were observing the students' condition.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "与此同时，检测室外，一群人正观察着学生们的情况。"
+      },
+      {
+        "id": 1228,
+        "en": "\"It's starting.\"",
+        "speaker": "陌生男1",
+        "emotion": "neutral",
+        "cn": "“开始了。”"
+      },
+      {
+        "id": 1229,
+        "en": "The lead researcher had messy short hair and was staring intently at the constantly changing data on the screen.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "为首的研究人员有着一头凌乱的短发，正死死盯着屏幕上不断变化的数据。"
+      },
+      {
+        "id": 1230,
+        "en": "That showed the mana circulation situation in each student's body after they began trying to practice Experimental Technique 113.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "那上面是各个学生在开始试着修炼试验功法113号之后，体内法力运转的情况。"
+      },
+      {
+        "id": 1231,
+        "en": "The assistant beside him was also looking at the practice diagrams of each student on the screen with a serious expression. This was an image that described the students' internal mana circulation routes, compiled from the mana data from various parts of the students' bodies.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一旁的助手同样满脸凝重地看着屏幕上一位位学员的练功图，这是汇聚了学生们身上各部位的法力数据之后，用来描述学员体内法力运转路线的图像。"
+      },
+      {
+        "id": 1232,
+        "en": "The correct circulation route was green, while parts where mana circulation deviated would be marked in red.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "正确的运转路线是绿色，而法力运转出现偏差的部分，则会被标记为红色。"
+      },
+      {
+        "id": 1233,
+        "en": "As time passed minute by minute, watching more and more red error markings appear on the circulation routes, disappointment kept showing in the assistant's eyes.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "时间一分一秒过去，看着那一个个运功路线上不断出现越来越多红色报错，助手的眼中也不断流露出失望之色。"
+      },
+      {
+        "id": 1234,
+        "en": "\"Teacher, it seems the magnetic needles' guidance precision needs to be improved further, otherwise they can't meet the mana circulation precision needed for beginners practicing 113.\"",
+        "speaker": "陌生男1",
+        "emotion": "neutral",
+        "cn": "“老师，元磁针的指引精度看来还要继续提升，不然无法满足初学者修炼113时的法力运行精度。”"
+      },
+      {
+        "id": 1235,
+        "en": "\"Getting beginners to master 113 is still too difficult. Should we recruit some test subjects with higher Dao Heart levels?\"",
+        "speaker": "陌生男1",
+        "emotion": "neutral",
+        "cn": "“要让初学者练成113还是太难了，要不要招一批道心等级更高的试验者？”"
+      },
+      {
+        "id": 1236,
+        "en": "The researcher called teacher frowned: \"Whether it's 113 or the magnetic needles, they were originally developed for beginners. I won't change this direction.\"",
+        "speaker": "研究员",
+        "emotion": "angry",
+        "cn": "被称为老师的研究人员皱眉道：“不论113还是元磁针，本来就是为初学者研发出来的，这个方向我不会改变。”"
+      },
+      {
+        "id": 1237,
+        "en": "\"Besides, those with higher Dao Heart levels have better techniques to learn. 113's passive breathing effect lacks competitiveness among them. Instead, beginners need the passive breathing effect more...\"",
+        "speaker": "研究员",
+        "emotion": "neutral",
+        "cn": "“再说了，道心等级高一些有更好的功法去学，113的被动吐纳效果在其中缺乏竞争力，反而是初学者更需要被动吐纳的效果……”"
+      },
+      {
+        "id": 1238,
+        "en": "Just then, a student who made a mistake groaned and suddenly spit out a large mouthful of blood.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "就在这时，一名失误的学生闷哼一声，猛地吐出了一大口血来。"
+      },
+      {
+        "id": 1239,
+        "en": "The 'teacher' said coldly: \"Hurry up and get him out. Don't let him disturb the others' mental state.\"",
+        "speaker": "研究员",
+        "emotion": "angry",
+        "cn": "‘老师’冷冷道：“赶紧把他送出去，不要让他扰乱了其他人的心境。”"
+      },
+      {
+        "id": 1240,
+        "en": "But with the first student spitting blood, more and more students trying to practice the technique began to feel unwell. Some had iron-blue faces and couldn't breathe, some screamed and fainted from pain, and some had minor injuries, just pale faces with pain or itching where they were circulating mana...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但伴随着第一名吐血学生的出现，越来越多尝试修炼功法的学生开始出现不适，有的面色铁青透不过气来，有的惨叫一声疼晕了过去，也有些伤势轻微，仅仅是脸色发白，运转法力的位置出现疼痛或者瘙痒……"
+      },
+      {
+        "id": 1241,
+        "en": "Watching student after student being carried out, the 'teacher's' expression became increasingly ugly.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "看着一个又一个的学生被送了出去，‘老师’的脸色变得越来越难看。"
+      },
+      {
+        "id": 1242,
+        "en": "He said unhappily: \"This batch of students is too poor quality. Can't we recruit some capable students?\"",
+        "speaker": "研究员",
+        "emotion": "angry",
+        "cn": "他不满道：“这批学生的素质太差了，就不能招点厉害的学生吗？”"
+      },
+      {
+        "id": 1243,
+        "en": "The assistant quietly explained: \"Teacher, the previous test subjects were injured too severely. No schools are willing to cooperate with us anymore.\"",
+        "speaker": "陌生男1",
+        "emotion": "neutral",
+        "cn": "助理小声解释道：“老师，之前的试验者受伤太过严重，已经没有学校愿意与我们合作了。”"
+      },
+      {
+        "id": 1244,
+        "en": "The 'teacher' snorted coldly, showing dissatisfaction on his face: \"Just a bunch of poor students. Whether it's 113 or the magnetic needles, as long as they can be successfully improved, that's such a huge beginner market. What does it matter if a few hundred people die?\"",
+        "speaker": "研究员",
+        "emotion": "angry",
+        "cn": "‘老师’冷哼一声，脸上浮现出不满之色：“一群穷学生而已，不论是113还是元磁针，只要能改进成功，那是多大的初学者市场？就算死上几百人又如何了？”"
+      },
+      {
+        "id": 1245,
+        "en": "At the same time, only the last three students who were still persisting in their practice remained in the testing room.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "与此同时，检测室内只剩下最后三名还在坚持运功的学生。"
+      },
+      {
+        "id": 1246,
+        "en": "Two of them had fewer errors, with very little out-of-control scattered mana, so they were still persisting.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "其中两人因为报错较少，失控散逸的法力极少，所以还在坚持。"
+      },
+      {
+        "id": 1247,
+        "en": "The other pale-faced student surprised even the 'teacher': \"This boy made quite a few mistakes during practice. He must be in unbearable pain all over his body right now, yet he can still persist until now?\"",
+        "speaker": "研究员",
+        "emotion": "neutral",
+        "cn": "另一个面色苍白的学生却看得‘老师’也微微惊讶：“此子运功过程中出岔不少，此刻只怕已经是浑身上下痛苦难耐，竟然还能坚持到现在？”"
+      },
+      {
+        "id": 1248,
+        "en": "The assistant beside him asked: \"Teacher, should we stop him?\"",
+        "speaker": "陌生男1",
+        "emotion": "neutral",
+        "cn": "一旁的助手问道：“老师，要阻止他吗？”"
+      },
+      {
+        "id": 1249,
+        "en": "The 'teacher' shook his head with interest: \"Since he wants to earn this money so badly, let's give him this chance.\"",
+        "speaker": "研究员",
+        "emotion": "neutral",
+        "cn": "‘老师’摇了摇头，饶有兴趣道：“既然他这么想赚这份钱，给他这个机会便是。”"
+      },
+      {
+        "id": 1250,
+        "en": "\"Besides, for our research, having one more complete set of error data on the cultivation route is obviously more beneficial.\"",
+        "speaker": "研究员",
+        "emotion": "neutral",
+        "cn": "“何况对我们的研究来说，多一份完整运功路线上的犯错数据，显然更有利。”"
+      },
+      {
+        "id": 1251,
+        "en": "...",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "……"
+      },
+      {
+        "id": 1252,
+        "en": "In the testing room, whenever Zhang Yu wanted to give up, he felt that chill from the ritual's power and the countdown that arose in his mind.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "检测室内，每当张羽想要放弃，便感觉到那股来自仪式力量的寒意，以及脑海中泛起的倒计时。"
+      },
+      {
+        "id": 1253,
+        "en": "\"This stupid thing! All it knows is to nag. If you're so capable, you do it.\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "“这智障玩意！就知道逼逼逼，有本事你来啊。”"
+      },
+      {
+        "id": 1254,
+        "en": "During the practice process, whenever Zhang Yu made a slight mistake, he could feel mana going out of control and overflowing from the route, staying in various parts of his body and stimulating him until his whole body was sore and itchy, hot and cold.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "运功的过程中，张羽稍有差错，便能感觉到有法力从路线上失控溢散了出去，留在身体的各部位刺激得他浑身上下又酸又痒，忽冷忽热。"
+      },
+      {
+        "id": 1255,
+        "en": "After finally completing the entire cultivation route once, he glanced at the Feather Book and saw \"Celestial Cycle Qi Gathering Method Level 0 (0/1)\" had changed to \"Celestial Cycle Qi Gathering Method Level 1 (0/20)\". Only then did he feel slightly relieved.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "好不容易将整套运功路线彻底走了一遍，瞄了一眼羽书上的“周天采气法0级（0/1）”变成了“周天采气法1级（0/20）”，他心中才微微松了一口气。"
+      },
+      {
+        "id": 1256,
+        "en": "Zhang Yu admitted he had been gambling, but fortunately this time the gamble paid off.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽承认自己有赌的成份，但还好这次赌成功了。"
+      },
+      {
+        "id": 1257,
+        "en": "At this moment, memories of practicing this technique hundreds and thousands of times flooded out from his mind, making him feel as if he had been practicing this technique for months.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "此刻成百上千遍运转此功的记忆从他脑海中狂涌而出，让他感觉自己就好像是习练此门功法已经数月了一样。"
+      },
+      {
+        "id": 1258,
+        "en": "At this moment, Zhang Yu felt that if he wanted to, he could use the Celestial Cycle Qi Gathering Method to gather all the out-of-control mana in his body and establish a complex mana circulation system.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这一刻的张羽感觉自己只要想，便能以周天采气法收摄全身失控的法力，建立一套复杂的法力循环。"
+      },
+      {
+        "id": 1259,
+        "en": "However, he didn't do so immediately. Instead, he endured the soreness and itching all over his body and slowly stood up.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "不过他并没有立刻这么做，而是顶着浑身酸痒，缓缓站了起来。"
+      },
+      {
+        "id": 1260,
+        "en": "The instructor beside him hurried over, also somewhat surprised: \"Student, are you alright?\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "一旁的指导老师连忙走了过来，也有些惊讶地说道：“这位同学，你没事吧？”"
+      },
+      {
+        "id": 1261,
+        "en": "This was the first time he had seen someone persist to the end with such a high error rate.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "他还是第一次见到错误率这么高的情况下，还能将此功坚持运行到最后的。"
+      },
+      {
+        "id": 1262,
+        "en": "Zhang Yu clutched his stomach and said: \"I feel like my insides are burning, itchy and painful. The upper half of my body feels like it's on fire, and the lower half feels frozen... It's so uncomfortable.\"",
+        "speaker": "张羽",
+        "emotion": "sad",
+        "cn": "张羽捂着肚子说道：“我感觉五内俱焚，又痒又痛，上半身像是在火烧，下半身像是被冰冻……好难受啊。”"
+      },
+      {
+        "id": 1263,
+        "en": "The instructor hurried to support him: \"Let me take you to the medical office for a checkup first.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "指导老师连忙扶着他说道：“我带你先去医务室检查一下情况吧。”"
+      },
+      {
+        "id": 1264,
+        "en": "\"No need!\" Zhang Yu waved his hand forcefully and said: \"I mean... you need to pay more.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“不用！”张羽猛地一摆手说道：“我的意思是……要加钱。”"
+      },
+      {
+        "id": 1265,
+        "en": "The instructor looked him up and down, seeing Zhang Yu constantly trembling and his increasingly pale face, and said: \"One thousand yuan, sign another contract, and whatever happens to you next has nothing to do with us.\"",
+        "speaker": "面试官",
+        "emotion": "neutral",
+        "cn": "指导老师上下打量了他一番，看着张羽不断颤抖，还有越发苍白的脸庞，开口说道：“1000块钱，再签一份合同，你接下来出了什么事情都和我们没关系。”"
+      },
+      {
+        "id": 1266,
+        "en": "After some haggling, Xianyun Company finally raised the payment by 3,000 yuan for Zhang Yu, requiring that no matter what his injuries were afterward, they would have no relationship with Xianyun Company.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一番拉扯之后，仙韵公司最后多涨了3000块给张羽，要求他接下来不论伤势如何，都与仙韵公司没有关系了。"
+      }
+    ],
     "0012": [
       {
         "id": 1268,
@@ -11363,6 +11988,680 @@
         "speaker": "赵天行",
         "emotion": "sad",
         "cn": "赵天行赶紧将张羽一把拽了过去，局促不安地说道：“你快点转过来，千万别让他们看到了。”"
+      }
+    ],
+    "0017": [
+      {
+        "id": 1725,
+        "en": "Chapter 17: Scores and Secrets",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "第17章 分数和秘辛"
+      },
+      {
+        "id": 1726,
+        "en": "\"I'm so hungry.\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "“好饿。”"
+      },
+      {
+        "id": 1727,
+        "en": "Qian Shen rubbed his belly, completely uninterested in any of the paintings in the exhibition. He just wanted to find somewhere to have a big meal.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "钱深摸了摸肚子，对眼前这些画展中的一幅幅画作毫无兴趣，只想找个地方大吃一顿。"
+      },
+      {
+        "id": 1728,
+        "en": "After all, he had just finished his physical training makeup class and rushed over here. With his stomach growling, he felt like he could eat an entire cow.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "毕竟是刚刚完成炼体补课再赶过来的，饥肠辘辘的他只觉自己能吃掉一头牛。"
+      },
+      {
+        "id": 1729,
+        "en": "\"I'm going to look for something good to eat.\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "“我去找找有没有什么好吃的。”"
+      },
+      {
+        "id": 1730,
+        "en": "After greeting his classmates who came with him, Qian Shen began searching around the exhibition.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "和同来的同学们打过招呼，钱深便在展会里找了起来。"
+      },
+      {
+        "id": 1731,
+        "en": "The students who came to the art exhibition with him were used to this behavior.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "与他一同来到画展的学生们对此也是见怪不怪。"
+      },
+      {
+        "id": 1732,
+        "en": "Since they studied cultivation daily and trained their bodies hard, they naturally needed much more nutrition and food than ordinary people.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "日日勤学仙道，苦炼肉体，他们所需要的营养，所进食的份量自然也远超常人。"
+      },
+      {
+        "id": 1733,
+        "en": "For someone like Qian Shen, a top student who practiced cultivation 24 hours a day, he ate even more. If he only ate five meals a day, his private tutor would worry that his appetite was poor.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "像钱深这种24小时日夜苦修的学霸，那每日进食就更多了，一天只吃个五顿都会被家庭老师担心是不是胃口不好。"
+      },
+      {
+        "id": 1734,
+        "en": "At that moment, Qian Shen's eyes suddenly lit up as he focused on the buffet table.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "就在这时，钱深的目光陡然一亮，双眼已经紧紧盯上了自助餐的餐桌。"
+      },
+      {
+        "id": 1735,
+        "en": "He quickly walked over, grabbed a plate of shrimp, and swallowed it in a few bites. But after eating for a while, he frowned. \"Why is this food so lacking in nutrition?\"",
+        "speaker": "钱深",
+        "emotion": "angry",
+        "cn": "只见他快步走上前去，抓起一盘大虾便几口吞下，但吃了一会却皱起了眉头：“这吃的这么没营养？”"
+      },
+      {
+        "id": 1736,
+        "en": "As a top student in the first year of Songyang High School, always ranking second in his grade, Qian Shen's success came not only from his talent and hard work, but most importantly, from his family's wealth.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "钱深作为嵩阳高中一年级的学霸，一直以来的年级第二，除了自身的天赋和努力之外，最重要的当然还是家里有钱。"
+      },
+      {
+        "id": 1737,
+        "en": "To improve his cultivation results, especially his physical training effects, the food he usually ate was rich in various cultivation elements.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "而为了提升修炼的效果，特别是炼体之效用，他往日里吃的食物中都富含种种仙道要素。"
+      },
+      {
+        "id": 1738,
+        "en": "For someone who believed only in scores like him, whether food tasted good or not was secondary. What mattered most was whether it could improve his cultivation efficiency.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "对他这种唯分数论者来说，好吃不好吃都是次要的，能够提升他修炼的效率才是最重要的。"
+      },
+      {
+        "id": 1739,
+        "en": "He could certainly afford the seafood provided at the exhibition buffet, but he wasn't interested in spending money just to satisfy his appetite. Instead, he felt this was a waste of his time and stomach space.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "画展自助餐提供的这些海鲜他平日里自然也吃得起，但他对这种专门花钱满足口腹之欲的事情并没有兴趣，反而觉得这是浪费了自己的时间和胃口。"
+      },
+      {
+        "id": 1740,
+        "en": "Seafood, fancy meals... if they couldn't improve his grades, they were just garbage.",
+        "speaker": "钱深",
+        "emotion": "angry",
+        "cn": "什么海鲜、什么大餐……不能提升成绩？那不就是垃圾。"
+      },
+      {
+        "id": 1741,
+        "en": "So while Qian Shen looked at the other dishes on the table, he called over a waiter to ask if there were any other foods that could serve as cultivation supplements.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "于是钱深一边打量餐桌上的其他菜色，一边开口唤来侍者，想要问问有没有别的可用作食补的食物。"
+      },
+      {
+        "id": 1742,
+        "en": "\"Everything you can eat is here. Take whatever you want.\"",
+        "speaker": "白真真",
+        "emotion": "neutral",
+        "cn": "“能吃的都在这里了，要什么自己拿吧。”"
+      },
+      {
+        "id": 1743,
+        "en": "Hearing the waiter's somewhat cold voice, Qian Shen couldn't help but frown. When he looked up, he saw a familiar face.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "听着侍者有些冷冰冰的声音，钱深忍不住皱起眉头，结果抬起头来便看到了一张熟悉的脸。"
+      },
+      {
+        "id": 1744,
+        "en": "Qian Shen looked at the waiter uniform the person was wearing and said in surprise, \"You're working here?\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "钱深看着看了看对方身上的侍者服装，意外道：“你在这里工作？”"
+      },
+      {
+        "id": 1745,
+        "en": "\"Yeah.\" Bai Zhenzhen replied expressionlessly. \"Is there anything else?\"",
+        "speaker": "白真真",
+        "emotion": "neutral",
+        "cn": "“嗯。”白真真面无表情道：“还有什么事吗？”"
+      },
+      {
+        "id": 1746,
+        "en": "Qian Shen frowned and said, \"Are you that short on money?\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "钱深却是皱了皱眉说道：“你很缺钱吗？”"
+      },
+      {
+        "id": 1747,
+        "en": "\"You should hurry up and sign a contract with the student council. Otherwise, continuing to waste time on this meaningless job will only hold back your cultivation path.\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "“那赶紧和学生会签约吧，不然继续把时间浪费在这种没有意义的工作上，只会拖累你的仙道之路。”"
+      },
+      {
+        "id": 1748,
+        "en": "\"When I eventually surpass you, it won't be any fun.\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "“到时候我就算超越了你，也没什么意思了。”"
+      },
+      {
+        "id": 1749,
+        "en": "Qian Shen's tone was full of regret. After all, he had always seen Bai Zhenzhen, the only girl in their grade who could beat his total score, as his rival.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "钱深的语气之中满是感叹，毕竟一直以来他都将白真真这位同年级唯一能在总分上超越自己的少女视为自己的对手。"
+      },
+      {
+        "id": 1750,
+        "en": "He felt that Bai Zhenzhen should think the same way.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "在他的感觉中，白真真应该也是这么想的才对。"
+      },
+      {
+        "id": 1751,
+        "en": "Over the next three years of high school, their entire grade, even the entire school, would be a battlefield where these two geniuses would compete against each other while secretly respecting one another.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "接下来的高中三年，整个年级甚至是整个学校，都将是他们两大天才人物争锋相对，却又惺惺相惜的战场。"
+      },
+      {
+        "id": 1752,
+        "en": "They should push each other to break through their limits in repeated competitions, and finally get into top universities together after three years.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "两人应该会在一次次的竞争中突破极限，最终在三年后一同考入顶尖名校。"
+      },
+      {
+        "id": 1753,
+        "en": "But facing Qian Shen's regret, Bai Zhenzhen only said coolly, \"Are you trying to tell me what to do?\"",
+        "speaker": "白真真",
+        "emotion": "angry",
+        "cn": "但面对钱深的感叹，白真真只是淡淡道：“你在教我做事？”"
+      },
+      {
+        "id": 1754,
+        "en": "Without waiting for Qian Shen to answer, Bai Zhenzhen continued, \"You, with your total score of just over 600, want to tell me what to do when I scored 650?\"",
+        "speaker": "白真真",
+        "emotion": "angry",
+        "cn": "没等钱深回答，白真真已经接着说道：“你一个总分600出头的家伙，要教650的我做事？”"
+      },
+      {
+        "id": 1755,
+        "en": "Faced with Bai Zhenzhen's naked score discrimination, Qian Shen, as a firm believer in the \"scores are everything\" philosophy, immediately lost his confidence. That 50-point difference hit him like a mountain.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "面对白真真赤裸裸的成绩歧视，钱深作为一个唯分数论的坚定支持者，气势瞬间矮了下来，那50分的差距就好像是一座山峰一样向他砸来。"
+      },
+      {
+        "id": 1756,
+        "en": "Your score is higher, so you're right.",
+        "speaker": "钱深",
+        "emotion": "sad",
+        "cn": "你分高，你说的有理。"
+      },
+      {
+        "id": 1757,
+        "en": "At that moment, in Qian Shen's eyes, it was as if there were three glowing numbers \"650\" floating above Bai Zhenzhen's head, giving off a powerful pressure that left him unable to say a word in response.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这一刻在钱深的眼中，白真真的头顶上就像是有着闪闪发光的三个数字650，并散发出强大的压迫感，压得他一句反驳的话也说不出来。"
+      },
+      {
+        "id": 1758,
+        "en": "Bai Zhenzhen frowned. \"Wait, why are you looking at the top of my head while talking to me?\"",
+        "speaker": "白真真",
+        "emotion": "neutral",
+        "cn": "白真真皱了皱眉：“不是，你跟我说话，往我头顶上看干什么？”"
+      },
+      {
+        "id": 1759,
+        "en": "Qian Shen snorted coldly and turned to leave.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "钱深冷哼一声，转身便离去了。"
+      },
+      {
+        "id": 1760,
+        "en": "\"Just wait, Bai Zhenzhen. If you keep wasting time like this, I'll definitely surpass you soon.\"",
+        "speaker": "钱深",
+        "emotion": "angry",
+        "cn": "“等着吧白真真，你这样浪费时间，要不了多久就一定会被我超越的。”"
+      },
+      {
+        "id": 1761,
+        "en": "But just as he turned around and took a few steps, he almost bumped into two security guards.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "哪知道刚转身走几步，就差点与两名保安撞上。"
+      },
+      {
+        "id": 1762,
+        "en": "It was Zhang Yu, who had come to check on the situation, and Zhao Tianxing, whom he had dragged along.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "正是过来查看双方情况的张羽，以及被他拽过来的赵天行。"
+      },
+      {
+        "id": 1763,
+        "en": "Seeing that Bai Zhenzhen and Qian Shen seemed to be having some conflict, Zhang Yu, as a security guard, had quickly rushed over.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "刚刚看到白真真和钱深似乎有点冲突，身为保安的张羽便连忙赶了过来。"
+      },
+      {
+        "id": 1764,
+        "en": "When Qian Shen saw the two people, although they were wearing security uniforms, he still recognized them immediately as his classmates: \"550 and 580?\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "而钱深看着两人，虽然身着保安服，但毕竟是同班同学，他还是一眼认出了两人的身份：“550和580？”"
+      },
+      {
+        "id": 1765,
+        "en": "Hearing this nickname, Zhang Yu was slightly stunned. The next moment, he realized that 550 was his total score from last month's exam, and 580 seemed to be Zhao Tianxing's total score.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "听到这个称呼的张羽微微一愣，下一刻就反应过来550是他上个月的月考总分，而580好像就是赵天行的总分？"
+      },
+      {
+        "id": 1766,
+        "en": "Good grief, this guy only sees scores and can't even remember his classmates' names. Another person who's gone crazy from studying.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "好家伙，眼里只有分数，连同学名字都记不住是吧？又是个学习学到变态的家伙。"
+      },
+      {
+        "id": 1767,
+        "en": "But actually, Qian Shen didn't just forget names. In fact, he couldn't remember either the names or scores of students below 550.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "但其实钱深不只是名字记不住，事实上550分以下的学生，他名字、分数都记不住。"
+      },
+      {
+        "id": 1768,
+        "en": "After all, to him... below 550? Weren't they all just NPCs? Was there any need to remember them?",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "毕竟对他来说……550以下？那不都是NPC吗？有记忆的必要吗？"
+      },
+      {
+        "id": 1769,
+        "en": "Like the 550 in front of him, in Qian Shen's eyes, he was already subhuman.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "像眼前的550，那在钱深眼里那就已经是个亚人了。"
+      },
+      {
+        "id": 1770,
+        "en": "Based on his observations over this period, the other person would probably score below 550 on the next monthly exam, so starting next month, there wouldn't even be a need to remember him.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "根据他这段时间的观察，对方下次月考大概率会考到550以下，那下个月开始就连记忆的必要都没有了。"
+      },
+      {
+        "id": 1771,
+        "en": "Looking at the security uniforms Zhang Yu and Zhao Tianxing were wearing, Qian Shen shook his head again. \"Why are you guys working part-time jobs too?\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "而看着张羽和赵天行身上的保安服，钱深又是摇了摇头：“你们怎么也来这打工了？”"
+      },
+      {
+        "id": 1772,
+        "en": "Facing 550 and 580, the confidence that had just been crushed by 650 immediately returned to Qian Shen. He said proudly, \"Instead of spending time studying and cultivating, why are you two wasting time here?\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "面对550和580，刚刚被650压迫的气势瞬间又从钱深身上涨了回来，只见他傲然道：“你们两个不抓紧时间多多学习，多多修炼，浪费时间来这里干什么？”"
+      },
+      {
+        "id": 1773,
+        "en": "Zhang Yu: \"Aren't you here too?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽：“你不也来这里吗？”"
+      },
+      {
+        "id": 1774,
+        "en": "Qian Shen chuckled confidently, \"I specifically canceled my tutoring session today to come here and comprehend the supreme martial arts in the Heavenly Martial Arts Diagram.\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "钱深呵呵一笑，自信道：“我今天特地推开补课的时间，那是为了过来参悟天人演武图中的绝世武功的。”"
+      },
+      {
+        "id": 1775,
+        "en": "Zhang Yu: \"Well, we're also here to comprehend the Heavenly Martial Arts Diagram.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽：“嗯，我们也是来参悟天人演武图的。”"
+      },
+      {
+        "id": 1776,
+        "en": "\"And we can also earn 800 yuan per hour.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“顺便还能拿每小时800的工资。”"
+      },
+      {
+        "id": 1777,
+        "en": "\"Making money while comprehending divine techniques - isn't that much more profitable?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“既赚钱又能参悟神功，是不是划算多了？”"
+      },
+      {
+        "id": 1778,
+        "en": "\"Huh?\" Qian Shen was slightly stunned when he heard this, looking at Zhang Yu with some surprise. He thought to himself, \"A person with 550 points actually said something that makes sense?\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "“嗯？”钱深闻言微微一愣，有些意外地看着眼前的张羽，心中暗道：“550分的人说的话竟然也有几分道理？”"
+      },
+      {
+        "id": 1779,
+        "en": "He looked at Zhang Yu and said, \"550, I'll remember you.\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "他看着张羽说道：“550，我记住你了。”"
+      },
+      {
+        "id": 1780,
+        "en": "\"My name is Zhang Yu!\" Zhang Yu couldn't help but look toward the top of his head. \"Why do you keep staring at the top of my head?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“我叫张羽！”张羽又忍不住看向了自己的头顶：“你为什么老盯着我头上看？”"
+      },
+      {
+        "id": 1781,
+        "en": "But Qian Shen quickly came to his senses. \"No, wait. Do you two really think you can comprehend the Heavenly Martial Arts Diagram?\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "但钱深很快又反应了过来：“不对，就凭你们两个也想参悟天人演武图？”"
+      },
+      {
+        "id": 1782,
+        "en": "Zhao Tianxing felt more and more people's eyes looking over, and Qian Shen's scornful gaze made his cheeks slightly red. He quickly waved his hands and said, \"No, no, no, I never thought about comprehending the Heavenly Martial Arts Diagram.\"",
+        "speaker": "赵天行",
+        "emotion": "sad",
+        "cn": "赵天行只觉得越来越多人的目光看了过来，而钱深鄙夷的注视更是让他脸颊微微泛红起来，只见他连忙摆手说道：“没没没，我没想参悟天人演武图的。”"
+      },
+      {
+        "id": 1783,
+        "en": "But Qian Shen was too lazy to listen to Zhao Tianxing's explanation. He just shook his head and sighed, \"The Heavenly Martial Arts Diagram was personally painted by a Golden Core expert. The supreme martial arts contained within it is specifically designed to select true geniuses. Even I don't have absolute confidence in mastering it, let alone you two.\"",
+        "speaker": "钱深",
+        "emotion": "neutral",
+        "cn": "钱深却懒得理会赵天行的解释，只是摇了摇头感叹道：“天人演武图乃是金丹高人亲手绘制，其中蕴含的绝世武功是专门用来挑选真正天才的，就连我也没有绝对信心练成，何况是你们？”"
+      },
+      {
+        "id": 1784,
+        "en": "After saying this, Qian Shen had no interest in looking at the 550 and 580 in front of him anymore. He turned around and left.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "说罢，钱深已经没有兴趣再看眼前的550和580，转身便离开了。"
+      },
+      {
+        "id": 1785,
+        "en": "Watching Qian Shen's retreating figure, Zhao Tianxing's face became even more bitter.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "而看着钱深离去的背影，赵天行的脸色变得更苦。"
+      },
+      {
+        "id": 1786,
+        "en": "Not only had the other person seen him working as a security guard, but Zhang Yu's careless words had also made him think that he came to comprehend the Heavenly Martial Arts Diagram.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这一下不但被对方看到自己当保安的事情，还因为张羽乱说话让对方误以为他来参悟天人演武图。"
+      },
+      {
+        "id": 1787,
+        "en": "Zhao Tianxing felt bitter in his heart, as if he could already see himself being laughed at by many of his classmates.",
+        "speaker": "旁白",
+        "emotion": "sad",
+        "cn": "赵天行满心苦涩，似乎已经看到了被班里众多同学们嘲笑的样子。"
+      },
+      {
+        "id": 1788,
+        "en": "He thought to himself, \"This trip has been a huge embarrassment.\"",
+        "speaker": "赵天行",
+        "emotion": "sad",
+        "cn": "他心中暗道：“这趟丢人丢大了。”"
+      },
+      {
+        "id": 1789,
+        "en": "Zhang Yu, on the other hand, didn't have as many complicated thoughts as Zhao Tianxing. He looked at Bai Zhenzhen and asked, \"Are you okay? You don't get along well with Qian Shen?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "一旁的张羽却是没有赵天行脑袋里这么多想法，看了看白真真问道：“没事吧？你跟钱深关系不太好？”"
+      },
+      {
+        "id": 1790,
+        "en": "Bai Zhenzhen curled her lips and said casually, \"What could happen to me? Most of the time, he just humiliates himself.\"",
+        "speaker": "白真真",
+        "emotion": "neutral",
+        "cn": "白真真撇了撇嘴，随意道：“我能有什么事，绝大部分情况都是他自取其辱。”"
+      },
+      {
+        "id": 1791,
+        "en": "Then she looked at Zhang Yu with a somewhat strange expression. \"You're also planning to comprehend the Heavenly Martial Arts Diagram?\"",
+        "speaker": "白真真",
+        "emotion": "neutral",
+        "cn": "接着她目光又有些古怪地看着张羽：“你也打算参悟天人演武图？”"
+      },
+      {
+        "id": 1792,
+        "en": "Looking at Zhang Yu nodding confidently, Bai Zhenzhen thought to herself, \"Yu has been driven more and more crazy by that huge debt. With his level... he actually wants to comprehend martial arts left by a Golden Core master?\"",
+        "speaker": "白真真",
+        "emotion": "neutral",
+        "cn": "看着自信点头的张羽，白真真心中暗道：“羽子这是被巨债逼得越来越魔怔了，以他的水平……竟然连金丹真人留下的武功都想参悟？”"
+      },
+      {
+        "id": 1793,
+        "en": "Zhao Tianxing just wanted to get out of there quickly. He tugged at Zhang Yu's clothes, wanting to leave, but noticed that Zhang Yu was making faces at Bai Zhenzhen.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一旁的赵天行只想赶快离开这里，拉了拉张羽的衣服就想要走，却发现对方正和白真真一阵挤眉弄眼。"
+      },
+      {
+        "id": 1794,
+        "en": "Then he saw Bai Zhenzhen secretly slip some seafood into Zhang Yu's arms.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "紧接着便看到白真真偷偷将一份海鲜送到了张羽怀里。"
+      },
+      {
+        "id": 1795,
+        "en": "Zhang Yu: \"Old Zhao, want to try some?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽：“老赵，你来一份试试吗？”"
+      },
+      {
+        "id": 1796,
+        "en": "Zhao Tianxing said urgently, \"The captain said we can't eat from the buffet.\"",
+        "speaker": "赵天行",
+        "emotion": "neutral",
+        "cn": "赵天行急道：“队长说了自助餐我们不能吃的。”"
+      },
+      {
+        "id": 1797,
+        "en": "While saying this, he quickly used his body to block Zhang Yu, afraid that someone would see this.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一边说着，他已经急忙用身体挡住了张羽，生怕这事情被人看到。"
+      },
+      {
+        "id": 1798,
+        "en": "Zhang Yu said easily, \"It's perfect that Zhen is also working here. We can take advantage of the company a little.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽轻松道：“这不正好阿真也在这打工吗？我们顺手薅一薅公司的羊毛。”"
+      },
+      {
+        "id": 1799,
+        "en": "Just as Zhang Yu was tasting the shrimp on his plate, a voice came from behind Zhao Tianxing.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "就在张羽尝着盘里的大虾时，一道声音从赵天行背后传来。"
+      },
+      {
+        "id": 1800,
+        "en": "\"What are you guys doing?\"",
+        "speaker": "周天翊",
+        "emotion": "neutral",
+        "cn": "“你们在干什么呢？”"
+      },
+      {
+        "id": 1801,
+        "en": "This voice startled Zhao Tianxing, but when he turned around and found that the speaker was their classmate Zhou Tianyi, he felt relieved instead.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "这声音吓了赵天行一跳，待他回过头发现说话的人是同班的周天翊时，反而松了一口气。"
+      },
+      {
+        "id": 1802,
+        "en": "Without realizing it, Zhao Tianxing seemed to have gradually gotten used to wearing a security uniform in front of his classmates.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "不知不觉间，赵天行似乎已经渐渐适应了在同学面前穿保安服的事情了。"
+      },
+      {
+        "id": 1803,
+        "en": "Zhang Yu looked at Zhou Tianyi in surprise. \"Old Zhou, you're here too?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽看着周天翊惊讶道：“老周，你也来了？”"
+      },
+      {
+        "id": 1804,
+        "en": "Zhou Tianyi smiled and said, \"Yeah, I came with Qian Shen and the others.\"",
+        "speaker": "周天翊",
+        "emotion": "neutral",
+        "cn": "周天翊笑笑道：“嗯，我跟钱深他们一块来的。”"
+      },
+      {
+        "id": 1805,
+        "en": "Zhang Yu: \"Really? I didn't see you just now.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽：“是吗？我刚刚怎么没看见你。”"
+      },
+      {
+        "id": 1806,
+        "en": "Zhou Tianyi said, \"Haha, how did you end up here?\"",
+        "speaker": "周天翊",
+        "emotion": "neutral",
+        "cn": "周天翊说道：“呵呵，你怎么来这的？”"
+      },
+      {
+        "id": 1807,
+        "en": "The two chatted about their respective situations, while Zhao Tianxing urged Zhang Yu to continue patrolling.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "两人互相聊了一下各自的状况，一旁的赵天行再次催促张羽该去继续巡逻了。"
+      },
+      {
+        "id": 1808,
+        "en": "Zhou Tianyi suddenly said mysteriously, \"I have some gossip about the Golden Core master. I wonder if you're interested in hearing it?\"",
+        "speaker": "周天翊",
+        "emotion": "neutral",
+        "cn": "周天翊却是突然一脸神秘地说道：“有一个关于金丹真人的八卦，不知道你们有没有兴趣听？”"
+      },
+      {
+        "id": 1809,
+        "en": "Seeing Zhang Yu's curious expression, Zhao Tianxing said, \"The captain has already been asking in the group chat where we are...\"",
+        "speaker": "赵天行",
+        "emotion": "neutral",
+        "cn": "看到露出好奇之色的张羽，赵天行说道：“队长已经在群里催了，问我们人在哪呢……”"
+      },
+      {
+        "id": 1810,
+        "en": "Zhang Yu nodded. \"Forget it, work is important. Let's hear what you have to say next time.\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "张羽点点头：“算了，工作要紧，还是下次再听你说吧。”"
+      },
+      {
+        "id": 1811,
+        "en": "Just as the two were about to turn and leave, they heard Zhou Tianyi say, \"Master Starfire had half of his cultivation taken away when he left his job, which is why he's planning to move back to the first floor.\"",
+        "speaker": "周天翊",
+        "emotion": "neutral",
+        "cn": "就在两人转身离去的时候，却听周天翊开口说道：“星火真人因为离职后被分去了一半修为，这才打算退回一层。”"
+      },
+      {
+        "id": 1812,
+        "en": "\"Huh?\"",
+        "speaker": "张羽",
+        "emotion": "neutral",
+        "cn": "“嗯？”"
+      },
+      {
+        "id": 1813,
+        "en": "Zhang Yu and Zhao Tianxing immediately turned around, waiting for Zhou Tianyi to continue.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "张羽和赵天行立刻都转过了身来，等着周天翊接下来的说话。"
+      },
+      {
+        "id": 1814,
+        "en": "Bai Zhenzhen, though she didn't look over, also pricked up her ears to listen.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "一旁的白真真虽然没有看过来，却也是竖起了耳朵在听。"
+      },
+      {
+        "id": 1815,
+        "en": "Zhou Tianyi smiled and continued, \"Golden Core masters can live up to 400 years at most. Master Starfire was already 350 years old last year and got laid off by the Myriad Law Sect.\"",
+        "speaker": "周天翊",
+        "emotion": "neutral",
+        "cn": "周天翊笑了笑，接着说道：“金丹真人最长能活400年，星火真人去年却已经350岁，被万法宗优化了。”"
+      },
+      {
+        "id": 1816,
+        "en": "\"When he left his job, half of his cultivation was taken back. He couldn't afford the expenses on the upper floors, so he wanted to move back to the first floor of Kunxu to focus on training descendants and teaching disciples.\"",
+        "speaker": "周天翊",
+        "emotion": "neutral",
+        "cn": "“他在离职时被回收了一半修为，无力支撑上面的消费，这才想要退回昆墟一层来，专心培养后代，调教弟子。”"
+      },
+      {
+        "id": 1817,
+        "en": "Zhang Yu was shocked by this ridiculous world again. \"Wait... they take away half your cultivation when you leave your job?\"",
+        "speaker": "张羽",
+        "emotion": "angry",
+        "cn": "张羽再次为这狗屁世界震惊了：“不是……离职还要收走一半修为？”"
+      },
+      {
+        "id": 1818,
+        "en": "Zhou Tianyi said matter-of-factly, \"The sect trained him and gave him the opportunity and resources to form his Golden Core. Isn't it normal to hand over half his cultivation when he leaves?\"",
+        "speaker": "周天翊",
+        "emotion": "neutral",
+        "cn": "周天翊理所当然道：“宗门培养了他，给了他结丹的机会和资源，离开时上交一半修为不是很正常？”"
+      },
+      {
+        "id": 1819,
+        "en": "Just as the three were listening to Zhou Tianyi's news about Master Starfire, the crowd in the distance suddenly became restless.",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "就在三人听着周天翊关于星火真人的消息时，远处的人群突然有些骚动起来。"
+      },
+      {
+        "id": 1820,
+        "en": "Some guests said in low voices, \"Ms. Li has arrived. The Heavenly Martial Arts Diagram is about to be unveiled.\"",
+        "speaker": "旁白",
+        "emotion": "neutral",
+        "cn": "有客人低声说道：“是李女士来了，天人演武图要揭开了。”"
       }
     ],
     "0018": [
