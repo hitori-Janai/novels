@@ -1755,8 +1755,24 @@
                 
                 // 显示模式切换
                 setDisplayMode(mode) {
+                    // 记录当前视窗中央的句子ID
+                    const currentCenterSentenceId = this.getCurrentCenterSentenceId();
+                    
+                    console.log(`🔄 切换显示模式: ${this.displayMode} -> ${mode}`, 
+                               currentCenterSentenceId ? `当前中心句子: ${currentCenterSentenceId}` : '未找到中心句子');
+                    
                     this.displayMode = mode;
                     this.saveToCache();
+                    
+                    // 切换显示模式后，滚动到之前的位置
+                    if (currentCenterSentenceId) {
+                        this.$nextTick(() => {
+                            // 给一点时间让DOM更新完成
+                            setTimeout(() => {
+                                this.scrollToSentence(currentCenterSentenceId);
+                            }, 100);
+                        });
+                    }
                 },
                 
                 // 音频播放控制
@@ -2122,6 +2138,70 @@
                             }, 1000);
                         }
                     });
+                },
+                
+                // 获取当前视窗中央的句子ID
+                getCurrentCenterSentenceId() {
+                    const contentBody = document.querySelector('.content-body');
+                    if (!contentBody) {
+                        console.warn('📍 未找到内容容器，无法获取中心句子');
+                        return null;
+                    }
+                    
+                    const containerRect = contentBody.getBoundingClientRect();
+                    const containerCenter = containerRect.top + containerRect.height / 2;
+                    
+                    // 获取所有句子元素
+                    const sentenceElements = document.querySelectorAll('.sentence-container[data-id]');
+                    if (sentenceElements.length === 0) {
+                        console.warn('📍 未找到任何句子元素，无法获取中心句子');
+                        return null;
+                    }
+                    
+                    let closestSentenceId = null;
+                    let minDistance = Infinity;
+                    
+                    // 找到最接近视窗中央的句子
+                    sentenceElements.forEach(element => {
+                        const elementRect = element.getBoundingClientRect();
+                        const elementCenter = elementRect.top + elementRect.height / 2;
+                        const distance = Math.abs(elementCenter - containerCenter);
+                        
+                        if (distance < minDistance) {
+                            minDistance = distance;
+                            closestSentenceId = element.getAttribute('data-id');
+                        }
+                    });
+                    
+                    console.log(`📍 找到中心句子: ${closestSentenceId}, 距离: ${minDistance.toFixed(2)}px`);
+                    return closestSentenceId;
+                },
+                
+                // 滚动到指定句子
+                scrollToSentence(sentenceId) {
+                    if (!sentenceId) {
+                        console.warn('🎯 未提供句子ID，无法滚动');
+                        return;
+                    }
+                    
+                    const targetElement = document.querySelector(`[data-id="${sentenceId}"]`);
+                    if (targetElement) {
+                        console.log(`🎯 滚动到句子: ${sentenceId}`);
+                        
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                        
+                        // 添加短暂的高亮效果
+                        targetElement.style.transition = 'background-color 0.3s ease';
+                        targetElement.style.backgroundColor = '#e3f2fd';
+                        setTimeout(() => {
+                            targetElement.style.backgroundColor = '';
+                        }, 1000);
+                    } else {
+                        console.warn(`🎯 未找到句子元素: ${sentenceId}`);
+                    }
                 },
                 
                 // 检查是否需要显示跳转到当前语句按钮
