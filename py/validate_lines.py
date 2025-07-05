@@ -61,7 +61,7 @@ def find_invalid_lines(root_dir: str = "books"):
 
     if not chapter_files:
         print("🟡 警告: 未找到任何章节文件 (如 0001.txt)。")
-        return
+        return invalid_lines_found
 
     for file_path in chapter_files:
         files_checked += 1
@@ -90,10 +90,12 @@ def find_invalid_lines(root_dir: str = "books"):
     else:
         print(f"⚠️ 扫描完成! 共在 {files_checked} 个文件中发现 {invalid_lines_found} 处格式错误。")
     print("="*50)
+    return invalid_lines_found
 
 def main():
     """主函数"""
-    find_invalid_lines()
+    if find_invalid_lines() > 0:
+        sys.exit(1)
 
 if __name__ == "__main__":
     main() 

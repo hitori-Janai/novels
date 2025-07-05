@@ -93,6 +93,12 @@ cn = "books/nomoney_en/cn/cn_new.txt"
 79 = {en = "books/oap_en/0079.txt", title = "第79章 你逃不掉的哦（谢谢無度索求的礼物之王）"}
 80 = {en = "books/oap_en/0080.txt", title = "第80章 一环扣一环"}
 81 = {en = "books/oap_en/0081.txt", title = "第81章 桃子小姐，你也是个病娇"}
+82 = {en = "books/oap_en/0082.txt", title = "第82章 病娇的闭环（为...不知道取啥名加更）"}
+83 = {en = "books/oap_en/0083.txt", title = "第83章 致敬抗压王牢桃"}
+84 = {en = "books/oap_en/0084.txt", title = "第84章 我对你的喜欢，是装的"}
+85 = {en = "books/oap_en/0085.txt", title = "第85章 品尝她的病娇（为空天垄清加更）"}
+86 = {en = "books/oap_en/0086.txt", title = "第86章 桃桃真单纯呢"}
+87 = {en = "books/oap_en/0087.txt", title = "第87章 你想要的，我会给你"}
 
 [novels.nomoney_en.chap]
 1 = {en = "books/nomoney_en/0001.txt", title = "第1章 面试"}

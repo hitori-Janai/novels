@@ -4,3 +4,4 @@ books/oap_en/audio/*/output.wav
 books/oap_en/audio/*/mylist.txt
 server.py
 books/nomoney_cn/
+.env
