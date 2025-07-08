@@ -11,6 +11,12 @@ title = "借贷修仙 英文版"
 audio = "books/nomoney_en/audio/"
 cn = "books/nomoney_en/cn/cn_new.txt"
 
+[novels.baka_en]
+title = "初圣 英文版"
+audio = "books/baka_en/audio/"
+cn = "books/baka_en/cn/cn.txt"
+
+
 [novels.oap_en.chap]
 1 = {en = "books/oap_en/0001.txt", title = "第1章 反派？但我是病娇"}
 2 = {en = "books/oap_en/0002.txt", title = "第2章 喜欢你喜欢你喜欢你"}
@@ -308,3 +314,6 @@ cn = "books/nomoney_en/cn/cn_new.txt"
 26 = {en = "books/nomoney_en/0026.txt", title = "第26章 报名法赛和月考到来"}
 27 = {en = "books/nomoney_en/0027.txt", title = "第27章 考间冲刺"}
 28 = {en = "books/nomoney_en/0028.txt", title = "第28章 道术和实战"}
+
+[novels.baka_en.chap]
+1 = {en = "books/baka_en/0001.txt", title = "第1章 百世书"}
