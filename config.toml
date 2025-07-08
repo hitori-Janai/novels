@@ -317,3 +317,45 @@ cn = "books/baka_en/cn/cn.txt"
 
 [novels.baka_en.chap]
 1 = {en = "books/baka_en/0001.txt", title = "第1章 百世书"}
+2 = {en = "books/baka_en/0002.txt", title = "第2章 顺天易，逆天难"}
+3 = {en = "books/baka_en/0003.txt", title = "第3章 魔门作风"}
+4 = {en = "books/baka_en/0004.txt", title = "第4章 防不胜防"}
+5 = {en = "books/baka_en/0005.txt", title = "第5章 这个仇我记下了"}
+6 = {en = "books/baka_en/0006.txt", title = "第6章 魔门的修炼方式"}
+7 = {en = "books/baka_en/0007.txt", title = "第7章 神霄御剑真决"}
+8 = {en = "books/baka_en/0008.txt", title = "第8章 牛马修仙传"}
+9 = {en = "books/baka_en/0009.txt", title = "第9章 财帛动人心"}
+10 = {en = "books/baka_en/0010.txt", title = "第10章 月黑杀人夜"}
+11 = {en = "books/baka_en/0011.txt", title = "第11章 杀生咒"}
+12 = {en = "books/baka_en/0012.txt", title = "第12章 功德博彩，替死阴傀"}
+13 = {en = "books/baka_en/0013.txt", title = "第13章 螳螂捕蝉，黄雀在后"}
+14 = {en = "books/baka_en/0014.txt", title = "第14章 黑吃黑！"}
+15 = {en = "books/baka_en/0015.txt", title = "第15章 钓鱼"}
+16 = {en = "books/baka_en/0016.txt", title = "第16章 疯狂的泡沫"}
+17 = {en = "books/baka_en/0017.txt", title = "第17章 别人恐惧我加仓"}
+18 = {en = "books/baka_en/0018.txt", title = "第18章 外挂的正确用法"}
+19 = {en = "books/baka_en/0019.txt", title = "第19章 剥皮"}
+20 = {en = "books/baka_en/0020.txt", title = "第20章 萧石叶"}
+21 = {en = "books/baka_en/0021.txt", title = "第21章 无妄之灾"}
+22 = {en = "books/baka_en/0022.txt", title = "第22章 神光之威"}
+23 = {en = "books/baka_en/0023.txt", title = "第23章 先天一炁万灵幡"}
+24 = {en = "books/baka_en/0024.txt", title = "第24章 自爆！"}
+25 = {en = "books/baka_en/0025.txt", title = "第25章 鸿运惊魂"}
+26 = {en = "books/baka_en/0026.txt", title = "第26章 不愧是圣宗"}
+27 = {en = "books/baka_en/0027.txt", title = "第27章 悟阵"}
+28 = {en = "books/baka_en/0028.txt", title = "第28章 九变化龙决"}
+29 = {en = "books/baka_en/0029.txt", title = "第29章 因果招是非"}
+30 = {en = "books/baka_en/0030.txt", title = "第30章 补天峰主"}
+31 = {en = "books/baka_en/0031.txt", title = "第31章 一剑斩长空"}
+32 = {en = "books/baka_en/0032.txt", title = "第32章 目标，刘信！"}
+33 = {en = "books/baka_en/0033.txt", title = "第33章 先天混元一炁神符"}
+34 = {en = "books/baka_en/0034.txt", title = "第34章 三河招揽，筑基机缘"}
+35 = {en = "books/baka_en/0035.txt", title = "第35章 赵师兄和我有缘啊！"}
+36 = {en = "books/baka_en/0036.txt", title = "第36章 骷髅山坊市"}
+37 = {en = "books/baka_en/0037.txt", title = "第37章 太阴蜕形尸解真法"}
+38 = {en = "books/baka_en/0038.txt", title = "第38章 神武门"}
+39 = {en = "books/baka_en/0039.txt", title = "第39章 敌袭"}
+40 = {en = "books/baka_en/0040.txt", title = "“阵起！”"}
+41 = {en = "books/baka_en/0041.txt", title = "第41章 鏖战"}
+42 = {en = "books/baka_en/0042.txt", title = "第42章 玄阴摄形，钉头索命"}
+43 = {en = "books/baka_en/0043.txt", title = "第43章 血衣楼主"}
