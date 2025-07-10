@@ -16,6 +16,11 @@ title = "初圣 英文版"
 audio = "books/baka_en/audio/"
 cn = "books/baka_en/cn/cn.txt"
 
+[novels.badgirl_en]
+title = "恶少 英文版"
+audio = "books/badgirl_en/audio/"
+cn = "books/badgirl_en/cn/cn.txt"
+
 
 [novels.oap_en.chap]
 1 = {en = "books/oap_en/0001.txt", title = "第1章 反派？但我是病娇"}
@@ -359,3 +364,46 @@ cn = "books/baka_en/cn/cn.txt"
 41 = {en = "books/baka_en/0041.txt", title = "第41章 鏖战"}
 42 = {en = "books/baka_en/0042.txt", title = "第42章 玄阴摄形，钉头索命"}
 43 = {en = "books/baka_en/0043.txt", title = "第43章 血衣楼主"}
+
+[novels.badgirl_en.chap]
+1 = {en = "books/badgirl_en/0001.txt", title = "第1章 重置1 恶堕什么的才不要啊！"}
+2 = {en = "books/badgirl_en/0002.txt", title = "第2章 重置2 耻辱的剧情"}
+3 = {en = "books/badgirl_en/0003.txt", title = "第3章 重置3 挂到账了？"}
+4 = {en = "books/badgirl_en/0004.txt", title = "第4章 重置4 这就摊牌了？"}
+5 = {en = "books/badgirl_en/0005.txt", title = "第5章 重置5 难道真的要堕落了吗？"}
+6 = {en = "books/badgirl_en/0006.txt", title = "第6章 重置6 这救兵正经吗？"}
+7 = {en = "books/badgirl_en/0007.txt", title = "第7章 重置7 实力不够，演技来凑"}
+8 = {en = "books/badgirl_en/0008.txt", title = "第8章 重置8 不妙咯～"}
+9 = {en = "books/badgirl_en/0009.txt", title = "第9章 重置9 过去的回响"}
+10 = {en = "books/badgirl_en/0010.txt", title = "第10章 重置10 巧合与不幸"}
+11 = {en = "books/badgirl_en/0011.txt", title = "第11章 重置11 安德烈"}
+12 = {en = "books/badgirl_en/0012.txt", title = "第12章 重置12 罪恶"}
+13 = {en = "books/badgirl_en/0013.txt", title = "第13章 重置13 冒牌货"}
+14 = {en = "books/badgirl_en/0014.txt", title = "第14章 重置14 你走吧"}
+15 = {en = "books/badgirl_en/0015.txt", title = "第15章 重置15 这是我欠你的"}
+16 = {en = "books/badgirl_en/0016.txt", title = "第16章 重置16 妊娠"}
+17 = {en = "books/badgirl_en/0017.txt", title = "第17章 重置17 雨夜临盆"}
+18 = {en = "books/badgirl_en/0018.txt", title = "第18章 重置18 死亡与诞生"}
+19 = {en = "books/badgirl_en/0019.txt", title = "第19章 重置19 莫名的声音"}
+20 = {en = "books/badgirl_en/0020.txt", title = "第20章 重置20 圣血"}
+21 = {en = "books/badgirl_en/0021.txt", title = "第21章 重置21 神术"}
+22 = {en = "books/badgirl_en/0022.txt", title = "第22章 重置22 tmd，还在追"}
+23 = {en = "books/badgirl_en/0023.txt", title = "第23章 重置23 直面"}
+24 = {en = "books/badgirl_en/0024.txt", title = "第24章 重置24 亡灵杀手MAX"}
+25 = {en = "books/badgirl_en/0025.txt", title = "第25章 重置25 魔堕了"}
+26 = {en = "books/badgirl_en/0026.txt", title = "第26章 重置26 能杀死魅魔的只有另一个魅魔"}
+27 = {en = "books/badgirl_en/0027.txt", title = "第27章 重置27 纯粹的战斗"}
+28 = {en = "books/badgirl_en/0028.txt", title = "第28章 重置28 放下剑，做吾的妻子"}
+29 = {en = "books/badgirl_en/0029.txt", title = "第29章 重置29 塞伦安之死"}
+30 = {en = "books/badgirl_en/0030.txt", title = "第30章 重置30 初代圣女"}
+31 = {en = "books/badgirl_en/0031.txt", title = "温柔的圣女朝迷茫孩子伸出双手，拥他入怀。"}
+32 = {en = "books/badgirl_en/0032.txt", title = "第32章 重置32 死而复生"}
+33 = {en = "books/badgirl_en/0033.txt", title = "第33章 重置33 不战意志"}
+34 = {en = "books/badgirl_en/0034.txt", title = "好冷，冷，刺入骨髓的冷……"}
+35 = {en = "books/badgirl_en/0035.txt", title = "第35章 重置35 差点被你杀死"}
+36 = {en = "books/badgirl_en/0036.txt", title = "第36章 重置36 圣歌"}
+37 = {en = "books/badgirl_en/0037.txt", title = "第37章 重置37 生生不息"}
+38 = {en = "books/badgirl_en/0038.txt", title = "第38章 重置38 苏醒"}
+39 = {en = "books/badgirl_en/0039.txt", title = "第39章 重置39 生命古树"}
+40 = {en = "books/badgirl_en/0040.txt", title = "第40章 重置40 不战誓约"}
+41 = {en = "books/badgirl_en/0041.txt", title = "第41章 重置41 你要与我为敌吗？"}
