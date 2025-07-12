@@ -366,9 +366,9 @@ cn = "books/badgirl_en/cn/cn.txt"
 43 = {en = "books/baka_en/0043.txt", title = "第43章 血衣楼主"}
 
 [novels.badgirl_en.chap]
-1 = {en = "books/badgirl_en/0001.txt", title = "第1章 重置1 恶堕什么的才不要啊！"}
-2 = {en = "books/badgirl_en/0002.txt", title = "第2章 重置2 耻辱的剧情"}
-3 = {en = "books/badgirl_en/0003.txt", title = "第3章 重置3 挂到账了？"}
+1 = {en = "books/badgirl_en/0001.txt", title = "第1章 待定"}
+2 = {en = "books/badgirl_en/0002.txt", title = "第2章 待定"}
+3 = {en = "books/badgirl_en/0003.txt", title = "第3章 待定"}
 4 = {en = "books/badgirl_en/0004.txt", title = "第4章 重置4 这就摊牌了？"}
 5 = {en = "books/badgirl_en/0005.txt", title = "第5章 重置5 难道真的要堕落了吗？"}
 6 = {en = "books/badgirl_en/0006.txt", title = "第6章 重置6 这救兵正经吗？"}
@@ -396,10 +396,10 @@ cn = "books/badgirl_en/cn/cn.txt"
 28 = {en = "books/badgirl_en/0028.txt", title = "第28章 重置28 放下剑，做吾的妻子"}
 29 = {en = "books/badgirl_en/0029.txt", title = "第29章 重置29 塞伦安之死"}
 30 = {en = "books/badgirl_en/0030.txt", title = "第30章 重置30 初代圣女"}
-31 = {en = "books/badgirl_en/0031.txt", title = "温柔的圣女朝迷茫孩子伸出双手，拥他入怀。"}
+31 = {en = "books/badgirl_en/0031.txt", title = "第31章 重置31 圣女？我？"}
 32 = {en = "books/badgirl_en/0032.txt", title = "第32章 重置32 死而复生"}
 33 = {en = "books/badgirl_en/0033.txt", title = "第33章 重置33 不战意志"}
-34 = {en = "books/badgirl_en/0034.txt", title = "好冷，冷，刺入骨髓的冷……"}
+34 = {en = "books/badgirl_en/0034.txt", title = "第34章 重置34 记忆如梦"}
 35 = {en = "books/badgirl_en/0035.txt", title = "第35章 重置35 差点被你杀死"}
 36 = {en = "books/badgirl_en/0036.txt", title = "第36章 重置36 圣歌"}
 37 = {en = "books/badgirl_en/0037.txt", title = "第37章 重置37 生生不息"}
@@ -407,3 +407,102 @@ cn = "books/badgirl_en/cn/cn.txt"
 39 = {en = "books/badgirl_en/0039.txt", title = "第39章 重置39 生命古树"}
 40 = {en = "books/badgirl_en/0040.txt", title = "第40章 重置40 不战誓约"}
 41 = {en = "books/badgirl_en/0041.txt", title = "第41章 重置41 你要与我为敌吗？"}
+42 = {en = "books/badgirl_en/0042.txt", title = "第42章 重置42 众生之敌"}
+43 = {en = "books/badgirl_en/0043.txt", title = "第43章 重置43 触犯天条了"}
+44 = {en = "books/badgirl_en/0044.txt", title = "第44章 重置44 不战不死"}
+45 = {en = "books/badgirl_en/0045.txt", title = "第45章 待定"}
+46 = {en = "books/badgirl_en/0046.txt", title = "第46章 自由的祈祷"}
+47 = {en = "books/badgirl_en/0047.txt", title = "第47章 待定"}
+48 = {en = "books/badgirl_en/0048.txt", title = "第48章 铳剑神父"}
+49 = {en = "books/badgirl_en/0049.txt", title = "第49章 待定"}
+50 = {en = "books/badgirl_en/0050.txt", title = "第50章 大变活人"}
+51 = {en = "books/badgirl_en/0051.txt", title = "第51章 待定"}
+52 = {en = "books/badgirl_en/0052.txt", title = "第52章 伊芙琳修女的工作日常"}
+53 = {en = "books/badgirl_en/0053.txt", title = "第53章 神明史诗"}
+54 = {en = "books/badgirl_en/0054.txt", title = "第54章 圆桌会议"}
+55 = {en = "books/badgirl_en/0055.txt", title = "第55章 待定"}
+56 = {en = "books/badgirl_en/0056.txt", title = "第56章 圣女与鲛人"}
+57 = {en = "books/badgirl_en/0057.txt", title = "第57章 异常"}
+58 = {en = "books/badgirl_en/0058.txt", title = "第58章 卑鄙的外乡人"}
+59 = {en = "books/badgirl_en/0059.txt", title = "第59章 狼人女巫与血族"}
+60 = {en = "books/badgirl_en/0060.txt", title = "第60章 老伙计"}
+61 = {en = "books/badgirl_en/0061.txt", title = "第61章 入虎穴"}
+62 = {en = "books/badgirl_en/0062.txt", title = "第62章 待定"}
+63 = {en = "books/badgirl_en/0063.txt", title = "第63章 Amen"}
+64 = {en = "books/badgirl_en/0064.txt", title = "第64章 待定"}
+65 = {en = "books/badgirl_en/0065.txt", title = "第65章 审讯"}
+66 = {en = "books/badgirl_en/0066.txt", title = "第66章 我是殿下的犬"}
+67 = {en = "books/badgirl_en/0067.txt", title = "第67章 忠犬亦是死狗"}
+68 = {en = "books/badgirl_en/0068.txt", title = "第68章 女王"}
+69 = {en = "books/badgirl_en/0069.txt", title = "第69章 公主"}
+70 = {en = "books/badgirl_en/0070.txt", title = "第70章 慷慨"}
+71 = {en = "books/badgirl_en/0071.txt", title = "第71章 一夫当关"}
+72 = {en = "books/badgirl_en/0072.txt", title = "第72章 待定"}
+73 = {en = "books/badgirl_en/0073.txt", title = "第73章 超级力量"}
+74 = {en = "books/badgirl_en/0074.txt", title = "第74章 厮杀"}
+75 = {en = "books/badgirl_en/0075.txt", title = "第75章 暗流"}
+76 = {en = "books/badgirl_en/0076.txt", title = "第76章 何为牺牲？"}
+77 = {en = "books/badgirl_en/0077.txt", title = "第77章 待定"}
+78 = {en = "books/badgirl_en/0078.txt", title = "第78章 待定"}
+79 = {en = "books/badgirl_en/0079.txt", title = "第79章 待定"}
+80 = {en = "books/badgirl_en/0080.txt", title = "第80章 待定"}
+81 = {en = "books/badgirl_en/0081.txt", title = "第81章 感应"}
+82 = {en = "books/badgirl_en/0082.txt", title = "第82章 待定"}
+83 = {en = "books/badgirl_en/0083.txt", title = "第83章 待定"}
+84 = {en = "books/badgirl_en/0084.txt", title = "第84章 待定"}
+85 = {en = "books/badgirl_en/0085.txt", title = "第85章 待定"}
+86 = {en = "books/badgirl_en/0086.txt", title = "第86章 待定"}
+87 = {en = "books/badgirl_en/0087.txt", title = "第87章 我的人"}
+88 = {en = "books/badgirl_en/0088.txt", title = "第88章 待定"}
+89 = {en = "books/badgirl_en/0089.txt", title = "第89章 模糊"}
+90 = {en = "books/badgirl_en/0090.txt", title = "第90章 准备"}
+91 = {en = "books/badgirl_en/0091.txt", title = "第91章 封印"}
+92 = {en = "books/badgirl_en/0092.txt", title = "第92章 解除方法"}
+93 = {en = "books/badgirl_en/0093.txt", title = "第93章 意外"}
+94 = {en = "books/badgirl_en/0094.txt", title = "第94章 异变"}
+95 = {en = "books/badgirl_en/0095.txt", title = "第95章 塞莱斯特"}
+96 = {en = "books/badgirl_en/0096.txt", title = "第96章 三七开"}
+97 = {en = "books/badgirl_en/0097.txt", title = "第97章 背刺"}
+98 = {en = "books/badgirl_en/0098.txt", title = "第98章 不得已（二合一）"}
+99 = {en = "books/badgirl_en/0099.txt", title = "第99章 背叛者"}
+100 = {en = "books/badgirl_en/0100.txt", title = "第100章 “背叛”（5000）"}
+101 = {en = "books/badgirl_en/0101.txt", title = "第101章 信任（二合一）"}
+102 = {en = "books/badgirl_en/0102.txt", title = "第102章 坐山观虎斗（二合一）"}
+103 = {en = "books/badgirl_en/0103.txt", title = "第103章 僵局"}
+104 = {en = "books/badgirl_en/0104.txt", title = "第104章 老女人"}
+105 = {en = "books/badgirl_en/0105.txt", title = "第105章 狼王钢骨"}
+106 = {en = "books/badgirl_en/0106.txt", title = "第106章 待定"}
+107 = {en = "books/badgirl_en/0107.txt", title = "第107章 待定"}
+108 = {en = "books/badgirl_en/0108.txt", title = "第108章 容器"}
+109 = {en = "books/badgirl_en/0109.txt", title = "第109章 血祭初拥"}
+110 = {en = "books/badgirl_en/0110.txt", title = "第110章 名字"}
+111 = {en = "books/badgirl_en/0111.txt", title = "第111章 渴求死亡"}
+112 = {en = "books/badgirl_en/0112.txt", title = "第112章 再相见"}
+113 = {en = "books/badgirl_en/0113.txt", title = "第113章 容纳"}
+114 = {en = "books/badgirl_en/0114.txt", title = "第114章 大赢特赢"}
+115 = {en = "books/badgirl_en/0115.txt", title = "第115章 蜕变"}
+116 = {en = "books/badgirl_en/0116.txt", title = "第116章 第一始祖"}
+117 = {en = "books/badgirl_en/0117.txt", title = "第117章 鏖战"}
+118 = {en = "books/badgirl_en/0118.txt", title = "第118章 女巫预言"}
+119 = {en = "books/badgirl_en/0119.txt", title = "第119章 命运不可违"}
+120 = {en = "books/badgirl_en/0120.txt", title = "第120章 托？"}
+121 = {en = "books/badgirl_en/0121.txt", title = "第121章 鱼死网破"}
+122 = {en = "books/badgirl_en/0122.txt", title = "第122章 第三次预言"}
+123 = {en = "books/badgirl_en/0123.txt", title = "第123章 风涤"}
+124 = {en = "books/badgirl_en/0124.txt", title = "第124章 重回战场"}
+125 = {en = "books/badgirl_en/0125.txt", title = "第125章 围杀"}
+126 = {en = "books/badgirl_en/0126.txt", title = "第126章 审判"}
+127 = {en = "books/badgirl_en/0127.txt", title = "第127章 陨落"}
+128 = {en = "books/badgirl_en/0128.txt", title = "第128章 待定"}
+129 = {en = "books/badgirl_en/0129.txt", title = "第129章 战后总结"}
+130 = {en = "books/badgirl_en/0130.txt", title = "第130章 待定"}
+131 = {en = "books/badgirl_en/0131.txt", title = "第131章 待定"}
+132 = {en = "books/badgirl_en/0132.txt", title = "第132章 待定"}
+133 = {en = "books/badgirl_en/0133.txt", title = "第133章 待定"}
+134 = {en = "books/badgirl_en/0134.txt", title = "第134章 “我”"}
+135 = {en = "books/badgirl_en/0135.txt", title = "第135章 第二次圆桌会议"}
+136 = {en = "books/badgirl_en/0136.txt", title = "第136章 待定"}
+137 = {en = "books/badgirl_en/0137.txt", title = "第137章 精灵"}
+138 = {en = "books/badgirl_en/0138.txt", title = "第138章 待定"}
+139 = {en = "books/badgirl_en/0139.txt", title = "第139章 入城"}
+140 = {en = "books/badgirl_en/0140.txt", title = "第140章 孤男寡女"}
