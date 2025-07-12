@@ -1566,7 +1566,7 @@
                         
                         // 元数据（仅在音频模式显示）
                         if (this.showMeta) {
-                            html += '<div class="sentence-meta">';
+                            html += '<div class="sentence-meta" aria-hidden="true">';
                             html += '<span class="speaker">' + sentence.speaker + '</span>';
                             html += '<span class="emotion">' + sentence.emotion + '</span>';
                             html += '<span class="id">#' + sentence.id + '</span>';
